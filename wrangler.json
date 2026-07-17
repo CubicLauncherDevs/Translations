@@ -1,0 +1,15 @@
+{
+	"name": "cubiclauncher-i18n",
+	"main": "src/index.ts",
+	"compatibility_date": "2025-07-16",
+	"compatibility_flags": ["nodejs_compat"],
+	"observability": {
+		"enabled": true
+	},
+	"vars": {
+		"LOCALE_REPO_OWNER": "CubicLauncherDevs",
+		"LOCALE_REPO_NAME": "CubicLauncher",
+		"LOCALE_REPO_BRANCH": "develop",
+		"LOCALE_REPO_PATH": "src/lib/i18n"
+	}
+}

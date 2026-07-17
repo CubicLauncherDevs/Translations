@@ -1,0 +1,19 @@
+{
+	"name": "cubiclauncher-i18n-worker",
+	"version": "1.0.0",
+	"description": "Mini servidor de i18n para CubicLauncher en Cloudflare Workers",
+	"type": "module",
+	"scripts": {
+		"dev": "wrangler dev",
+		"deploy": "wrangler deploy",
+		"types": "wrangler types",
+		"fetch-locales": "node tools/fetch-locales.js",
+		"build": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@cloudflare/workers-types": "^5.20260710.1",
+		"typescript": "^5.8.3",
+		"wrangler": "^4.13.0"
+	},
+	"dependencies": {}
+}

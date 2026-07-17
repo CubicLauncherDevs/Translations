@@ -126,10 +126,10 @@ export default {
 		if (parts.length === 0) {
 			return jsonResponse({
 				service: 'CubicLauncher i18n API',
-				version: '1.0.0',
+				version: '1.1.0',
 				defaultLocale,
 				locales: localeMeta,
-				localeAlias: 'Endpoints accept both short code (es) and full id (es-ES)',
+				localeAlias: 'Endpoints accept both short code and full locale id',
 				endpoints: {
 					listLocales: '/locales',
 					getLocale: '/{locale}',

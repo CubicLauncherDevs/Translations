@@ -11,8 +11,6 @@ Mini servidor de internacionalización para [CubicLauncher](https://github.com/C
 │   ├── i18n.ts           # Helpers: flatten, interpolate, fallback
 │   └── locales/          # Archivos de traducción descargados (nombrados por su campo id)
 │       ├── de-DE.json
-│       ├── en-US.json
-│       ├── es-ES.json
 │       ├── fr-FR.json
 │       └── uk-UA.json
 ├── tools/
@@ -47,47 +45,47 @@ Lista los idiomas soportados con su short code y su `id` completo.
 
 ```json
 [
-  { "code": "es", "id": "es-ES", "label": "Español", "flag": "🇪🇸" },
-  { "code": "en", "id": "en-US", "label": "English", "flag": "🇬🇧" }
+  { "code": "fr", "id": "fr-FR", "label": "Français", "flag": "🇫🇷" },
+  { "code": "de", "id": "de-DE", "label": "Deutsch", "flag": "🇩🇪" }
 ]
 ```
 
 ### `GET /{locale}`
-Devuelve el diccionario completo de un idioma en formato anidado. Acepta tanto el short code (`es`) como el `id` completo (`es-ES`).
+Devuelve el diccionario completo de un idioma en formato anidado. Acepta tanto el short code (`fr`) como el `id` completo (`fr-FR`).
 
 ```bash
-curl https://i18n.cubiclauncher.org/es
-curl https://i18n.cubiclauncher.org/es-ES
+curl https://i18n.cubiclauncher.org/fr
+curl https://i18n.cubiclauncher.org/fr-FR
 ```
 
 ### `GET /{locale}?flat=true`
 Devuelve el diccionario con las claves aplanadas, igual que usa el launcher internamente.
 
 ```bash
-curl "https://i18n.cubiclauncher.org/en?flat=true"
-curl "https://i18n.cubiclauncher.org/en-US?flat=true"
+curl "https://i18n.cubiclauncher.org/fr?flat=true"
+curl "https://i18n.cubiclauncher.org/fr-FR?flat=true"
 ```
 
 ### `GET /{locale}.json`
 Descarga el archivo JSON original del idioma usando el campo `id` como nombre de archivo. Acepta short code o `id` completo.
 
 ```bash
-curl -OJ https://i18n.cubiclauncher.org/es.json
-# Guarda "es-ES.json"
+curl -OJ https://i18n.cubiclauncher.org/fr.json
+# Guarda "fr-FR.json"
 
-curl -OJ https://i18n.cubiclauncher.org/es-ES.json
-# También guarda "es-ES.json"
+curl -OJ https://i18n.cubiclauncher.org/fr-FR.json
+# También guarda "fr-FR.json"
 ```
 
 ### `GET /download/{locale}`
 Alias para descargar el archivo JSON de un idioma.
 
 ```bash
-curl -OJ https://i18n.cubiclauncher.org/download/es
-# Guarda "es-ES.json"
+curl -OJ https://i18n.cubiclauncher.org/download/fr
+# Guarda "fr-FR.json"
 
-curl -OJ https://i18n.cubiclauncher.org/download/es-ES
-# También guarda "es-ES.json"
+curl -OJ https://i18n.cubiclauncher.org/download/fr-FR
+# También guarda "fr-FR.json"
 ```
 
 ### `GET /{locale}/{dotted.key}`
@@ -95,25 +93,25 @@ Devuelve una traducción concreta. Soporta interpolación vía query params. Ace
 
 ```bash
 # Sin interpolación
-curl https://i18n.cubiclauncher.org/es/common.cancel
-# { "value": "Cancelar", ... }
+curl https://i18n.cubiclauncher.org/fr/common.cancel
+# { "value": "Annuler", ... }
 
-curl https://i18n.cubiclauncher.org/es-ES/common.cancel
-# { "value": "Cancelar", ... }
+curl https://i18n.cubiclauncher.org/fr-FR/common.cancel
+# { "value": "Annuler", ... }
 
 # Con interpolación
-curl "https://i18n.cubiclauncher.org/es/settings.java.installVersion?version=17"
-# { "value": "Instalando Java 17...", "interpolated": true }
+curl "https://i18n.cubiclauncher.org/fr/settings.java.installVersion?version=17"
+# { "value": "Installation de Java 17...", "interpolated": true }
 ```
 
-Si la clave no existe en el idioma solicitado, cae automáticamente al inglés.
+Si la clave no existe en el idioma solicitado, cae automáticamente al francés.
 
 ### `GET /{locale}/nested/path/to/key`
 Acceso a valores anidados sin usar puntos.
 
 ```bash
-curl https://i18n.cubiclauncher.org/es/nested/settings/launcher/language
-# { "value": "Idioma", "path": "settings.launcher.language" }
+curl https://i18n.cubiclauncher.org/fr/nested/settings/launcher/language
+# { "value": "Langue", "path": "settings.launcher.language" }
 ```
 
 ### `POST /sync`

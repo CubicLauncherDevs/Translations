@@ -14,7 +14,7 @@ const OWNER = 'CubicLauncherDevs';
 const REPO = 'CubicLauncher';
 const BRANCH = 'develop';
 const REPO_PATH = 'src/lib/i18n';
-const LOCALES = ['en', 'es', 'fr', 'de', 'uk'];
+const LOCALES = ['fr', 'de', 'uk'];
 
 async function fetchLocale(code) {
 	const url = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${REPO_PATH}/${code}.json`;

@@ -1,5 +1,5 @@
 {
-	"name": "cubiclauncher-i18n",
+	"name": "translations",
 	"main": "src/index.ts",
 	"compatibility_date": "2025-07-16",
 	"compatibility_flags": ["nodejs_compat"],

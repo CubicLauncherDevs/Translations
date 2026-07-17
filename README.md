@@ -56,26 +56,26 @@ Lista los idiomas soportados con su short code y su `id` completo.
 Devuelve el diccionario completo de un idioma en formato anidado. Acepta tanto el short code (`es`) como el `id` completo (`es-ES`).
 
 ```bash
-curl https://<tu-worker>.workers.dev/es
-curl https://<tu-worker>.workers.dev/es-ES
+curl https://i18n.cubiclauncher.org/es
+curl https://i18n.cubiclauncher.org/es-ES
 ```
 
 ### `GET /{locale}?flat=true`
 Devuelve el diccionario con las claves aplanadas, igual que usa el launcher internamente.
 
 ```bash
-curl "https://<tu-worker>.workers.dev/en?flat=true"
-curl "https://<tu-worker>.workers.dev/en-US?flat=true"
+curl "https://i18n.cubiclauncher.org/en?flat=true"
+curl "https://i18n.cubiclauncher.org/en-US?flat=true"
 ```
 
 ### `GET /{locale}.json`
 Descarga el archivo JSON original del idioma usando el campo `id` como nombre de archivo. Acepta short code o `id` completo.
 
 ```bash
-curl -OJ https://<tu-worker>.workers.dev/es.json
+curl -OJ https://i18n.cubiclauncher.org/es.json
 # Guarda "es-ES.json"
 
-curl -OJ https://<tu-worker>.workers.dev/es-ES.json
+curl -OJ https://i18n.cubiclauncher.org/es-ES.json
 # También guarda "es-ES.json"
 ```
 
@@ -83,10 +83,10 @@ curl -OJ https://<tu-worker>.workers.dev/es-ES.json
 Alias para descargar el archivo JSON de un idioma.
 
 ```bash
-curl -OJ https://<tu-worker>.workers.dev/download/es
+curl -OJ https://i18n.cubiclauncher.org/download/es
 # Guarda "es-ES.json"
 
-curl -OJ https://<tu-worker>.workers.dev/download/es-ES
+curl -OJ https://i18n.cubiclauncher.org/download/es-ES
 # También guarda "es-ES.json"
 ```
 
@@ -95,14 +95,14 @@ Devuelve una traducción concreta. Soporta interpolación vía query params. Ace
 
 ```bash
 # Sin interpolación
-curl https://<tu-worker>.workers.dev/es/common.cancel
+curl https://i18n.cubiclauncher.org/es/common.cancel
 # { "value": "Cancelar", ... }
 
-curl https://<tu-worker>.workers.dev/es-ES/common.cancel
+curl https://i18n.cubiclauncher.org/es-ES/common.cancel
 # { "value": "Cancelar", ... }
 
 # Con interpolación
-curl "https://<tu-worker>.workers.dev/es/settings.java.installVersion?version=17"
+curl "https://i18n.cubiclauncher.org/es/settings.java.installVersion?version=17"
 # { "value": "Instalando Java 17...", "interpolated": true }
 ```
 
@@ -112,7 +112,7 @@ Si la clave no existe en el idioma solicitado, cae automáticamente al inglés.
 Acceso a valores anidados sin usar puntos.
 
 ```bash
-curl https://<tu-worker>.workers.dev/es/nested/settings/launcher/language
+curl https://i18n.cubiclauncher.org/es/nested/settings/launcher/language
 # { "value": "Idioma", "path": "settings.launcher.language" }
 ```
 

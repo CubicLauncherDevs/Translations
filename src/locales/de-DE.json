@@ -361,10 +361,10 @@
 		"selectMrpackBtn": ".mrpack-Datei auswählen",
 		"uploadIcon": "Logo hochladen",
 		"iconFilter": "Bilder",
-		"customNameNeeded": "This modpack name contains unsupported characters. Please enter a custom name:",
-		"customNamePlaceholder": "Instance name",
-		"nameInvalidChars": "The name contains invalid characters. Use only ASCII letters, numbers, and basic punctuation.",
-		"nameInvalidNonAscii": "The name can only contain ASCII characters (a-z, 0-9, -, _)."
+		"customNameNeeded": "Der Name dieses Modpacks enthält nicht unterstützte Zeichen. Bitte gib einen eigenen Namen ein:",
+		"customNamePlaceholder": "Instanzname",
+		"nameInvalidChars": "Der Name enthält ungültige Zeichen. Verwenden Sie bitte ausschließlich ASCII-Buchstaben, Zahlen und grundlegende Satzzeichen.",
+		"nameInvalidNonAscii": "Der Name darf nur ASCII-Zeichen enthalten (a–z, 0–9, -, _)."
 	},
 	"themes": {
 		"importSuccess": "Theme importiert",

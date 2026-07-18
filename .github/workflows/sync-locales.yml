@@ -13,7 +13,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
 
       - name: Sync missing keys from en-US to other locales
         run: node tools/sync-locales.js

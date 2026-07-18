@@ -5,15 +5,11 @@ on:
     - cron: '0 6 * * 1'
   workflow_dispatch:
 
-env:
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
-
 jobs:
   sync:
     runs-on: ubuntu-latest
     permissions:
       contents: write
-      pull-requests: write
     steps:
       - uses: actions/checkout@v4
 
@@ -24,14 +20,14 @@ jobs:
       - name: Sync missing keys from en-US to other locales
         run: node tools/sync-locales.js
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v7
-        with:
-          commit-message: 'sync: add missing locale keys from en-US'
-          title: 'Sync new locale keys from en-US'
-          body: |
-            Se agregaron automáticamente claves faltantes desde `en-US.json` a los demás archivos de locale.
-
-            Las traducciones existentes **no fueron modificadas**.
-          branch: sync-locales
-          delete-branch: true
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "sync: add missing locale keys from en-US"
+            git push
+          fi

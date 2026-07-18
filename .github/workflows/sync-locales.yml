@@ -5,6 +5,9 @@ on:
     - cron: '0 6 * * 1'
   workflow_dispatch:
 
+env:
+  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+
 jobs:
   sync:
     runs-on: ubuntu-latest
@@ -16,13 +19,13 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: 24
+          node-version: 22
 
       - name: Sync missing keys from en-US to other locales
         run: node tools/sync-locales.js
 
       - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           commit-message: 'sync: add missing locale keys from en-US'
           title: 'Sync new locale keys from en-US'

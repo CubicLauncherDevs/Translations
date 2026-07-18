@@ -1,4 +1,4 @@
-import { writeFile, readFile, mkdir } from 'node:fs/promises';
+import { writeFile, readFile, mkdir, readdir } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -44,8 +44,11 @@ function mergeMissingKeys(reference, target) {
 	return result;
 }
 
-function findLocaleFiles() {
-	return ['fr-FR.json', 'de-DE.json', 'uk-UA.json'];
+async function findLocaleFiles() {
+	const entries = await readdir(LOCALES_DIR);
+	return entries
+		.filter((name) => name.endsWith('.json') && name !== 'en-US.json')
+		.sort();
 }
 
 async function main() {
@@ -57,7 +60,7 @@ async function main() {
 	await writeFile(enPath, JSON.stringify(reference, null, '\t') + '\n', 'utf-8');
 	console.log('Saved en-US.json');
 
-	const localeFiles = findLocaleFiles();
+	const localeFiles = await findLocaleFiles();
 
 	for (const fileName of localeFiles) {
 		const filePath = join(LOCALES_DIR, fileName);

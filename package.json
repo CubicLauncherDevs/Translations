@@ -8,6 +8,7 @@
 		"deploy": "wrangler deploy",
 		"types": "wrangler types",
 		"fetch-locales": "node tools/fetch-locales.js",
+		"sync-locales": "node tools/sync-locales.js",
 		"build": "tsc --noEmit"
 	},
 	"devDependencies": {

@@ -456,7 +456,8 @@
 		"AUTH_TOKENS_DEL": "Не вдалося видалити токени: {error}",
 		"AUTH_BLOCKED": "Внутрішня помилка: {error}",
 		"AUTH_SESSION_EXPIRED": "Сесія закінчилася. Будь ласка, перезапустіть лаунчер та увійдіть знову: {error}",
-		"GENERIC": "Сталася неочікувана помилка: {error}"
+		"GENERIC": "Сталася неочікувана помилка: {error}",
+		"INST_BUSY": "Instance is running"
 	},
 	"versionDownloader": {
 		"title": "Завантажити версії",
@@ -495,7 +496,10 @@
 			"sortNewest": "Новизною",
 			"category": "Категорія",
 			"allCategories": "Всі",
-			"refresh": "Оновити"
+			"refresh": "Оновити",
+			"title": "Filters",
+			"hideFilters": "Hide advanced filters",
+			"showFilters": "Show advanced filters"
 		},
 		"item": {
 			"by": "від",
@@ -523,7 +527,8 @@
 			"openOnModrinth": "Відкрити на Modrinth",
 			"openOnCurseForge": "Відкрити на CurseForge",
 			"noSelection": "Виберіть мод для перегляду деталей",
-			"by": "від"
+			"by": "від",
+			"installedLabel": "Already installed"
 		}
 	}
 }

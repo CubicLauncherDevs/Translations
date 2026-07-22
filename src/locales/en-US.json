@@ -456,6 +456,7 @@
 		"AUTH_TOKENS_DEL": "Could not delete tokens: {error}",
 		"AUTH_BLOCKED": "Internal error: {error}",
 		"AUTH_SESSION_EXPIRED": "Session expired. Please restart the launcher and log in again: {error}",
+		"INST_BUSY": "Instance is running",
 		"GENERIC": "An unexpected error occurred: {error}"
 	},
 	"versionDownloader": {
@@ -483,6 +484,9 @@
 			"searchSubtitle": "Try a different search term or category."
 		},
 		"filter": {
+			"title": "Filters",
+			"hideFilters": "Hide advanced filters",
+			"showFilters": "Show advanced filters",
 			"tabModrinth": "Modrinth",
 			"tabCurseForge": "CurseForge",
 			"tabLocal": "Local",
@@ -508,6 +512,7 @@
 		},
 		"detail": {
 			"close": "Close details",
+			"installedLabel": "Already installed",
 			"unknownAuthor": "Unknown author",
 			"downloads": "Downloads",
 			"version": "Version",
@@ -515,7 +520,6 @@
 			"loadingVersions": "Loading versions...",
 			"selectVersion": "Select version",
 			"readme": "About",
-			"gallery": "Gallery",
 			"install": "Install",
 			"uninstall": "Uninstall",
 			"enable": "Enable",

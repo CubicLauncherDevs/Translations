@@ -456,7 +456,8 @@
 		"AUTH_TOKENS_DEL": "Erreur lors de la suppression des jetons : {error}",
 		"AUTH_BLOCKED": "Erreur interne : {error}",
 		"AUTH_SESSION_EXPIRED": "Session expirée. Veuillez redémarrer le launcher et vous reconnecter : {error}",
-		"GENERIC": "Une erreur inattendue s'est produite : {error}"
+		"GENERIC": "Une erreur inattendue s'est produite : {error}",
+		"INST_BUSY": "Instance is running"
 	},
 	"versionDownloader": {
 		"title": "Télécharger les Versions",
@@ -495,7 +496,10 @@
 			"sortNewest": "Newest",
 			"category": "Category",
 			"allCategories": "All",
-			"refresh": "Refresh"
+			"refresh": "Refresh",
+			"title": "Filters",
+			"hideFilters": "Hide advanced filters",
+			"showFilters": "Show advanced filters"
 		},
 		"item": {
 			"by": "by",
@@ -523,7 +527,8 @@
 			"openOnModrinth": "Open on Modrinth",
 			"openOnCurseForge": "Open on CurseForge",
 			"noSelection": "Select a mod to view its details",
-			"by": "par"
+			"by": "par",
+			"installedLabel": "Already installed"
 		}
 	}
 }

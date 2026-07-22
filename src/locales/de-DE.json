@@ -456,7 +456,8 @@
 		"AUTH_TOKENS_DEL": "Fehler beim Löschen der Tokens: {error}",
 		"AUTH_BLOCKED": "Interner Fehler: {error}",
 		"AUTH_SESSION_EXPIRED": "Sitzung abgelaufen. Bitte starte den Launcher neu und melde dich erneut an: {error}",
-		"GENERIC": "Ein unerwarteter Fehler ist aufgetreten: {error}"
+		"GENERIC": "Ein unerwarteter Fehler ist aufgetreten: {error}",
+		"INST_BUSY": "Instance is running"
 	},
 	"versionDownloader": {
 		"title": "Versionen herunterladen",
@@ -495,7 +496,10 @@
 			"sortNewest": "Newest",
 			"category": "Category",
 			"allCategories": "All",
-			"refresh": "Refresh"
+			"refresh": "Refresh",
+			"title": "Filters",
+			"hideFilters": "Hide advanced filters",
+			"showFilters": "Show advanced filters"
 		},
 		"item": {
 			"by": "by",
@@ -523,7 +527,8 @@
 			"openOnModrinth": "Open on Modrinth",
 			"openOnCurseForge": "Open on CurseForge",
 			"noSelection": "Select a mod to view its details",
-			"by": "von"
+			"by": "von",
+			"installedLabel": "Already installed"
 		}
 	}
 }

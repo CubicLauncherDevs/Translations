@@ -456,7 +456,8 @@
 		"AUTH_TOKENS_DEL": "Error al eliminar tokens: {error}",
 		"AUTH_BLOCKED": "Error interno: {error}",
 		"AUTH_SESSION_EXPIRED": "Sesión expirada. Reinicia el launcher e inicia sesión de nuevo: {error}",
-		"GENERIC": "Ocurrió un error inesperado: {error}"
+		"GENERIC": "Ocurrió un error inesperado: {error}",
+		"INST_BUSY": "Instance is running"
 	},
 	"versionDownloader": {
 		"title": "Descargar Versiones",
@@ -495,7 +496,10 @@
 			"sortNewest": "Más nuevos",
 			"category": "Categoría",
 			"allCategories": "Todas",
-			"refresh": "Actualizar"
+			"refresh": "Actualizar",
+			"title": "Filters",
+			"hideFilters": "Hide advanced filters",
+			"showFilters": "Show advanced filters"
 		},
 		"item": {
 			"by": "por",
@@ -523,7 +527,8 @@
 			"openOnModrinth": "Abrir en Modrinth",
 			"openOnCurseForge": "Abrir en CurseForge",
 			"noSelection": "Selecciona un mod para ver sus detalles",
-			"by": "por"
+			"by": "por",
+			"installedLabel": "Already installed"
 		}
 	}
 }

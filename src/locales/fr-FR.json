@@ -364,7 +364,11 @@
 		"customNameNeeded": "Le nom de ce modpack contient des caractères non pris en charge. Veuillez saisir un nom personnalisé:",
 		"customNamePlaceholder": "Nom de l'instance",
 		"nameInvalidChars": "Le nom contient des caractères non valides. N'utilisez que des lettres ASCII, des chiffres et des signes de ponctuation de base.",
-		"nameInvalidNonAscii": "Le nom ne peut contenir que des caractères ASCII (a-z, 0-9, -, _)."
+		"nameInvalidNonAscii": "Le nom ne peut contenir que des caractères ASCII (a-z, 0-9, -, _).",
+		"nextBtn": "Next",
+		"backBtn": "Back",
+		"stepInfo": "Info",
+		"stepVersion": "Version"
 	},
 	"themes": {
 		"importSuccess": "Thème importé",

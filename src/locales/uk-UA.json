@@ -364,7 +364,11 @@
 		"customNameNeeded": "Назва цього модпака містить символи, що не підтримуються. Будь ласка, введіть власну назву:",
 		"customNamePlaceholder": "Назва екземпляра",
 		"nameInvalidChars": "Ім'я містить недопустимі символи. Використовуйте лише літери, цифри та основні розділові знаки у кодуванні ASCII.",
-		"nameInvalidNonAscii": "Ім'я може містити лише символи ASCII (a–z, 0–9, -, _)."
+		"nameInvalidNonAscii": "Ім'я може містити лише символи ASCII (a–z, 0–9, -, _).",
+		"nextBtn": "Next",
+		"backBtn": "Back",
+		"stepInfo": "Info",
+		"stepVersion": "Version"
 	},
 	"themes": {
 		"importSuccess": "Тему імпортовано",

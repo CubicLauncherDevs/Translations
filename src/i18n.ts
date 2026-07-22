@@ -1,4 +1,6 @@
 import de from './locales/de-DE.json';
+import en from './locales/en-US.json';
+import es from './locales/es-ES.json';
 import fr from './locales/fr-FR.json';
 import uk from './locales/uk-UA.json';
 
@@ -6,7 +8,7 @@ export type DictValue = string | { [key: string]: DictValue };
 export type LocaleDict = Record<string, DictValue>;
 export type FlatDict = Record<string, string>;
 
-export const locales: Record<string, LocaleDict> = { fr, de, uk };
+export const locales: Record<string, LocaleDict> = { en, es, fr, de, uk };
 
 export const localeIds: Record<string, string> = Object.fromEntries(
 	Object.entries(locales).map(([code, dict]) => {
@@ -26,12 +28,12 @@ export function resolveLocale(input: string): string | null {
 }
 
 export const localeMeta = [
+	{ code: 'en', label: 'English', flag: '🇬🇧' },
+	{ code: 'es', label: 'Español', flag: '🇪🇸' },
 	{ code: 'fr', label: 'Français', flag: '🇫🇷' },
 	{ code: 'de', label: 'Deutsch', flag: '🇩🇪' },
 	{ code: 'uk', label: 'Українська', flag: '🇺🇦' },
 ] as const;
-
-export const defaultLocale = 'fr';
 
 let flatCache: Map<string, FlatDict> | null = null;
 
@@ -86,20 +88,14 @@ export function resolveTranslation(
 	params: Record<string, string>,
 ): { value: string; localeUsed: string; interpolated: boolean } | null {
 	const flat = getFlat(locale);
-	let text = flat[key];
-	let localeUsed = locale;
-
-	if (text === undefined && locale !== defaultLocale) {
-		text = getFlat(defaultLocale)[key];
-		localeUsed = defaultLocale;
-	}
+	const text = flat[key];
 
 	if (text === undefined) return null;
 
 	const interpolated = Object.keys(params).length > 0;
 	return {
 		value: interpolated ? interpolate(text, params) : text,
-		localeUsed,
+		localeUsed: locale,
 		interpolated,
 	};
 }

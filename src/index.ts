@@ -1,5 +1,4 @@
 import {
-	defaultLocale,
 	flatten,
 	getNestedValue,
 	localeIds,
@@ -126,8 +125,7 @@ export default {
 		if (parts.length === 0) {
 			return jsonResponse({
 				service: 'CubicLauncher i18n API',
-				version: '1.1.0',
-				defaultLocale,
+				version: '1.2.0',
 				locales: localeMeta,
 				localeAlias: 'Endpoints accept both short code and full locale id',
 				endpoints: {
@@ -193,16 +191,6 @@ export default {
 		if (parts[1] === 'nested' && parts.length > 2) {
 			const path = parts.slice(2);
 			const value = getNestedValue(dict, path);
-			if (value === undefined && locale !== defaultLocale) {
-				const fallback = getNestedValue(locales[defaultLocale], path);
-				if (fallback !== undefined) {
-					return jsonResponse({
-						value: serializeDictValue(fallback),
-						locale: defaultLocale,
-						path: path.join('.'),
-					});
-				}
-			}
 			if (value === undefined) {
 				return errorResponse(`Key '${path.join('.')}' not found`, 404);
 			}

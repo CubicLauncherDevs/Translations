@@ -3,6 +3,7 @@ import en from './locales/en-US.json';
 import es from './locales/es-ES.json';
 import fr from './locales/fr-FR.json';
 import uk from './locales/uk-UA.json';
+import ja from './locales/ja-JP.json';
 
 export type DictValue = string | { [key: string]: DictValue };
 export type LocaleDict = Record<string, DictValue>;
@@ -33,6 +34,7 @@ export const localeMeta = [
 	{ code: 'fr', label: 'Français', flag: '🇫🇷' },
 	{ code: 'de', label: 'Deutsch', flag: '🇩🇪' },
 	{ code: 'uk', label: 'Українська', flag: '🇺🇦' },
+	{ code: 'ja', label: '日本語', flag: '🇯🇵' },
 ] as const;
 
 let flatCache: Map<string, FlatDict> | null = null;

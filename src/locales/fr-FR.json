@@ -457,7 +457,7 @@
 		"AUTH_BLOCKED": "Erreur interne : {error}",
 		"AUTH_SESSION_EXPIRED": "Session expirée. Veuillez redémarrer le launcher et vous reconnecter : {error}",
 		"GENERIC": "Une erreur inattendue s'est produite : {error}",
-		"INST_BUSY": "Instance is running"
+		"INST_BUSY": "L'instance est en cours d'exécution"
 	},
 	"versionDownloader": {
 		"title": "Télécharger les Versions",
@@ -528,7 +528,7 @@
 			"openOnCurseForge": "Open on CurseForge",
 			"noSelection": "Select a mod to view its details",
 			"by": "par",
-			"installedLabel": "Already installed"
+			"installedLabel": "Déjà installé"
 		}
 	}
 }

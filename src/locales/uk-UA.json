@@ -457,7 +457,7 @@
 		"AUTH_BLOCKED": "Внутрішня помилка: {error}",
 		"AUTH_SESSION_EXPIRED": "Сесія закінчилася. Будь ласка, перезапустіть лаунчер та увійдіть знову: {error}",
 		"GENERIC": "Сталася неочікувана помилка: {error}",
-		"INST_BUSY": "Instance is running"
+		"INST_BUSY": "Інстанція працює"
 	},
 	"versionDownloader": {
 		"title": "Завантажити версії",
@@ -528,7 +528,7 @@
 			"openOnCurseForge": "Відкрити на CurseForge",
 			"noSelection": "Виберіть мод для перегляду деталей",
 			"by": "від",
-			"installedLabel": "Already installed"
+			"installedLabel": "Вже встановлено"
 		}
 	}
 }

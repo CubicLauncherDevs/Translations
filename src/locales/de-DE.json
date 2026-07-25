@@ -457,7 +457,7 @@
 		"AUTH_BLOCKED": "Interner Fehler: {error}",
 		"AUTH_SESSION_EXPIRED": "Sitzung abgelaufen. Bitte starte den Launcher neu und melde dich erneut an: {error}",
 		"GENERIC": "Ein unerwarteter Fehler ist aufgetreten: {error}",
-		"INST_BUSY": "Instance is running"
+		"INST_BUSY": "Die Instanz läuft"
 	},
 	"versionDownloader": {
 		"title": "Versionen herunterladen",
@@ -528,7 +528,7 @@
 			"openOnCurseForge": "Open on CurseForge",
 			"noSelection": "Select a mod to view its details",
 			"by": "von",
-			"installedLabel": "Already installed"
+			"installedLabel": "Bereits installiert"
 		}
 	}
 }

@@ -9,7 +9,7 @@ export type DictValue = string | { [key: string]: DictValue };
 export type LocaleDict = Record<string, DictValue>;
 export type FlatDict = Record<string, string>;
 
-export const locales: Record<string, LocaleDict> = { en, es, fr, de, uk };
+export const locales: Record<string, LocaleDict> = { en, es, fr, de, uk, ja };
 
 export const localeIds: Record<string, string> = Object.fromEntries(
 	Object.entries(locales).map(([code, dict]) => {

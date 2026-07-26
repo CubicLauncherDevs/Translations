@@ -131,7 +131,9 @@
 		},
 		"downloadVersions": "Télécharger les Versions",
 		"collapse": "Réduire la barre latérale",
-		"expand": "Agrandir la barre latérale"
+		"expand": "Agrandir la barre latérale",
+		"edit": "Edit",
+		"openFolder": "Open Folder"
 	},
 	"userMenu": {
 		"title": "Profil Utilisateur",

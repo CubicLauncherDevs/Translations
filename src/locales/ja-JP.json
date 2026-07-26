@@ -131,7 +131,9 @@
 		},
 		"downloadVersions": "バージョンをダウンロード",
 		"collapse": "サイドバーを折りたたむ",
-		"expand": "サイドバーを展開"
+		"expand": "サイドバーを展開",
+		"edit": "Edit",
+		"openFolder": "Open Folder"
 	},
 	"userMenu": {
 		"title": "ユーザープロフィール",

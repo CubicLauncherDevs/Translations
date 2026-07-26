@@ -131,7 +131,9 @@
 		},
 		"downloadVersions": "Завантажити версії",
 		"collapse": "Згорнути бічну панель",
-		"expand": "Розгорнути бічну панель"
+		"expand": "Розгорнути бічну панель",
+		"edit": "Edit",
+		"openFolder": "Open Folder"
 	},
 	"userMenu": {
 		"title": "Профіль користувача",

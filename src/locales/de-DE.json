@@ -131,7 +131,9 @@
 		},
 		"downloadVersions": "Versionen herunterladen",
 		"collapse": "Seitenleiste einklappen",
-		"expand": "Seitenleiste ausklappen"
+		"expand": "Seitenleiste ausklappen",
+		"edit": "Edit",
+		"openFolder": "Open Folder"
 	},
 	"userMenu": {
 		"title": "Benutzerprofil",

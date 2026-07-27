@@ -1,5 +1,6 @@
 {
 	"id": "ja-JP",
+	"version": "1.0.0",
 	"common": {
 		"cancel": "キャンセル",
 		"save": "保存",

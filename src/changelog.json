@@ -1,0 +1,44 @@
+[
+	{
+		"type": "locale.added",
+		"locale": "en-US",
+		"version": "1.0.0",
+		"timestamp": "2026-07-26T00:00:00.000Z",
+		"details": { "note": "Initial English locale" }
+	},
+	{
+		"type": "locale.added",
+		"locale": "es-ES",
+		"version": "1.0.0",
+		"timestamp": "2026-07-26T00:00:00.000Z",
+		"details": { "note": "Initial Spanish locale" }
+	},
+	{
+		"type": "locale.added",
+		"locale": "fr-FR",
+		"version": "1.0.0",
+		"timestamp": "2026-07-26T00:00:00.000Z",
+		"details": { "note": "Initial French locale" }
+	},
+	{
+		"type": "locale.added",
+		"locale": "de-DE",
+		"version": "1.0.0",
+		"timestamp": "2026-07-26T00:00:00.000Z",
+		"details": { "note": "Initial German locale" }
+	},
+	{
+		"type": "locale.added",
+		"locale": "uk-UA",
+		"version": "1.0.0",
+		"timestamp": "2026-07-26T00:00:00.000Z",
+		"details": { "note": "Initial Ukrainian locale" }
+	},
+	{
+		"type": "locale.added",
+		"locale": "ja-JP",
+		"version": "1.0.0",
+		"timestamp": "2026-07-26T00:00:00.000Z",
+		"details": { "note": "Initial Japanese locale" }
+	}
+]

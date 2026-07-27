@@ -1,5 +1,9 @@
+import changelog from './changelog.json';
 import {
+	computeLocaleEtag,
 	flatten,
+	getLocale,
+	getLocaleVersion,
 	getNestedValue,
 	localeIds,
 	localeMeta,
@@ -40,17 +44,29 @@ function errorResponse(message: string, status = 400) {
 	return jsonResponse({ error: message }, status);
 }
 
+function notModifiedResponse(etag: string) {
+	return new Response(null, {
+		status: 304,
+		headers: {
+			ETag: etag,
+			'Cache-Control': 'public, max-age=60',
+			...corsHeaders,
+		},
+	});
+}
+
 function serializeDictValue(value: DictValue | undefined): unknown {
 	if (value === undefined) return null;
 	if (typeof value === 'string') return value;
 	return value as LocaleDict;
 }
 
-function downloadResponse(locale: string): Response {
+async function downloadResponse(locale: string): Promise<Response> {
 	const dict = locales[locale];
 	if (!dict) {
 		return errorResponse(`Locale '${locale}' not found`, 404);
 	}
+	const etag = await computeLocaleEtag(locale, dict);
 	const filename = `${localeIds[locale] ?? locale}.json`;
 	return new Response(JSON.stringify(dict, null, '\t'), {
 		status: 200,
@@ -58,8 +74,45 @@ function downloadResponse(locale: string): Response {
 			'Content-Type': 'application/json; charset=utf-8',
 			'Content-Disposition': `attachment; filename="${filename}"`,
 			'Cache-Control': 'public, max-age=60',
+			ETag: etag,
+			'X-Locale-Version': getLocaleVersion(dict) ?? 'unknown',
 			...corsHeaders,
 		},
+	});
+}
+
+async function handleGetLocale(request: Request, env: Env, locale: string): Promise<Response> {
+	const dict = locales[locale];
+	if (!dict) {
+		return errorResponse(`Locale '${locale}' not found`, 404);
+	}
+
+	const etag = await computeLocaleEtag(locale, dict);
+	const clientEtag = request.headers.get('If-None-Match');
+	if (clientEtag && clientEtag === etag) {
+		return notModifiedResponse(etag);
+	}
+
+	const url = new URL(request.url);
+	const flatRequested = url.searchParams.get('flat') === 'true';
+	const body = flatRequested ? flatten(dict) : dict;
+
+	return jsonResponse(body, 200, {
+		ETag: etag,
+		'X-Locale-Version': getLocaleVersion(dict) ?? 'unknown',
+	});
+}
+
+function handleGetLocaleVersion(locale: string): Response {
+	const dict = locales[locale];
+	if (!dict) {
+		return errorResponse(`Locale '${locale}' not found`, 404);
+	}
+
+	return jsonResponse({
+		code: locale,
+		id: localeIds[locale],
+		version: getLocaleVersion(dict) ?? 'unknown',
 	});
 }
 
@@ -80,15 +133,13 @@ async function handleSync(request: Request, env: Env): Promise<Response> {
 
 	await Promise.all(
 		localeMeta.map(async ({ code }) => {
-			const url = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${path}/${code}.json`;
+			const upstreamUrl = `https://raw.githubusercontent.com/${owner}/${repo}/${branch}/${path}/${code}.json`;
 			try {
-				const res = await fetch(url);
+				const res = await fetch(upstreamUrl);
 				if (!res.ok) {
 					results[code] = { ok: false, status: res.status };
 					return;
 				}
-				// Real deployments would write to KV/R2 here.
-				// For the embedded version this endpoint only validates reachability.
 				const body = await res.text();
 				JSON.parse(body);
 				results[code] = { ok: true, status: res.status };
@@ -99,6 +150,18 @@ async function handleSync(request: Request, env: Env): Promise<Response> {
 	);
 
 	return jsonResponse({ synced: results });
+}
+
+function handleGetChanges(url: URL): Response {
+	const since = url.searchParams.get('since');
+	const sinceMs = since ? new Date(since).getTime() : 0;
+
+	const filtered = changelog.filter((entry) => {
+		if (!since) return true;
+		return new Date(entry.timestamp).getTime() >= sinceMs;
+	});
+
+	return jsonResponse({ changes: filtered });
 }
 
 export default {
@@ -125,15 +188,17 @@ export default {
 		if (parts.length === 0) {
 			return jsonResponse({
 				service: 'CubicLauncher i18n API',
-				version: '1.2.0',
+				version: '1.3.0',
 				locales: localeMeta,
 				localeAlias: 'Endpoints accept both short code and full locale id',
 				endpoints: {
 					listLocales: '/locales',
 					getLocale: '/{locale}',
 					getLocaleFlat: '/{locale}?flat=true',
+					getLocaleVersion: '/{locale}/version',
 					getLocaleFile: '/{locale}.json',
 					downloadLocale: '/download/{locale}',
+					getChanges: '/locales/changes?since=<ISO8601>',
 					getKey: '/{locale}/{dotted.key}',
 					getKeyInterpolated: '/{locale}/{dotted.key}?param=value',
 					getNested: '/{locale}/nested/path/to/key',
@@ -142,7 +207,7 @@ export default {
 			});
 		}
 
-		// GET /{locale}.json - download raw locale file (accepts both short code and id)
+		// GET /{locale}.json - download raw locale file
 		if (parts.length === 1 && parts[0].endsWith('.json')) {
 			const requested = parts[0].slice(0, -5);
 			const resolved = resolveLocale(requested);
@@ -151,12 +216,17 @@ export default {
 			}
 		}
 
-		// GET /download/{locale} - alternative download endpoint (accepts both short code and id)
+		// GET /download/{locale}
 		if (parts.length === 2 && parts[0] === 'download') {
 			const resolved = resolveLocale(parts[1]);
 			if (resolved) {
 				return downloadResponse(resolved);
 			}
+		}
+
+		// GET /locales/changes
+		if (parts[0] === 'locales' && parts[1] === 'changes') {
+			return handleGetChanges(url);
 		}
 
 		// GET /locales
@@ -178,13 +248,14 @@ export default {
 			return errorResponse(`Locale '${requestedLocale}' not found`, 404);
 		}
 
+		// GET /{locale}/version
+		if (parts.length === 2 && parts[1] === 'version') {
+			return handleGetLocaleVersion(locale);
+		}
+
 		// GET /{locale}
 		if (parts.length === 1) {
-			const flatRequested = url.searchParams.get('flat') === 'true';
-			if (flatRequested) {
-				return jsonResponse(flatten(dict));
-			}
-			return jsonResponse(dict);
+			return handleGetLocale(request, env, locale);
 		}
 
 		// GET /{locale}/nested/path/to/key
@@ -196,7 +267,7 @@ export default {
 			}
 			return jsonResponse({
 				value: serializeDictValue(value),
-				locale,
+				locale: localeIds[locale],
 				path: path.join('.'),
 			});
 		}

@@ -1,5 +1,6 @@
 {
 	"id": "uk-UA",
+	"version": "1.0.0",
 	"common": {
 		"cancel": "Скасувати",
 		"save": "Зберегти",

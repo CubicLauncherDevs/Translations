@@ -49,7 +49,8 @@ function ensureCache(): Map<string, FlatDict> {
 export function flatten(obj: LocaleDict, prefix = ''): FlatDict {
 	const result: FlatDict = {};
 	for (const key in obj) {
-		if (key === 'id') continue;
+		// `id` y `version` son metadatos, no claves de traducción.
+		if (key === 'id' || key === 'version') continue;
 		const val = obj[key];
 		if (typeof val === 'string') {
 			result[prefix + key] = val;
@@ -84,6 +85,24 @@ export function getNestedValue(dict: LocaleDict, path: string[]): DictValue | un
 	return current;
 }
 
+export function getLocale(code: string): LocaleDict | undefined {
+	return locales[code];
+}
+
+export function getLocaleVersion(dict: LocaleDict): string | undefined {
+	return typeof dict.version === 'string' ? dict.version : undefined;
+}
+
+export async function computeLocaleEtag(locale: string, dict: LocaleDict): Promise<string> {
+	const text = JSON.stringify(dict);
+	const bytes = new TextEncoder().encode(text);
+	const buffer = await crypto.subtle.digest('SHA-256', bytes);
+	const hash = Array.from(new Uint8Array(buffer))
+		.map((b) => b.toString(16).padStart(2, '0'))
+		.join('');
+	return `W/"${locale}-${hash.slice(0, 16)}"`;
+}
+
 export function resolveTranslation(
 	locale: string,
 	key: string,
@@ -97,7 +116,7 @@ export function resolveTranslation(
 	const interpolated = Object.keys(params).length > 0;
 	return {
 		value: interpolated ? interpolate(text, params) : text,
-		localeUsed: locale,
+		localeUsed: localeIds[locale],
 		interpolated,
 	};
 }

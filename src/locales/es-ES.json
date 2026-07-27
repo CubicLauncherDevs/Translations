@@ -1,5 +1,6 @@
 {
 	"id": "es-ES",
+	"version": "1.0.0",
 	"common": {
 		"cancel": "Cancelar",
 		"save": "Guardar",

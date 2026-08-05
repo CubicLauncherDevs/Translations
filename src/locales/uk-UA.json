@@ -1,6 +1,6 @@
 {
 	"id": "uk-UA",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"common": {
 		"cancel": "Скасувати",
 		"save": "Зберегти",
@@ -133,8 +133,8 @@
 		"downloadVersions": "Завантажити версії",
 		"collapse": "Згорнути бічну панель",
 		"expand": "Розгорнути бічну панель",
-		"edit": "Edit",
-		"openFolder": "Open Folder"
+		"edit": "Редагувати",
+		"openFolder": "Відкрити теку"
 	},
 	"userMenu": {
 		"title": "Профіль користувача",
@@ -162,23 +162,23 @@
 		},
 		"yggdrasilModal": {
 			"title": "Authlib Injector",
-			"serverInstruction": "Enter the Yggdrasil authentication server URL.",
-			"serverLabel": "Server",
-			"serverPlaceholder": "e.g. littlesk.in",
-			"connect": "Connect",
-			"loginInstruction": "Enter your credentials to log in.",
-			"usernameLabel": "Username",
-			"emailLabel": "Email",
-			"usernamePlaceholder": "Your username",
+			"serverInstruction": "Введіть URL сервера автентифікації Yggdrasil.",
+			"serverLabel": "Сервер",
+			"serverPlaceholder": "напр. littlesk.in",
+			"connect": "Підключитися",
+			"loginInstruction": "Введіть свої облікові дані для входу.",
+			"usernameLabel": "Ім'я користувача",
+			"emailLabel": "Електронна пошта",
+			"usernamePlaceholder": "Ваше ім'я користувача",
 			"emailPlaceholder": "email@example.com",
-			"passwordLabel": "Password",
-			"back": "Back",
-			"login": "Log in",
-			"loading": "Connecting...",
-			"errorTitle": "Error",
-			"errorUnknown": "Unknown error",
-			"successTitle": "Connected!",
-			"successSubtitle": "Your account has been linked."
+			"passwordLabel": "Пароль",
+			"back": "Назад",
+			"login": "Увійти",
+			"loading": "Підключення...",
+			"errorTitle": "Помилка",
+			"errorUnknown": "Невідома помилка",
+			"successTitle": "Підключено!",
+			"successSubtitle": "Ваш обліковий запис повʼязано."
 		}
 	},
 	"launch": {
@@ -389,10 +389,10 @@
 		"customNamePlaceholder": "Назва екземпляра",
 		"nameInvalidChars": "Ім'я містить недопустимі символи. Використовуйте лише літери, цифри та основні розділові знаки у кодуванні ASCII.",
 		"nameInvalidNonAscii": "Ім'я може містити лише символи ASCII (a–z, 0–9, -, _).",
-		"nextBtn": "Next",
-		"backBtn": "Back",
-		"stepInfo": "Info",
-		"stepVersion": "Version"
+		"nextBtn": "Далі",
+		"backBtn": "Назад",
+		"stepInfo": "Інформація",
+		"stepVersion": "Версія"
 	},
 	"themes": {
 		"importSuccess": "Тему імпортовано",
@@ -496,7 +496,7 @@
 		"downloading": "Завантаження...",
 		"forgeJavaHint": "Forge вимагає налаштування Java 21 в Налаштуваннях > Java.",
 		"neoForgeJavaHint": "NeoForge вимагає налаштування Java 17/21 в Налаштуваннях > Java.",
-		"loaderSearchPlaceholder": "Search loader version..."
+		"loaderSearchPlaceholder": "Пошук версії завантажувача..."
 	},
 	"market": {
 		"empty": {
@@ -521,9 +521,9 @@
 			"category": "Категорія",
 			"allCategories": "Всі",
 			"refresh": "Оновити",
-			"title": "Filters",
-			"hideFilters": "Hide advanced filters",
-			"showFilters": "Show advanced filters"
+			"title": "Фільтри",
+			"hideFilters": "Приховати розширені фільтри",
+			"showFilters": "Показати розширені фільтри"
 		},
 		"item": {
 			"by": "від",

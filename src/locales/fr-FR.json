@@ -1,6 +1,6 @@
 {
 	"id": "fr-FR",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"common": {
 		"cancel": "Annuler",
 		"save": "Enregistrer",
@@ -18,7 +18,7 @@
 		"title": "Paramètres",
 		"advanced": "Avancé",
 		"tabs": {
-			"launcher": "Launcher",
+			"launcher": "Lanceur",
 			"minecraft": "Minecraft",
 			"java": "Java"
 		},
@@ -133,8 +133,8 @@
 		"downloadVersions": "Télécharger les Versions",
 		"collapse": "Réduire la barre latérale",
 		"expand": "Agrandir la barre latérale",
-		"edit": "Edit",
-		"openFolder": "Open Folder"
+		"edit": "Modifier",
+		"openFolder": "Ouvrir le dossier"
 	},
 	"userMenu": {
 		"title": "Profil Utilisateur",
@@ -162,23 +162,23 @@
 		},
 		"yggdrasilModal": {
 			"title": "Authlib Injector",
-			"serverInstruction": "Enter the Yggdrasil authentication server URL.",
-			"serverLabel": "Server",
-			"serverPlaceholder": "e.g. littlesk.in",
-			"connect": "Connect",
-			"loginInstruction": "Enter your credentials to log in.",
-			"usernameLabel": "Username",
-			"emailLabel": "Email",
-			"usernamePlaceholder": "Your username",
+			"serverInstruction": "Saisis l'URL du serveur d'authentification Yggdrasil.",
+			"serverLabel": "Serveur",
+			"serverPlaceholder": "ex. littlesk.in",
+			"connect": "Se connecter",
+			"loginInstruction": "Saisis tes identifiants pour te connecter.",
+			"usernameLabel": "Nom d'utilisateur",
+			"emailLabel": "E-mail",
+			"usernamePlaceholder": "Ton nom utilisateur",
 			"emailPlaceholder": "email@example.com",
-			"passwordLabel": "Password",
-			"back": "Back",
-			"login": "Log in",
-			"loading": "Connecting...",
-			"errorTitle": "Error",
-			"errorUnknown": "Unknown error",
-			"successTitle": "Connected!",
-			"successSubtitle": "Your account has been linked."
+			"passwordLabel": "Mot de passe",
+			"back": "Retour",
+			"login": "Se connecter",
+			"loading": "Connexion en cours...",
+			"errorTitle": "Erreur",
+			"errorUnknown": "Erreur inconnue",
+			"successTitle": "Connecté !",
+			"successSubtitle": "Votre compte a été lié."
 		}
 	},
 	"launch": {
@@ -213,7 +213,7 @@
 			"resources": "Ressources",
 			"screenshots": "Captures d'écran",
 			"logs": "Journaux",
-			"shaderpacks": "Shader Packs"
+			"shaderpacks": "Packs de shaders"
 		},
 		"details": {
 			"title": "Détails",
@@ -334,7 +334,7 @@
 			"sourceCurseForge": "CurseForge",
 			"openSettings": "Ouvrir les Paramètres",
 			"curseForgeRelease": "Release",
-			"curseForgeBeta": "Beta",
+			"curseForgeBeta": "Bêta",
 			"curseForgeAlpha": "Alpha"
 		}
 	},
@@ -389,8 +389,8 @@
 		"customNamePlaceholder": "Nom de l'instance",
 		"nameInvalidChars": "Le nom contient des caractères non valides. N'utilisez que des lettres ASCII, des chiffres et des signes de ponctuation de base.",
 		"nameInvalidNonAscii": "Le nom ne peut contenir que des caractères ASCII (a-z, 0-9, -, _).",
-		"nextBtn": "Next",
-		"backBtn": "Back",
+		"nextBtn": "Suivant",
+		"backBtn": "Retour",
 		"stepInfo": "Info",
 		"stepVersion": "Version"
 	},
@@ -496,61 +496,61 @@
 		"downloading": "Téléchargement...",
 		"forgeJavaHint": "Forge nécessite Java 21, à configurer dans Paramètres > Java.",
 		"neoForgeJavaHint": "NeoForge nécessite Java 17/21, à configurer dans Paramètres > Java.",
-		"loaderSearchPlaceholder": "Search loader version..."
+		"loaderSearchPlaceholder": "Rechercher une version du loader..."
 	},
 	"market": {
 		"empty": {
-			"localTitle": "No mods installed",
-			"localSubtitle": "Mods you install from the Market or add manually will appear here.",
-			"marketTitle": "Discover mods",
-			"marketSubtitle": "Search Modrinth for mods compatible with this instance.",
-			"searchTitle": "No mods found",
-			"searchSubtitle": "Try a different search term or category."
+			"localTitle": "Aucun mod installé",
+			"localSubtitle": "Les mods installés depuis le Market ou ajoutés manuellement apparaîtront ici.",
+			"marketTitle": "Découvrir des mods",
+			"marketSubtitle": "Recherchez sur Modrinth des mods compatibles avec cette instance.",
+			"searchTitle": "Aucun mod trouvé",
+			"searchSubtitle": "Essayez un autre terme ou une autre catégorie."
 		},
 		"filter": {
 			"tabModrinth": "Modrinth",
 			"tabCurseForge": "CurseForge",
 			"tabLocal": "Local",
-			"searchModrinth": "Search Modrinth...",
-			"searchCurseForge": "Search CurseForge...",
-			"searchLocal": "Search installed mods...",
-			"sortBy": "Sort by",
-			"sortDownloads": "Downloads",
-			"sortRelevance": "Relevance",
-			"sortNewest": "Newest",
-			"category": "Category",
-			"allCategories": "All",
-			"refresh": "Refresh",
-			"title": "Filters",
-			"hideFilters": "Hide advanced filters",
-			"showFilters": "Show advanced filters"
+			"searchModrinth": "Rechercher sur Modrinth...",
+			"searchCurseForge": "Rechercher sur CurseForge...",
+			"searchLocal": "Rechercher parmi les mods installés...",
+			"sortBy": "Trier par",
+			"sortDownloads": "Téléchargements",
+			"sortRelevance": "Pertinence",
+			"sortNewest": "Plus récents",
+			"category": "Catégorie",
+			"allCategories": "Toutes",
+			"refresh": "Actualiser",
+			"title": "Filtres",
+			"hideFilters": "Masquer les filtres avancés",
+			"showFilters": "Afficher les filtres avancés"
 		},
 		"item": {
-			"by": "by",
-			"unknownAuthor": "Unknown author",
-			"noDescription": "No description available",
-			"install": "Install",
-			"installed": "Installed",
-			"updateAvailable": "Update",
+			"by": "par",
+			"unknownAuthor": "Auteur inconnu",
+			"noDescription": "Aucune description disponible",
+			"install": "Installer",
+			"installed": "Installé",
+			"updateAvailable": "Mettre à jour",
 			"incompatible": "Incompatible"
 		},
 		"detail": {
-			"close": "Close details",
-			"unknownAuthor": "Unknown author",
-			"downloads": "Downloads",
+			"close": "Fermer les détails",
+			"unknownAuthor": "Auteur inconnu",
+			"downloads": "Téléchargements",
 			"version": "Version",
-			"noVersions": "No versions available",
-			"loadingVersions": "Loading versions...",
-			"selectVersion": "Select version",
-			"readme": "About",
+			"noVersions": "Aucune version disponible",
+			"loadingVersions": "Chargement des versions...",
+			"selectVersion": "Sélectionner la version",
+			"readme": "À propos",
 			"gallery": "Gallery",
-			"install": "Install",
-			"uninstall": "Uninstall",
-			"enable": "Enable",
-			"disable": "Disable",
-			"openOnModrinth": "Open on Modrinth",
-			"openOnCurseForge": "Open on CurseForge",
-			"noSelection": "Select a mod to view its details",
+			"install": "Installer",
+			"uninstall": "Désinstaller",
+			"enable": "Activer",
+			"disable": "Désactiver",
+			"openOnModrinth": "Ouvrir sur Modrinth",
+			"openOnCurseForge": "Ouvrir sur CurseForge",
+			"noSelection": "Sélectionnez un mod pour voir ses détails",
 			"by": "par",
 			"installedLabel": "Déjà installé"
 		}

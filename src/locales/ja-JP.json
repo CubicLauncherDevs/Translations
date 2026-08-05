@@ -1,6 +1,6 @@
 {
 	"id": "ja-JP",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"common": {
 		"cancel": "キャンセル",
 		"save": "保存",
@@ -133,14 +133,14 @@
 		"downloadVersions": "バージョンをダウンロード",
 		"collapse": "サイドバーを折りたたむ",
 		"expand": "サイドバーを展開",
-		"edit": "Edit",
-		"openFolder": "Open Folder"
+		"edit": "編集",
+		"openFolder": "フォルダーを開く"
 	},
 	"userMenu": {
 		"title": "ユーザープロフィール",
 		"usernamePlaceholder": "ユーザー名",
 		"offline": "オフライン",
-		"authInjector": "Authlib Injector",
+		"authInjector": "Authlib インジェクター",
 		"cancel": "キャンセル",
 		"loginMicrosoft": "Microsoft アカウントでログイン",
 		"logout": "ログアウト",
@@ -161,24 +161,24 @@
 			"error": "ログインに失敗しました: {error}"
 		},
 		"yggdrasilModal": {
-			"title": "Authlib Injector",
-			"serverInstruction": "Enter the Yggdrasil authentication server URL.",
-			"serverLabel": "Server",
-			"serverPlaceholder": "e.g. littlesk.in",
-			"connect": "Connect",
-			"loginInstruction": "Enter your credentials to log in.",
-			"usernameLabel": "Username",
-			"emailLabel": "Email",
-			"usernamePlaceholder": "Your username",
+			"title": "Authlib インジェクター",
+			"serverInstruction": "Yggdrasil 認証サーバーの URL を入力してください。",
+			"serverLabel": "サーバー",
+			"serverPlaceholder": "例: littlesk.in",
+			"connect": "接続",
+			"loginInstruction": "ログインするには資格情報を入力してください。",
+			"usernameLabel": "ユーザー名",
+			"emailLabel": "メールアドレス",
+			"usernamePlaceholder": "ユーザー名",
 			"emailPlaceholder": "email@example.com",
-			"passwordLabel": "Password",
-			"back": "Back",
-			"login": "Log in",
-			"loading": "Connecting...",
-			"errorTitle": "Error",
-			"errorUnknown": "Unknown error",
-			"successTitle": "Connected!",
-			"successSubtitle": "Your account has been linked."
+			"passwordLabel": "パスワード",
+			"back": "戻る",
+			"login": "ログイン",
+			"loading": "接続中...",
+			"errorTitle": "エラー",
+			"errorUnknown": "不明なエラー",
+			"successTitle": "接続しました！",
+			"successSubtitle": "アカウントが連携されました。"
 		}
 	},
 	"launch": {

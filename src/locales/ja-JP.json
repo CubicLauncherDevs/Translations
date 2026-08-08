@@ -52,7 +52,8 @@
 			"downloadInstallBtn": "ダウンロードしてインストール",
 			"installing": "インストール中...",
 			"installingBtn": "アップデートをインストール中",
-			"installUpdateBtn": "アップデートをインストール"
+			"installUpdateBtn": "アップデートをインストール",
+			"themesBrowse": "Browse themes"
 		},
 		"minecraft": {
 			"perfTitle": "パフォーマンス（メモリ）",
@@ -61,7 +62,11 @@
 			"ramHint": "最小メモリは Java が起動時に確保する容量、最大メモリは使用できる上限です。2 つの値を設定すると、Java がその範囲内で使用量を自動調整します。",
 			"optionsTitle": "Minecraft の設定",
 			"showSnapshots": "スナップショット版を表示",
-			"showAlpha": "アルファ版を表示"
+			"showAlpha": "アルファ版を表示",
+			"recommendedRamButton": "Use recommended RAM",
+			"recommendedRamHint": "{min}-{max} GB recommended · {total} GB detected",
+			"loadingRecommendedRam": "Detecting system RAM...",
+			"showUnstableLoaders": "Show unstable loader versions"
 		},
 		"about": {
 			"title": "このアプリについて",
@@ -496,7 +501,8 @@
 		"downloading": "ダウンロード中...",
 		"forgeJavaHint": "Forge を使うには、設定 > Java で Java 21 を設定する必要があります。",
 		"neoForgeJavaHint": "NeoForge を使うには、設定 > Java で Java 17/21 を設定する必要があります。",
-		"loaderSearchPlaceholder": "ローダーのバージョンを検索..."
+		"loaderSearchPlaceholder": "ローダーのバージョンを検索...",
+		"stableTooltip": "Recommended stable version"
 	},
 	"market": {
 		"empty": {

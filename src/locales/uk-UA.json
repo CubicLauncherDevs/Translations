@@ -52,7 +52,8 @@
 			"downloadInstallBtn": "Завантажити та встановити",
 			"installing": "Встановлення...",
 			"installingBtn": "Встановлення оновлення",
-			"installUpdateBtn": "Встановити оновлення"
+			"installUpdateBtn": "Встановити оновлення",
+			"themesBrowse": "Browse themes"
 		},
 		"minecraft": {
 			"perfTitle": "Продуктивність (RAM)",
@@ -61,7 +62,11 @@
 			"ramHint": "Мінімальна пам'ять резервується Java при запуску, максимум — це межа, яку вона може використовувати. Два значення дозволяють Java регулювати використання між ними.",
 			"optionsTitle": "Параметри Minecraft",
 			"showSnapshots": "Показувати снапшоти",
-			"showAlpha": "Показувати альфа-версії"
+			"showAlpha": "Показувати альфа-версії",
+			"recommendedRamButton": "Use recommended RAM",
+			"recommendedRamHint": "{min}-{max} GB recommended · {total} GB detected",
+			"loadingRecommendedRam": "Detecting system RAM...",
+			"showUnstableLoaders": "Show unstable loader versions"
 		},
 		"about": {
 			"title": "Про лаунчер",
@@ -496,7 +501,8 @@
 		"downloading": "Завантаження...",
 		"forgeJavaHint": "Forge вимагає налаштування Java 21 в Налаштуваннях > Java.",
 		"neoForgeJavaHint": "NeoForge вимагає налаштування Java 17/21 в Налаштуваннях > Java.",
-		"loaderSearchPlaceholder": "Пошук версії завантажувача..."
+		"loaderSearchPlaceholder": "Пошук версії завантажувача...",
+		"stableTooltip": "Recommended stable version"
 	},
 	"market": {
 		"empty": {

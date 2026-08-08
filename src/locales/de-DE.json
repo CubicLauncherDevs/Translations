@@ -52,7 +52,8 @@
 			"downloadInstallBtn": "Herunterladen und installieren",
 			"installing": "Installation...",
 			"installingBtn": "Update installieren",
-			"installUpdateBtn": "Update installieren"
+			"installUpdateBtn": "Update installieren",
+			"themesBrowse": "Browse themes"
 		},
 		"minecraft": {
 			"perfTitle": "Leistung (RAM)",
@@ -61,7 +62,11 @@
 			"ramHint": "Der minimale Speicher ist der Speicher, den Java beim Start reserviert. Der maximale Speicher ist das Limit, das Java nutzen kann. Zwei Werte werden verwendet, damit Java seinen Speicherverbrauch zwischen diesen Werten anpassen kann.",
 			"optionsTitle": "Minecraft-Optionen",
 			"showSnapshots": "Snapshot-Versionen anzeigen",
-			"showAlpha": "Alpha-Versionen anzeigen"
+			"showAlpha": "Alpha-Versionen anzeigen",
+			"recommendedRamButton": "Use recommended RAM",
+			"recommendedRamHint": "{min}-{max} GB recommended · {total} GB detected",
+			"loadingRecommendedRam": "Detecting system RAM...",
+			"showUnstableLoaders": "Show unstable loader versions"
 		},
 		"about": {
 			"title": "Über uns",
@@ -496,7 +501,8 @@
 		"downloading": "Wird heruntergeladen...",
 		"forgeJavaHint": "Forge erfordert Java 21, das unter Einstellungen > Java konfiguriert werden muss.",
 		"neoForgeJavaHint": "NeoForge erfordert Java 17/21, das unter Einstellungen > Java konfiguriert werden muss.",
-		"loaderSearchPlaceholder": "Loader-Version suchen..."
+		"loaderSearchPlaceholder": "Loader-Version suchen...",
+		"stableTooltip": "Recommended stable version"
 	},
 	"market": {
 		"empty": {

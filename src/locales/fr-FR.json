@@ -397,7 +397,19 @@
 		"nextBtn": "Suivant",
 		"backBtn": "Retour",
 		"stepInfo": "Info",
-		"stepVersion": "Version"
+		"stepVersion": "Version",
+		"importInstanceTab": "Import Instance",
+		"importInstanceHint": "Select a .zip file exported from MultiMC, Prism Launcher or a compatible launcher.",
+		"importInstanceSelect": "Select .zip",
+		"importInstanceAnalyzing": "Analyzing...",
+		"importInstanceChangeFile": "Change file",
+		"importInstanceDetected": "Detected format: {format}",
+		"importInstanceImportBtn": "Import instance",
+		"importInstanceImporting": "Importing...",
+		"importInstanceSuccessTitle": "Instance imported",
+		"importInstanceSuccessMessage": "The instance has been imported successfully.",
+		"importInstanceError": "Could not import the instance. The file may not be supported.",
+		"importInstanceDetectErr": "Could not detect a valid instance in the selected file."
 	},
 	"themes": {
 		"importSuccess": "Thème importé",

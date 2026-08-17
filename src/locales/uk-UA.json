@@ -53,7 +53,8 @@
 			"installing": "Встановлення...",
 			"installingBtn": "Встановлення оновлення",
 			"installUpdateBtn": "Встановити оновлення",
-			"themesBrowse": "Browse themes"
+			"themesBrowse": "Browse themes",
+			"openConsoleOnLaunch": "Open console when launching instances"
 		},
 		"minecraft": {
 			"perfTitle": "Продуктивність (RAM)",
@@ -99,7 +100,9 @@
 			"envVarsAdd": "Додати",
 			"saveBtn": "Зберегти налаштування",
 			"saving": "Збереження...",
-			"zuluCredit": "Середовища Java надані Azul Zulu (Zulu.org)"
+			"zuluCredit": "Середовища Java надані Azul Zulu (Zulu.org)",
+			"curseforgeApiKey": "CurseForge API Key",
+			"curseforgeApiKeyPlaceholder": "Your CurseForge API key (optional)"
 		}
 	},
 	"main": {
@@ -184,6 +187,47 @@
 			"errorUnknown": "Невідома помилка",
 			"successTitle": "Підключено!",
 			"successSubtitle": "Ваш обліковий запис повʼязано."
+		},
+		"activate": "Activate",
+		"accountSingular": "Saved account",
+		"accountPlural": "Saved accounts",
+		"type": "Type",
+		"server": "Server",
+		"editName": "Edit name",
+		"noAccountsTitle": "No accounts",
+		"noAccountsSubtitle": "Add an account to get started",
+		"addFirstAccount": "Add your first account",
+		"close": "Close",
+		"yes": "Yes",
+		"no": "No",
+		"selectAccount": "Select an account to view its details",
+		"skinCape": {
+			"title": "Skin & Cape",
+			"loading": "Loading Minecraft profile...",
+			"currentSkin": "Current skin",
+			"uploadSkin": "Upload skin (.png)",
+			"dropSkinHere": "Drop skin here",
+			"invalidSkinFile": "Only .png files are allowed",
+			"skinUrlPlaceholder": "Image URL (.png)",
+			"useUrl": "Use URL",
+			"classic": "Classic",
+			"slim": "Slim",
+			"capes": "Capes",
+			"cape": "Cape",
+			"noCapes": "No capes available for this account.",
+			"active": "Active",
+			"equip": "Equip",
+			"unequip": "Unequip",
+			"skinUpdated": "Skin updated",
+			"skinUpdatedDesc": "Your skin was applied successfully.",
+			"capeUpdated": "Cape updated",
+			"capeUpdatedDesc": "Your cape was applied successfully.",
+			"saveChanges": "Save changes",
+			"discardChanges": "Discard",
+			"pendingChanges": "Unsaved changes",
+			"changesSaved": "Changes saved",
+			"changesSavedDesc": "Your changes were applied successfully.",
+			"unequipPending": "Cape unequipped (pending save)"
 		}
 	},
 	"launch": {
@@ -412,7 +456,10 @@
 		"importInstanceDetectErr": "Could not detect a valid instance in the selected file.",
 		"localTab": "Local",
 		"localModpackTab": "Modpack",
-		"localInstanceTab": "Instance"
+		"localInstanceTab": "Instance",
+		"curseforgeTab": "CurseForge",
+		"curseforgeModpackSearchPlaceholder": "Search CurseForge modpacks...",
+		"viewOnCurseForge": "View on CurseForge"
 	},
 	"themes": {
 		"importSuccess": "Тему імпортовано",

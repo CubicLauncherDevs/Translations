@@ -142,7 +142,11 @@
 		"collapse": "Colapsar barra lateral",
 		"expand": "Expandir barra lateral",
 		"edit": "Edit",
-		"openFolder": "Open Folder"
+		"openFolder": "Open Folder",
+		"export": "Export",
+		"pin": "Pin",
+		"unpin": "Unpin",
+		"pinned": "Pinned instance"
 	},
 	"userMenu": {
 		"title": "Perfil de Usuario",
@@ -459,7 +463,15 @@
 		"localInstanceTab": "Instance",
 		"curseforgeTab": "CurseForge",
 		"curseforgeModpackSearchPlaceholder": "Search CurseForge modpacks...",
-		"viewOnCurseForge": "View on CurseForge"
+		"viewOnCurseForge": "View on CurseForge",
+		"filterSortLabel": "Sort by",
+		"filterCategoryLabel": "Category",
+		"filterVersionLabel": "Version",
+		"filterAllVersions": "Any version",
+		"filterAllCategories": "All",
+		"sortRelevance": "Relevance",
+		"sortDownloads": "Downloads",
+		"sortNewest": "Newest"
 	},
 	"themes": {
 		"importSuccess": "Theme importado",
@@ -510,7 +522,22 @@
 		"slide7": {
 			"title": "Configuración de Java",
 			"desc": "Aquí puedes gestionar las versiones de Java 8, 17, 21 y 25. Puedes instalar Java automáticamente desde el launcher o usar una instalación externa. También puedes configurar argumentos JVM y variables de entorno."
-		}
+		},
+		"slide8": {
+			"title": "Java Configuration",
+			"desc": "Manage Java 8, 17, 21 and 25 runtimes here. Install Java automatically from the launcher or use an existing installation. You can also configure JVM arguments and environment variables."
+		},
+		"slide9": {
+			"title": "License",
+			"desc": "CubicLauncher is free software released under the GNU General Public License v3."
+		},
+		"licenseName": "GNU General Public License v3",
+		"licenseBullet1": "You are free to use, study, share and modify the software.",
+		"licenseBullet2": "If you redistribute the software, you must keep the same license.",
+		"licenseBullet3": "The software is provided without warranty of any kind.",
+		"viewLicense": "View full license",
+		"acceptLicense": "I accept the license terms",
+		"acceptLicenseNote": "Check the box to continue."
 	},
 	"errors": {
 		"title": "Error",
@@ -622,5 +649,11 @@
 			"by": "por",
 			"installedLabel": "Ya instalado"
 		}
+	},
+	"notifications": {
+		"exportTitle": "Export instance",
+		"exportSuccess": "Instance exported to {path}",
+		"exportingTitle": "Exporting instance",
+		"exportingMessage": "Compressing {name}..."
 	}
 }

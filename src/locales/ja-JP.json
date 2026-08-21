@@ -142,7 +142,11 @@
 		"collapse": "サイドバーを折りたたむ",
 		"expand": "サイドバーを展開",
 		"edit": "編集",
-		"openFolder": "フォルダーを開く"
+		"openFolder": "フォルダーを開く",
+		"export": "Export",
+		"pin": "Pin",
+		"unpin": "Unpin",
+		"pinned": "Pinned instance"
 	},
 	"userMenu": {
 		"title": "ユーザープロフィール",
@@ -459,7 +463,15 @@
 		"localInstanceTab": "Instance",
 		"curseforgeTab": "CurseForge",
 		"curseforgeModpackSearchPlaceholder": "Search CurseForge modpacks...",
-		"viewOnCurseForge": "View on CurseForge"
+		"viewOnCurseForge": "View on CurseForge",
+		"filterSortLabel": "Sort by",
+		"filterCategoryLabel": "Category",
+		"filterVersionLabel": "Version",
+		"filterAllVersions": "Any version",
+		"filterAllCategories": "All",
+		"sortRelevance": "Relevance",
+		"sortDownloads": "Downloads",
+		"sortNewest": "Newest"
 	},
 	"themes": {
 		"importSuccess": "テーマをインポートしました",
@@ -510,7 +522,22 @@
 		"slide7": {
 			"title": "Java の設定",
 			"desc": "Java 8、17、21、25 のランタイムをここで管理できます。ランチャーから自動でインストールするほか、既存のインストールを使うこともできます。JVM 引数や環境変数の設定も可能です。"
-		}
+		},
+		"slide8": {
+			"title": "Java Configuration",
+			"desc": "Manage Java 8, 17, 21 and 25 runtimes here. Install Java automatically from the launcher or use an existing installation. You can also configure JVM arguments and environment variables."
+		},
+		"slide9": {
+			"title": "License",
+			"desc": "CubicLauncher is free software released under the GNU General Public License v3."
+		},
+		"licenseName": "GNU General Public License v3",
+		"licenseBullet1": "You are free to use, study, share and modify the software.",
+		"licenseBullet2": "If you redistribute the software, you must keep the same license.",
+		"licenseBullet3": "The software is provided without warranty of any kind.",
+		"viewLicense": "View full license",
+		"acceptLicense": "I accept the license terms",
+		"acceptLicenseNote": "Check the box to continue."
 	},
 	"errors": {
 		"title": "エラー",
@@ -621,5 +648,11 @@
 			"noSelection": "Mod を選択すると詳細が表示されます",
 			"by": "作者:"
 		}
+	},
+	"notifications": {
+		"exportTitle": "Export instance",
+		"exportSuccess": "Instance exported to {path}",
+		"exportingTitle": "Exporting instance",
+		"exportingMessage": "Compressing {name}..."
 	}
 }

@@ -94,8 +94,6 @@
 			"installedVersion": "Installed version: {version}",
 			"notInstalled": "Not installed",
 			"installError": "Error installing JRE {version}: {error}",
-			"curseforgeApiKey": "CurseForge API Key",
-			"curseforgeApiKeyPlaceholder": "Your CurseForge API key (optional)",
 			"jvmArgs": "JVM Arguments",
 			"envVars": "Environment Variables",
 			"envVarsAdd": "Add",
@@ -141,7 +139,11 @@
 		},
 		"downloadVersions": "Download Versions",
 		"collapse": "Collapse sidebar",
-		"expand": "Expand sidebar"
+		"expand": "Expand sidebar",
+		"export": "Export",
+		"pin": "Pin",
+		"unpin": "Unpin",
+		"pinned": "Pinned instance"
 	},
 	"userMenu": {
 		"title": "User Profile",
@@ -431,6 +433,14 @@
 		"searchBtn": "Search",
 		"searchingModpacks": "Searching modpacks...",
 		"noModpacksFound": "No modpacks found",
+		"filterSortLabel": "Sort by",
+		"filterCategoryLabel": "Category",
+		"filterVersionLabel": "Version",
+		"filterAllVersions": "Any version",
+		"filterAllCategories": "All",
+		"sortRelevance": "Relevance",
+		"sortDownloads": "Downloads",
+		"sortNewest": "Newest",
 		"downloadingModpack": "Downloading modpack...",
 		"installingModpack": "Installing modpack...",
 		"installBtn": "Install",
@@ -487,29 +497,50 @@
 			"desc": "A modern, fast Minecraft launcher. Manage multiple instances, mods, Java configurations and more. Let's take a quick tour!"
 		},
 		"slide2": {
+			"title": "Your Accounts",
+			"desc": "Manage your Minecraft accounts here. Add Microsoft accounts, offline accounts or custom servers, and switch between them easily."
+		},
+		"slide3": {
 			"title": "Your Instances",
 			"desc": "Instances are separate Minecraft installations. View and select your instances here. Each one can have its own version, mods and configuration."
 		},
-		"slide3": {
+		"slide4": {
 			"title": "Create Instance",
 			"desc": "Use this button to create a new instance. Choose a name, version, loader (Fabric, Forge, NeoForge) and a custom icon."
 		},
-		"slide4": {
+		"slide5": {
 			"title": "Download Versions",
 			"desc": "Download Minecraft versions here. Get official releases, snapshots, alphas and Fabric versions to use in your instances."
 		},
-		"slide5": {
+		"slide6": {
 			"title": "Settings",
 			"desc": "The Settings panel has three sections: Launcher, Minecraft and Java. Let's look at each one."
 		},
-		"slide6": {
+		"slide7": {
 			"title": "Settings Sections",
 			"desc": "Use the tabs to navigate between Launcher (language, themes, updates), Minecraft (RAM, versions) and Java (runtimes, arguments)."
 		},
-		"slide7": {
+		"slide8": {
 			"title": "Java Configuration",
 			"desc": "Manage Java 8, 17, 21 and 25 runtimes here. Install Java automatically from the launcher or use an existing installation. You can also configure JVM arguments and environment variables."
-		}
+		},
+		"slide9": {
+			"title": "License",
+			"desc": "CubicLauncher is free software released under the GNU General Public License v3."
+		},
+		"licenseName": "GNU General Public License v3",
+		"licenseBullet1": "You are free to use, study, share and modify the software.",
+		"licenseBullet2": "If you redistribute the software, you must keep the same license.",
+		"licenseBullet3": "The software is provided without warranty of any kind.",
+		"viewLicense": "View full license",
+		"acceptLicense": "I accept the license terms",
+		"acceptLicenseNote": "Check the box to continue."
+	},
+	"notifications": {
+		"exportTitle": "Export instance",
+		"exportSuccess": "Instance exported to {path}",
+		"exportingTitle": "Exporting instance",
+		"exportingMessage": "Compressing {name}..."
 	},
 	"errors": {
 		"title": "Error",

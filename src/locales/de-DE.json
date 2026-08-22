@@ -1,6 +1,6 @@
 {
 	"id": "de-DE",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"common": {
 		"cancel": "Abbrechen",
 		"save": "Speichern",
@@ -53,8 +53,8 @@
 			"installing": "Installation...",
 			"installingBtn": "Update installieren",
 			"installUpdateBtn": "Update installieren",
-			"themesBrowse": "Browse themes",
-			"openConsoleOnLaunch": "Open console when launching instances"
+			"themesBrowse": "Themes durchsuchen",
+			"openConsoleOnLaunch": "Konsole beim Starten von Instanzen öffnen"
 		},
 		"minecraft": {
 			"perfTitle": "Leistung (RAM)",
@@ -64,10 +64,10 @@
 			"optionsTitle": "Minecraft-Optionen",
 			"showSnapshots": "Snapshot-Versionen anzeigen",
 			"showAlpha": "Alpha-Versionen anzeigen",
-			"recommendedRamButton": "Use recommended RAM",
-			"recommendedRamHint": "{min}-{max} GB recommended · {total} GB detected",
-			"loadingRecommendedRam": "Detecting system RAM...",
-			"showUnstableLoaders": "Show unstable loader versions"
+			"recommendedRamButton": "Empfohlenen RAM verwenden",
+			"recommendedRamHint": "{min}-{max} GB empfohlen · {total} GB erkannt",
+			"loadingRecommendedRam": "System-RAM wird erkannt...",
+			"showUnstableLoaders": "Instabile Loader-Versionen anzeigen"
 		},
 		"about": {
 			"title": "Über uns",
@@ -143,10 +143,10 @@
 		"expand": "Seitenleiste ausklappen",
 		"edit": "Bearbeiten",
 		"openFolder": "Ordner öffnen",
-		"export": "Export",
-		"pin": "Pin",
-		"unpin": "Unpin",
-		"pinned": "Pinned instance"
+		"export": "Exportieren",
+		"pin": "Anheften",
+		"unpin": "Lösen",
+		"pinned": "Angeheftete Instanz"
 	},
 	"userMenu": {
 		"title": "Benutzerprofil",
@@ -192,46 +192,46 @@
 			"successTitle": "Verbunden!",
 			"successSubtitle": "Dein Konto wurde verknüpft."
 		},
-		"activate": "Activate",
-		"accountSingular": "Saved account",
-		"accountPlural": "Saved accounts",
-		"type": "Type",
+		"activate": "Aktivieren",
+		"accountSingular": "Gespeichertes Konto",
+		"accountPlural": "Gespeicherte Konten",
+		"type": "Typ",
 		"server": "Server",
-		"editName": "Edit name",
-		"noAccountsTitle": "No accounts",
-		"noAccountsSubtitle": "Add an account to get started",
-		"addFirstAccount": "Add your first account",
-		"close": "Close",
-		"yes": "Yes",
-		"no": "No",
-		"selectAccount": "Select an account to view its details",
+		"editName": "Name bearbeiten",
+		"noAccountsTitle": "Keine Konten",
+		"noAccountsSubtitle": "Füge ein Konto hinzu, um loszulegen",
+		"addFirstAccount": "Füge dein erstes Konto hinzu",
+		"close": "Schließen",
+		"yes": "Ja",
+		"no": "Nein",
+		"selectAccount": "Wähle ein Konto aus, um dessen Details anzuzeigen",
 		"skinCape": {
 			"title": "Skin & Cape",
-			"loading": "Loading Minecraft profile...",
-			"currentSkin": "Current skin",
-			"uploadSkin": "Upload skin (.png)",
-			"dropSkinHere": "Drop skin here",
-			"invalidSkinFile": "Only .png files are allowed",
-			"skinUrlPlaceholder": "Image URL (.png)",
-			"useUrl": "Use URL",
+			"loading": "Minecraft-Profil wird geladen...",
+			"currentSkin": "Aktueller Skin",
+			"uploadSkin": "Skin hochladen (.png)",
+			"dropSkinHere": "Skin hier ablegen",
+			"invalidSkinFile": "Nur .png-Dateien sind erlaubt",
+			"skinUrlPlaceholder": "Bild-URL (.png)",
+			"useUrl": "URL verwenden",
 			"classic": "Classic",
 			"slim": "Slim",
 			"capes": "Capes",
 			"cape": "Cape",
-			"noCapes": "No capes available for this account.",
-			"active": "Active",
-			"equip": "Equip",
-			"unequip": "Unequip",
-			"skinUpdated": "Skin updated",
-			"skinUpdatedDesc": "Your skin was applied successfully.",
-			"capeUpdated": "Cape updated",
-			"capeUpdatedDesc": "Your cape was applied successfully.",
-			"saveChanges": "Save changes",
-			"discardChanges": "Discard",
-			"pendingChanges": "Unsaved changes",
-			"changesSaved": "Changes saved",
-			"changesSavedDesc": "Your changes were applied successfully.",
-			"unequipPending": "Cape unequipped (pending save)"
+			"noCapes": "Für dieses Konto sind keine Capes verfügbar.",
+			"active": "Aktiv",
+			"equip": "Anlegen",
+			"unequip": "Ablegen",
+			"skinUpdated": "Skin aktualisiert",
+			"skinUpdatedDesc": "Dein Skin wurde erfolgreich angewendet.",
+			"capeUpdated": "Cape aktualisiert",
+			"capeUpdatedDesc": "Dein Cape wurde erfolgreich angewendet.",
+			"saveChanges": "Änderungen speichern",
+			"discardChanges": "Verwerfen",
+			"pendingChanges": "Ungespeicherte Änderungen",
+			"changesSaved": "Änderungen gespeichert",
+			"changesSavedDesc": "Deine Änderungen wurden erfolgreich angewendet.",
+			"unequipPending": "Cape abgelegt (noch nicht gespeichert)"
 		}
 	},
 	"launch": {
@@ -446,32 +446,32 @@
 		"backBtn": "Zurück",
 		"stepInfo": "Info",
 		"stepVersion": "Version",
-		"importInstanceTab": "Import Instance",
-		"importInstanceHint": "Select a .zip file exported from MultiMC, Prism Launcher or a compatible launcher.",
-		"importInstanceSelect": "Select .zip",
-		"importInstanceAnalyzing": "Analyzing...",
-		"importInstanceChangeFile": "Change file",
-		"importInstanceDetected": "Detected format: {format}",
-		"importInstanceImportBtn": "Import instance",
-		"importInstanceImporting": "Importing...",
-		"importInstanceSuccessTitle": "Instance imported",
-		"importInstanceSuccessMessage": "The instance has been imported successfully.",
-		"importInstanceError": "Could not import the instance. The file may not be supported.",
-		"importInstanceDetectErr": "Could not detect a valid instance in the selected file.",
-		"localTab": "Local",
+		"importInstanceTab": "Instanz importieren",
+		"importInstanceHint": "Wähle eine .zip-Datei, die aus MultiMC, Prism Launcher oder einem kompatiblen Launcher exportiert wurde.",
+		"importInstanceSelect": ".zip auswählen",
+		"importInstanceAnalyzing": "Analysieren...",
+		"importInstanceChangeFile": "Datei ändern",
+		"importInstanceDetected": "Erkanntes Format: {format}",
+		"importInstanceImportBtn": "Instanz importieren",
+		"importInstanceImporting": "Importieren...",
+		"importInstanceSuccessTitle": "Instanz importiert",
+		"importInstanceSuccessMessage": "Die Instanz wurde erfolgreich importiert.",
+		"importInstanceError": "Die Instanz konnte nicht importiert werden. Die Datei wird möglicherweise nicht unterstützt.",
+		"importInstanceDetectErr": "In der ausgewählten Datei wurde keine gültige Instanz erkannt.",
+		"localTab": "Lokal",
 		"localModpackTab": "Modpack",
-		"localInstanceTab": "Instance",
+		"localInstanceTab": "Instanz",
 		"curseforgeTab": "CurseForge",
-		"curseforgeModpackSearchPlaceholder": "Search CurseForge modpacks...",
-		"viewOnCurseForge": "View on CurseForge",
-		"filterSortLabel": "Sort by",
-		"filterCategoryLabel": "Category",
+		"curseforgeModpackSearchPlaceholder": "CurseForge-Modpacks durchsuchen...",
+		"viewOnCurseForge": "Auf CurseForge anzeigen",
+		"filterSortLabel": "Sortieren nach",
+		"filterCategoryLabel": "Kategorie",
 		"filterVersionLabel": "Version",
-		"filterAllVersions": "Any version",
-		"filterAllCategories": "All",
-		"sortRelevance": "Relevance",
+		"filterAllVersions": "Beliebige Version",
+		"filterAllCategories": "Alle",
+		"sortRelevance": "Relevanz",
 		"sortDownloads": "Downloads",
-		"sortNewest": "Newest"
+		"sortNewest": "Neueste"
 	},
 	"themes": {
 		"importSuccess": "Theme importiert",
@@ -524,20 +524,20 @@
 			"desc": "Hier kannst du die Java-Versionen 8, 17, 21 und 25 verwalten. Du kannst Java automatisch über den Launcher installieren oder eine externe Installation verwenden. Du kannst auch JVM-Argumente und Umgebungsvariablen konfigurieren."
 		},
 		"slide8": {
-			"title": "Java Configuration",
-			"desc": "Manage Java 8, 17, 21 and 25 runtimes here. Install Java automatically from the launcher or use an existing installation. You can also configure JVM arguments and environment variables."
+			"title": "Java-Konfiguration",
+			"desc": "Verwalte hier Java-8-, 17-, 21- und 25-Laufzeiten. Installiere Java automatisch über den Launcher oder nutze eine bestehende Installation. Du kannst auch JVM-Argumente und Umgebungsvariablen konfigurieren."
 		},
 		"slide9": {
-			"title": "License",
-			"desc": "CubicLauncher is free software released under the GNU General Public License v3."
+			"title": "Lizenz",
+			"desc": "CubicLauncher ist freie Software, veröffentlicht unter der GNU General Public License v3."
 		},
 		"licenseName": "GNU General Public License v3",
-		"licenseBullet1": "You are free to use, study, share and modify the software.",
-		"licenseBullet2": "If you redistribute the software, you must keep the same license.",
-		"licenseBullet3": "The software is provided without warranty of any kind.",
-		"viewLicense": "View full license",
-		"acceptLicense": "I accept the license terms",
-		"acceptLicenseNote": "Check the box to continue."
+		"licenseBullet1": "Du darfst die Software frei nutzen, studieren, teilen und verändern.",
+		"licenseBullet2": "Wenn du die Software weiterverbreitest, musst du dieselbe Lizenz beibehalten.",
+		"licenseBullet3": "Die Software wird ohne jegliche Gewährleistung bereitgestellt.",
+		"viewLicense": "Vollständige Lizenz anzeigen",
+		"acceptLicense": "Ich akzeptiere die Lizenzbedingungen",
+		"acceptLicenseNote": "Aktiviere das Kontrollkästchen, um fortzufahren."
 	},
 	"errors": {
 		"title": "Fehler",
@@ -591,7 +591,7 @@
 		"forgeJavaHint": "Forge erfordert Java 21, das unter Einstellungen > Java konfiguriert werden muss.",
 		"neoForgeJavaHint": "NeoForge erfordert Java 17/21, das unter Einstellungen > Java konfiguriert werden muss.",
 		"loaderSearchPlaceholder": "Loader-Version suchen...",
-		"stableTooltip": "Recommended stable version"
+		"stableTooltip": "Empfohlene stabile Version"
 	},
 	"market": {
 		"empty": {
@@ -651,9 +651,9 @@
 		}
 	},
 	"notifications": {
-		"exportTitle": "Export instance",
-		"exportSuccess": "Instance exported to {path}",
-		"exportingTitle": "Exporting instance",
-		"exportingMessage": "Compressing {name}..."
+		"exportTitle": "Instanz exportieren",
+		"exportSuccess": "Instanz exportiert nach {path}",
+		"exportingTitle": "Instanz wird exportiert",
+		"exportingMessage": "Komprimiere {name}..."
 	}
 }

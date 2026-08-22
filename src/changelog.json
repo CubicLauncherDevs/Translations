@@ -40,5 +40,47 @@
 		"version": "1.0.0",
 		"timestamp": "2026-07-26T00:00:00.000Z",
 		"details": { "note": "Initial Japanese locale" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "en-US",
+		"version": "1.2.0",
+		"timestamp": "2026-08-22T23:03:32.481Z",
+		"details": { "note": "Restored version field and synced reference keys" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "de-DE",
+		"version": "1.2.0",
+		"timestamp": "2026-08-22T23:03:32.481Z",
+		"details": { "note": "Translated missing keys from en-US" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "es-ES",
+		"version": "1.2.0",
+		"timestamp": "2026-08-22T23:03:32.481Z",
+		"details": { "note": "Translated missing keys from en-US" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "fr-FR",
+		"version": "1.2.0",
+		"timestamp": "2026-08-22T23:03:32.481Z",
+		"details": { "note": "Translated missing keys from en-US" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "ja-JP",
+		"version": "1.2.0",
+		"timestamp": "2026-08-22T23:03:32.481Z",
+		"details": { "note": "Translated missing keys from en-US" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "uk-UA",
+		"version": "1.2.0",
+		"timestamp": "2026-08-22T23:03:32.481Z",
+		"details": { "note": "Translated missing keys from en-US" }
 	}
 ]

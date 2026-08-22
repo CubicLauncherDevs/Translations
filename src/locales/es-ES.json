@@ -1,6 +1,6 @@
 {
 	"id": "es-ES",
-	"version": "1.0.0",
+	"version": "1.2.0",
 	"common": {
 		"cancel": "Cancelar",
 		"save": "Guardar",
@@ -18,7 +18,7 @@
 		"title": "Ajustes",
 		"advanced": "Avanzado",
 		"tabs": {
-			"launcher": "Launcher",
+			"launcher": "Lanzador",
 			"minecraft": "Minecraft",
 			"java": "Java"
 		},
@@ -53,8 +53,8 @@
 			"installing": "Instalando...",
 			"installingBtn": "Instalando actualización",
 			"installUpdateBtn": "Instalar Actualización",
-			"themesBrowse": "Browse themes",
-			"openConsoleOnLaunch": "Open console when launching instances"
+			"themesBrowse": "Explorar temas",
+			"openConsoleOnLaunch": "Abrir la consola al iniciar instancias"
 		},
 		"minecraft": {
 			"perfTitle": "Rendimiento (RAM)",
@@ -64,10 +64,10 @@
 			"optionsTitle": "Opciones de Minecraft",
 			"showSnapshots": "Mostrar versiones Snapshots",
 			"showAlpha": "Mostrar versiones Alpha",
-			"recommendedRamButton": "Use recommended RAM",
-			"recommendedRamHint": "{min}-{max} GB recommended · {total} GB detected",
-			"loadingRecommendedRam": "Detecting system RAM...",
-			"showUnstableLoaders": "Show unstable loader versions"
+			"recommendedRamButton": "Usar la RAM recomendada",
+			"recommendedRamHint": "{min}-{max} GB recomendados · {total} GB detectados",
+			"loadingRecommendedRam": "Detectando la RAM del sistema...",
+			"showUnstableLoaders": "Mostrar versiones inestables del cargador"
 		},
 		"about": {
 			"title": "Sobre Nosotros",
@@ -141,12 +141,12 @@
 		"downloadVersions": "Descargar Versiones",
 		"collapse": "Colapsar barra lateral",
 		"expand": "Expandir barra lateral",
-		"edit": "Edit",
-		"openFolder": "Open Folder",
-		"export": "Export",
-		"pin": "Pin",
-		"unpin": "Unpin",
-		"pinned": "Pinned instance"
+		"edit": "Editar",
+		"openFolder": "Abrir carpeta",
+		"export": "Exportar",
+		"pin": "Fijar",
+		"unpin": "Desfijar",
+		"pinned": "Instancia fijada"
 	},
 	"userMenu": {
 		"title": "Perfil de Usuario",
@@ -174,64 +174,64 @@
 		},
 		"yggdrasilModal": {
 			"title": "Authlib Injector",
-			"serverInstruction": "Enter the Yggdrasil authentication server URL.",
-			"serverLabel": "Server",
+			"serverInstruction": "Introduce la URL del servidor de autenticación de Yggdrasil.",
+			"serverLabel": "Servidor",
 			"serverPlaceholder": "e.g. littlesk.in",
-			"connect": "Connect",
-			"loginInstruction": "Enter your credentials to log in.",
-			"usernameLabel": "Username",
-			"emailLabel": "Email",
-			"usernamePlaceholder": "Your username",
+			"connect": "Conectar",
+			"loginInstruction": "Introduce tus credenciales para iniciar sesión.",
+			"usernameLabel": "Nombre de usuario",
+			"emailLabel": "Correo electrónico",
+			"usernamePlaceholder": "Tu nombre de usuario",
 			"emailPlaceholder": "email@example.com",
-			"passwordLabel": "Password",
-			"back": "Back",
-			"login": "Log in",
-			"loading": "Connecting...",
+			"passwordLabel": "Contraseña",
+			"back": "Atrás",
+			"login": "Iniciar sesión",
+			"loading": "Conectando...",
 			"errorTitle": "Error",
-			"errorUnknown": "Unknown error",
-			"successTitle": "Connected!",
-			"successSubtitle": "Your account has been linked."
+			"errorUnknown": "Error desconocido",
+			"successTitle": "¡Conectado!",
+			"successSubtitle": "Tu cuenta se ha vinculado."
 		},
-		"activate": "Activate",
-		"accountSingular": "Saved account",
-		"accountPlural": "Saved accounts",
-		"type": "Type",
-		"server": "Server",
-		"editName": "Edit name",
-		"noAccountsTitle": "No accounts",
-		"noAccountsSubtitle": "Add an account to get started",
-		"addFirstAccount": "Add your first account",
-		"close": "Close",
-		"yes": "Yes",
+		"activate": "Activar",
+		"accountSingular": "Cuenta guardada",
+		"accountPlural": "Cuentas guardadas",
+		"type": "Tipo",
+		"server": "Servidor",
+		"editName": "Editar nombre",
+		"noAccountsTitle": "Sin cuentas",
+		"noAccountsSubtitle": "Añade una cuenta para empezar",
+		"addFirstAccount": "Añade tu primera cuenta",
+		"close": "Cerrar",
+		"yes": "Sí",
 		"no": "No",
-		"selectAccount": "Select an account to view its details",
+		"selectAccount": "Selecciona una cuenta para ver sus detalles",
 		"skinCape": {
-			"title": "Skin & Cape",
-			"loading": "Loading Minecraft profile...",
-			"currentSkin": "Current skin",
-			"uploadSkin": "Upload skin (.png)",
-			"dropSkinHere": "Drop skin here",
-			"invalidSkinFile": "Only .png files are allowed",
-			"skinUrlPlaceholder": "Image URL (.png)",
-			"useUrl": "Use URL",
-			"classic": "Classic",
+			"title": "Skin y capa",
+			"loading": "Cargando perfil de Minecraft...",
+			"currentSkin": "Skin actual",
+			"uploadSkin": "Subir skin (.png)",
+			"dropSkinHere": "Suelta la skin aquí",
+			"invalidSkinFile": "Solo se permiten archivos .png",
+			"skinUrlPlaceholder": "URL de la imagen (.png)",
+			"useUrl": "Usar URL",
+			"classic": "Clásico",
 			"slim": "Slim",
-			"capes": "Capes",
-			"cape": "Cape",
-			"noCapes": "No capes available for this account.",
-			"active": "Active",
-			"equip": "Equip",
-			"unequip": "Unequip",
-			"skinUpdated": "Skin updated",
-			"skinUpdatedDesc": "Your skin was applied successfully.",
-			"capeUpdated": "Cape updated",
-			"capeUpdatedDesc": "Your cape was applied successfully.",
-			"saveChanges": "Save changes",
-			"discardChanges": "Discard",
-			"pendingChanges": "Unsaved changes",
-			"changesSaved": "Changes saved",
-			"changesSavedDesc": "Your changes were applied successfully.",
-			"unequipPending": "Cape unequipped (pending save)"
+			"capes": "Capas",
+			"cape": "Capa",
+			"noCapes": "No hay capas disponibles para esta cuenta.",
+			"active": "Activo",
+			"equip": "Equipar",
+			"unequip": "Desequipar",
+			"skinUpdated": "Skin actualizada",
+			"skinUpdatedDesc": "Tu skin se ha aplicado correctamente.",
+			"capeUpdated": "Capa actualizada",
+			"capeUpdatedDesc": "Tu capa se ha aplicado correctamente.",
+			"saveChanges": "Guardar cambios",
+			"discardChanges": "Descartar",
+			"pendingChanges": "Cambios sin guardar",
+			"changesSaved": "Cambios guardados",
+			"changesSavedDesc": "Tus cambios se han aplicado correctamente.",
+			"unequipPending": "Capa desequipada (pendiente de guardar)"
 		}
 	},
 	"launch": {
@@ -262,11 +262,11 @@
 		"tabs": {
 			"details": "Detalles",
 			"mods": "Mods",
-			"market": "Market",
+			"market": "Mercado",
 			"resources": "Recursos",
 			"screenshots": "Capturas",
-			"logs": "Logs",
-			"shaderpacks": "Shader Packs"
+			"logs": "Registros",
+			"shaderpacks": "Paquetes de shaders"
 		},
 		"details": {
 			"title": "Detalles",
@@ -339,7 +339,7 @@
 			"title": "Consola"
 		},
 		"downloadMods": {
-			"sectionLabel": "Mod Manager",
+			"sectionLabel": "Gestor de mods",
 			"reviewTitle": "Revisar & Descargar",
 			"back": "← Volver",
 			"resolvingDeps": "Resolviendo dependencias...",
@@ -386,7 +386,7 @@
 			"sourceModrinth": "Modrinth",
 			"sourceCurseForge": "CurseForge",
 			"openSettings": "Abrir Ajustes",
-			"curseForgeRelease": "Release",
+			"curseForgeRelease": "Lanzamiento",
 			"curseForgeBeta": "Beta",
 			"curseForgeAlpha": "Alpha"
 		}
@@ -446,32 +446,32 @@
 		"backBtn": "Volver",
 		"stepInfo": "Información",
 		"stepVersion": "Versión",
-		"importInstanceTab": "Import Instance",
-		"importInstanceHint": "Select a .zip file exported from MultiMC, Prism Launcher or a compatible launcher.",
-		"importInstanceSelect": "Select .zip",
-		"importInstanceAnalyzing": "Analyzing...",
-		"importInstanceChangeFile": "Change file",
-		"importInstanceDetected": "Detected format: {format}",
-		"importInstanceImportBtn": "Import instance",
-		"importInstanceImporting": "Importing...",
-		"importInstanceSuccessTitle": "Instance imported",
-		"importInstanceSuccessMessage": "The instance has been imported successfully.",
-		"importInstanceError": "Could not import the instance. The file may not be supported.",
-		"importInstanceDetectErr": "Could not detect a valid instance in the selected file.",
+		"importInstanceTab": "Importar instancia",
+		"importInstanceHint": "Selecciona un archivo .zip exportado desde MultiMC, Prism Launcher o un lanzador compatible.",
+		"importInstanceSelect": "Seleccionar .zip",
+		"importInstanceAnalyzing": "Analizando...",
+		"importInstanceChangeFile": "Cambiar archivo",
+		"importInstanceDetected": "Formato detectado: {format}",
+		"importInstanceImportBtn": "Importar instancia",
+		"importInstanceImporting": "Importando...",
+		"importInstanceSuccessTitle": "Instancia importada",
+		"importInstanceSuccessMessage": "La instancia se ha importado correctamente.",
+		"importInstanceError": "No se ha podido importar la instancia. Es posible que el archivo no sea compatible.",
+		"importInstanceDetectErr": "No se ha detectado una instancia válida en el archivo seleccionado.",
 		"localTab": "Local",
 		"localModpackTab": "Modpack",
-		"localInstanceTab": "Instance",
+		"localInstanceTab": "Instancia",
 		"curseforgeTab": "CurseForge",
-		"curseforgeModpackSearchPlaceholder": "Search CurseForge modpacks...",
-		"viewOnCurseForge": "View on CurseForge",
-		"filterSortLabel": "Sort by",
-		"filterCategoryLabel": "Category",
-		"filterVersionLabel": "Version",
-		"filterAllVersions": "Any version",
-		"filterAllCategories": "All",
-		"sortRelevance": "Relevance",
-		"sortDownloads": "Downloads",
-		"sortNewest": "Newest"
+		"curseforgeModpackSearchPlaceholder": "Buscar modpacks de CurseForge...",
+		"viewOnCurseForge": "Ver en CurseForge",
+		"filterSortLabel": "Ordenar por",
+		"filterCategoryLabel": "Categoría",
+		"filterVersionLabel": "Versión",
+		"filterAllVersions": "Cualquier versión",
+		"filterAllCategories": "Todo",
+		"sortRelevance": "Relevancia",
+		"sortDownloads": "Descargas",
+		"sortNewest": "Más reciente"
 	},
 	"themes": {
 		"importSuccess": "Theme importado",
@@ -524,20 +524,20 @@
 			"desc": "Aquí puedes gestionar las versiones de Java 8, 17, 21 y 25. Puedes instalar Java automáticamente desde el launcher o usar una instalación externa. También puedes configurar argumentos JVM y variables de entorno."
 		},
 		"slide8": {
-			"title": "Java Configuration",
-			"desc": "Manage Java 8, 17, 21 and 25 runtimes here. Install Java automatically from the launcher or use an existing installation. You can also configure JVM arguments and environment variables."
+			"title": "Configuración de Java",
+			"desc": "Gestiona aquí los entornos de ejecución de Java 8, 17, 21 y 25. Instala Java automáticamente desde el lanzador o usa una instalación existente. También puedes configurar los argumentos de la JVM y las variables de entorno."
 		},
 		"slide9": {
-			"title": "License",
-			"desc": "CubicLauncher is free software released under the GNU General Public License v3."
+			"title": "Licencia",
+			"desc": "CubicLauncher es software libre publicado bajo la GNU General Public License v3."
 		},
 		"licenseName": "GNU General Public License v3",
-		"licenseBullet1": "You are free to use, study, share and modify the software.",
-		"licenseBullet2": "If you redistribute the software, you must keep the same license.",
-		"licenseBullet3": "The software is provided without warranty of any kind.",
-		"viewLicense": "View full license",
-		"acceptLicense": "I accept the license terms",
-		"acceptLicenseNote": "Check the box to continue."
+		"licenseBullet1": "Tienes la libertad de usar, estudiar, compartir y modificar el software.",
+		"licenseBullet2": "Si redistribuyes el software, debes mantener la misma licencia.",
+		"licenseBullet3": "El software se proporciona sin garantía de ningún tipo.",
+		"viewLicense": "Ver licencia completa",
+		"acceptLicense": "Acepto los términos de la licencia",
+		"acceptLicenseNote": "Marca la casilla para continuar."
 	},
 	"errors": {
 		"title": "Error",
@@ -591,7 +591,7 @@
 		"forgeJavaHint": "Forge requiere Java 21 configurado en Ajustes > Java.",
 		"neoForgeJavaHint": "NeoForge requiere Java 17/21 configurado en Ajustes > Java.",
 		"loaderSearchPlaceholder": "Buscar versión del loader...",
-		"stableTooltip": "Recommended stable version"
+		"stableTooltip": "Versión estable recomendada"
 	},
 	"market": {
 		"empty": {
@@ -616,9 +616,9 @@
 			"category": "Categoría",
 			"allCategories": "Todas",
 			"refresh": "Actualizar",
-			"title": "Filters",
-			"hideFilters": "Hide advanced filters",
-			"showFilters": "Show advanced filters"
+			"title": "Filtros",
+			"hideFilters": "Ocultar filtros avanzados",
+			"showFilters": "Mostrar filtros avanzados"
 		},
 		"item": {
 			"by": "por",
@@ -651,9 +651,9 @@
 		}
 	},
 	"notifications": {
-		"exportTitle": "Export instance",
-		"exportSuccess": "Instance exported to {path}",
-		"exportingTitle": "Exporting instance",
-		"exportingMessage": "Compressing {name}..."
+		"exportTitle": "Exportar instancia",
+		"exportSuccess": "Instancia exportada a {path}",
+		"exportingTitle": "Exportando instancia",
+		"exportingMessage": "Comprimiendo {name}..."
 	}
 }

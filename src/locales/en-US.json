@@ -651,5 +651,6 @@
 			"noSelection": "Select a mod to view its details",
 			"by": "by"
 		}
-	}
+	},
+	"version": "1.2.0"
 }

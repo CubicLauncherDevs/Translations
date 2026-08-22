@@ -1,6 +1,6 @@
 {
 	"id": "uk-UA",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"common": {
 		"cancel": "Скасувати",
 		"save": "Зберегти",
@@ -53,8 +53,8 @@
 			"installing": "Встановлення...",
 			"installingBtn": "Встановлення оновлення",
 			"installUpdateBtn": "Встановити оновлення",
-			"themesBrowse": "Browse themes",
-			"openConsoleOnLaunch": "Open console when launching instances"
+			"themesBrowse": "Перегляд тем",
+			"openConsoleOnLaunch": "Відкривати консоль під час запуску екземплярів"
 		},
 		"minecraft": {
 			"perfTitle": "Продуктивність (RAM)",
@@ -64,10 +64,10 @@
 			"optionsTitle": "Параметри Minecraft",
 			"showSnapshots": "Показувати снапшоти",
 			"showAlpha": "Показувати альфа-версії",
-			"recommendedRamButton": "Use recommended RAM",
-			"recommendedRamHint": "{min}-{max} GB recommended · {total} GB detected",
-			"loadingRecommendedRam": "Detecting system RAM...",
-			"showUnstableLoaders": "Show unstable loader versions"
+			"recommendedRamButton": "Використовувати рекомендований обсяг RAM",
+			"recommendedRamHint": "Рекомендовано {min}-{max} GB · виявлено {total} GB",
+			"loadingRecommendedRam": "Визначення обсягу RAM...",
+			"showUnstableLoaders": "Показувати нестабільні версії лоадера"
 		},
 		"about": {
 			"title": "Про лаунчер",
@@ -143,10 +143,10 @@
 		"expand": "Розгорнути бічну панель",
 		"edit": "Редагувати",
 		"openFolder": "Відкрити теку",
-		"export": "Export",
-		"pin": "Pin",
-		"unpin": "Unpin",
-		"pinned": "Pinned instance"
+		"export": "Експортувати",
+		"pin": "Закріпити",
+		"unpin": "Відкріпити",
+		"pinned": "Закріплений екземпляр"
 	},
 	"userMenu": {
 		"title": "Профіль користувача",
@@ -192,46 +192,46 @@
 			"successTitle": "Підключено!",
 			"successSubtitle": "Ваш обліковий запис повʼязано."
 		},
-		"activate": "Activate",
-		"accountSingular": "Saved account",
-		"accountPlural": "Saved accounts",
-		"type": "Type",
-		"server": "Server",
-		"editName": "Edit name",
-		"noAccountsTitle": "No accounts",
-		"noAccountsSubtitle": "Add an account to get started",
-		"addFirstAccount": "Add your first account",
-		"close": "Close",
-		"yes": "Yes",
-		"no": "No",
-		"selectAccount": "Select an account to view its details",
+		"activate": "Активувати",
+		"accountSingular": "Збережений обліковий запис",
+		"accountPlural": "Збережені облікові записи",
+		"type": "Тип",
+		"server": "Сервер",
+		"editName": "Редагувати назву",
+		"noAccountsTitle": "Немає облікових записів",
+		"noAccountsSubtitle": "Додайте обліковий запис, щоб почати",
+		"addFirstAccount": "Додайте свій перший обліковий запис",
+		"close": "Закрити",
+		"yes": "Так",
+		"no": "Ні",
+		"selectAccount": "Виберіть обліковий запис, щоб переглянути його дані",
 		"skinCape": {
-			"title": "Skin & Cape",
-			"loading": "Loading Minecraft profile...",
-			"currentSkin": "Current skin",
-			"uploadSkin": "Upload skin (.png)",
-			"dropSkinHere": "Drop skin here",
-			"invalidSkinFile": "Only .png files are allowed",
-			"skinUrlPlaceholder": "Image URL (.png)",
-			"useUrl": "Use URL",
+			"title": "Скін і плащ",
+			"loading": "Завантаження профілю Minecraft...",
+			"currentSkin": "Поточний скін",
+			"uploadSkin": "Завантажити скін (.png)",
+			"dropSkinHere": "Перетягніть скін сюди",
+			"invalidSkinFile": "Дозволені лише файли .png",
+			"skinUrlPlaceholder": "URL зображення (.png)",
+			"useUrl": "Використати URL",
 			"classic": "Classic",
-			"slim": "Slim",
-			"capes": "Capes",
-			"cape": "Cape",
-			"noCapes": "No capes available for this account.",
-			"active": "Active",
-			"equip": "Equip",
-			"unequip": "Unequip",
-			"skinUpdated": "Skin updated",
-			"skinUpdatedDesc": "Your skin was applied successfully.",
-			"capeUpdated": "Cape updated",
-			"capeUpdatedDesc": "Your cape was applied successfully.",
-			"saveChanges": "Save changes",
-			"discardChanges": "Discard",
-			"pendingChanges": "Unsaved changes",
-			"changesSaved": "Changes saved",
-			"changesSavedDesc": "Your changes were applied successfully.",
-			"unequipPending": "Cape unequipped (pending save)"
+			"slim": "Тонкий",
+			"capes": "Плащі",
+			"cape": "Плащ",
+			"noCapes": "Немає доступних плащів для цього облікового запису.",
+			"active": "Активний",
+			"equip": "Надіти",
+			"unequip": "Зняти",
+			"skinUpdated": "Скін оновлено",
+			"skinUpdatedDesc": "Ваш скін успішно застосовано.",
+			"capeUpdated": "Плащ оновлено",
+			"capeUpdatedDesc": "Ваш плащ успішно застосовано.",
+			"saveChanges": "Зберегти зміни",
+			"discardChanges": "Відкинути",
+			"pendingChanges": "Незбережені зміни",
+			"changesSaved": "Зміни збережено",
+			"changesSavedDesc": "Ваші зміни успішно застосовано.",
+			"unequipPending": "Плащ знято (очікує збереження)"
 		}
 	},
 	"launch": {
@@ -446,32 +446,32 @@
 		"backBtn": "Назад",
 		"stepInfo": "Інформація",
 		"stepVersion": "Версія",
-		"importInstanceTab": "Import Instance",
-		"importInstanceHint": "Select a .zip file exported from MultiMC, Prism Launcher or a compatible launcher.",
-		"importInstanceSelect": "Select .zip",
-		"importInstanceAnalyzing": "Analyzing...",
-		"importInstanceChangeFile": "Change file",
-		"importInstanceDetected": "Detected format: {format}",
-		"importInstanceImportBtn": "Import instance",
-		"importInstanceImporting": "Importing...",
-		"importInstanceSuccessTitle": "Instance imported",
-		"importInstanceSuccessMessage": "The instance has been imported successfully.",
-		"importInstanceError": "Could not import the instance. The file may not be supported.",
-		"importInstanceDetectErr": "Could not detect a valid instance in the selected file.",
-		"localTab": "Local",
-		"localModpackTab": "Modpack",
-		"localInstanceTab": "Instance",
+		"importInstanceTab": "Імпортувати екземпляр",
+		"importInstanceHint": "Виберіть файл .zip, експортований з MultiMC, Prism Launcher або сумісного лаунчера.",
+		"importInstanceSelect": "Вибрати .zip",
+		"importInstanceAnalyzing": "Аналізуємо...",
+		"importInstanceChangeFile": "Змінити файл",
+		"importInstanceDetected": "Виявлений формат: {format}",
+		"importInstanceImportBtn": "Імпортувати екземпляр",
+		"importInstanceImporting": "Імпортування...",
+		"importInstanceSuccessTitle": "Екземпляр імпортовано",
+		"importInstanceSuccessMessage": "Екземпляр успішно імпортовано.",
+		"importInstanceError": "Не вдалося імпортувати екземпляр. Файл, можливо, не підтримується.",
+		"importInstanceDetectErr": "Не вдалося виявити дійсний екземпляр у вибраному файлі.",
+		"localTab": "Локальний",
+		"localModpackTab": "Модпак",
+		"localInstanceTab": "Екземпляр",
 		"curseforgeTab": "CurseForge",
-		"curseforgeModpackSearchPlaceholder": "Search CurseForge modpacks...",
-		"viewOnCurseForge": "View on CurseForge",
-		"filterSortLabel": "Sort by",
-		"filterCategoryLabel": "Category",
-		"filterVersionLabel": "Version",
-		"filterAllVersions": "Any version",
-		"filterAllCategories": "All",
-		"sortRelevance": "Relevance",
-		"sortDownloads": "Downloads",
-		"sortNewest": "Newest"
+		"curseforgeModpackSearchPlaceholder": "Шукати модпаки на CurseForge...",
+		"viewOnCurseForge": "Переглянути на CurseForge",
+		"filterSortLabel": "Сортувати за",
+		"filterCategoryLabel": "Категорія",
+		"filterVersionLabel": "Версія",
+		"filterAllVersions": "Будь-яка версія",
+		"filterAllCategories": "Усі",
+		"sortRelevance": "Релевантність",
+		"sortDownloads": "Завантаження",
+		"sortNewest": "Найновіші"
 	},
 	"themes": {
 		"importSuccess": "Тему імпортовано",
@@ -524,20 +524,20 @@
 			"desc": "Керуйте середовищами Java 8, 17, 21 та 25 тут. Встановлюйте Java автоматично з лаунчера або використовуйте наявне встановлення. Також можна налаштувати аргументи JVM та змінні середовища."
 		},
 		"slide8": {
-			"title": "Java Configuration",
-			"desc": "Manage Java 8, 17, 21 and 25 runtimes here. Install Java automatically from the launcher or use an existing installation. You can also configure JVM arguments and environment variables."
+			"title": "Конфігурація Java",
+			"desc": "Керуйте середовищами виконання Java 8, 17, 21 та 25 тут. Встановіть Java автоматично з лаунчера або використайте наявне встановлення. Також можна налаштувати аргументи JVM та змінні середовища."
 		},
 		"slide9": {
-			"title": "License",
-			"desc": "CubicLauncher is free software released under the GNU General Public License v3."
+			"title": "Ліцензія",
+			"desc": "CubicLauncher — це вільне програмне забезпечення, випущене під GNU General Public License v3."
 		},
 		"licenseName": "GNU General Public License v3",
-		"licenseBullet1": "You are free to use, study, share and modify the software.",
-		"licenseBullet2": "If you redistribute the software, you must keep the same license.",
-		"licenseBullet3": "The software is provided without warranty of any kind.",
-		"viewLicense": "View full license",
-		"acceptLicense": "I accept the license terms",
-		"acceptLicenseNote": "Check the box to continue."
+		"licenseBullet1": "Ви можете вільно використовувати, вивчати, поширювати та змінювати це програмне забезпечення.",
+		"licenseBullet2": "Якщо ви поширюєте це програмне забезпечення, ви повинні зберегти ту саму ліцензію.",
+		"licenseBullet3": "Програмне забезпечення надається без будь-яких гарантій.",
+		"viewLicense": "Переглянути повну ліцензію",
+		"acceptLicense": "Я приймаю умови ліцензії",
+		"acceptLicenseNote": "Поставте позначку, щоб продовжити."
 	},
 	"errors": {
 		"title": "Помилка",
@@ -591,7 +591,7 @@
 		"forgeJavaHint": "Forge вимагає налаштування Java 21 в Налаштуваннях > Java.",
 		"neoForgeJavaHint": "NeoForge вимагає налаштування Java 17/21 в Налаштуваннях > Java.",
 		"loaderSearchPlaceholder": "Пошук версії завантажувача...",
-		"stableTooltip": "Recommended stable version"
+		"stableTooltip": "Рекомендована стабільна версія"
 	},
 	"market": {
 		"empty": {
@@ -651,9 +651,9 @@
 		}
 	},
 	"notifications": {
-		"exportTitle": "Export instance",
-		"exportSuccess": "Instance exported to {path}",
-		"exportingTitle": "Exporting instance",
-		"exportingMessage": "Compressing {name}..."
+		"exportTitle": "Експортувати екземпляр",
+		"exportSuccess": "Екземпляр експортовано до {path}",
+		"exportingTitle": "Експортування екземпляра",
+		"exportingMessage": "Стиснення {name}..."
 	}
 }

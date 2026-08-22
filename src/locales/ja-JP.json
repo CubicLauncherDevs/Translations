@@ -1,6 +1,6 @@
 {
 	"id": "ja-JP",
-	"version": "1.1.0",
+	"version": "1.2.0",
 	"common": {
 		"cancel": "キャンセル",
 		"save": "保存",
@@ -53,8 +53,8 @@
 			"installing": "インストール中...",
 			"installingBtn": "アップデートをインストール中",
 			"installUpdateBtn": "アップデートをインストール",
-			"themesBrowse": "Browse themes",
-			"openConsoleOnLaunch": "Open console when launching instances"
+			"themesBrowse": "テーマを参照",
+			"openConsoleOnLaunch": "インスタンス起動時にコンソールを開く"
 		},
 		"minecraft": {
 			"perfTitle": "パフォーマンス（メモリ）",
@@ -64,10 +64,10 @@
 			"optionsTitle": "Minecraft の設定",
 			"showSnapshots": "スナップショット版を表示",
 			"showAlpha": "アルファ版を表示",
-			"recommendedRamButton": "Use recommended RAM",
-			"recommendedRamHint": "{min}-{max} GB recommended · {total} GB detected",
-			"loadingRecommendedRam": "Detecting system RAM...",
-			"showUnstableLoaders": "Show unstable loader versions"
+			"recommendedRamButton": "推奨RAMを使用",
+			"recommendedRamHint": "{min}-{max} GB推奨 · {total} GB検出",
+			"loadingRecommendedRam": "システムRAMを検出中...",
+			"showUnstableLoaders": "不安定なローダーバージョンを表示"
 		},
 		"about": {
 			"title": "このアプリについて",
@@ -143,10 +143,10 @@
 		"expand": "サイドバーを展開",
 		"edit": "編集",
 		"openFolder": "フォルダーを開く",
-		"export": "Export",
-		"pin": "Pin",
-		"unpin": "Unpin",
-		"pinned": "Pinned instance"
+		"export": "エクスポート",
+		"pin": "ピン留め",
+		"unpin": "ピン留めを解除",
+		"pinned": "ピン留め中のインスタンス"
 	},
 	"userMenu": {
 		"title": "ユーザープロフィール",
@@ -192,46 +192,46 @@
 			"successTitle": "接続しました！",
 			"successSubtitle": "アカウントが連携されました。"
 		},
-		"activate": "Activate",
-		"accountSingular": "Saved account",
-		"accountPlural": "Saved accounts",
-		"type": "Type",
-		"server": "Server",
-		"editName": "Edit name",
-		"noAccountsTitle": "No accounts",
-		"noAccountsSubtitle": "Add an account to get started",
-		"addFirstAccount": "Add your first account",
-		"close": "Close",
-		"yes": "Yes",
-		"no": "No",
-		"selectAccount": "Select an account to view its details",
+		"activate": "有効化",
+		"accountSingular": "保存済みアカウント",
+		"accountPlural": "保存済みアカウント",
+		"type": "タイプ",
+		"server": "サーバー",
+		"editName": "名前を編集",
+		"noAccountsTitle": "アカウントがありません",
+		"noAccountsSubtitle": "アカウントを追加して始める",
+		"addFirstAccount": "最初のアカウントを追加",
+		"close": "閉じる",
+		"yes": "はい",
+		"no": "いいえ",
+		"selectAccount": "アカウントを選択して詳細を表示",
 		"skinCape": {
-			"title": "Skin & Cape",
-			"loading": "Loading Minecraft profile...",
-			"currentSkin": "Current skin",
-			"uploadSkin": "Upload skin (.png)",
-			"dropSkinHere": "Drop skin here",
-			"invalidSkinFile": "Only .png files are allowed",
-			"skinUrlPlaceholder": "Image URL (.png)",
-			"useUrl": "Use URL",
-			"classic": "Classic",
-			"slim": "Slim",
-			"capes": "Capes",
-			"cape": "Cape",
-			"noCapes": "No capes available for this account.",
-			"active": "Active",
-			"equip": "Equip",
-			"unequip": "Unequip",
-			"skinUpdated": "Skin updated",
-			"skinUpdatedDesc": "Your skin was applied successfully.",
-			"capeUpdated": "Cape updated",
-			"capeUpdatedDesc": "Your cape was applied successfully.",
-			"saveChanges": "Save changes",
-			"discardChanges": "Discard",
-			"pendingChanges": "Unsaved changes",
-			"changesSaved": "Changes saved",
-			"changesSavedDesc": "Your changes were applied successfully.",
-			"unequipPending": "Cape unequipped (pending save)"
+			"title": "スキンとマント",
+			"loading": "Minecraftプロフィールを読み込み中...",
+			"currentSkin": "現在のスキン",
+			"uploadSkin": "スキンをアップロード（.png）",
+			"dropSkinHere": "スキンをここにドロップ",
+			"invalidSkinFile": ".pngファイルのみ対応しています",
+			"skinUrlPlaceholder": "画像URL（.png）",
+			"useUrl": "URLを使用",
+			"classic": "クラシック",
+			"slim": "スリム",
+			"capes": "マント",
+			"cape": "マント",
+			"noCapes": "このアカウントで利用できるマントはありません。",
+			"active": "有効",
+			"equip": "装備",
+			"unequip": "外す",
+			"skinUpdated": "スキンを更新しました",
+			"skinUpdatedDesc": "スキンが正常に適用されました。",
+			"capeUpdated": "マントを更新しました",
+			"capeUpdatedDesc": "マントが正常に適用されました。",
+			"saveChanges": "変更を保存",
+			"discardChanges": "破棄",
+			"pendingChanges": "未保存の変更",
+			"changesSaved": "変更を保存しました",
+			"changesSavedDesc": "変更が正常に適用されました。",
+			"unequipPending": "マントを外しました（保存待ち）"
 		}
 	},
 	"launch": {
@@ -446,32 +446,32 @@
 		"backBtn": "戻る",
 		"stepInfo": "基本情報",
 		"stepVersion": "バージョン",
-		"importInstanceTab": "Import Instance",
-		"importInstanceHint": "Select a .zip file exported from MultiMC, Prism Launcher or a compatible launcher.",
-		"importInstanceSelect": "Select .zip",
-		"importInstanceAnalyzing": "Analyzing...",
-		"importInstanceChangeFile": "Change file",
-		"importInstanceDetected": "Detected format: {format}",
-		"importInstanceImportBtn": "Import instance",
-		"importInstanceImporting": "Importing...",
-		"importInstanceSuccessTitle": "Instance imported",
-		"importInstanceSuccessMessage": "The instance has been imported successfully.",
-		"importInstanceError": "Could not import the instance. The file may not be supported.",
-		"importInstanceDetectErr": "Could not detect a valid instance in the selected file.",
-		"localTab": "Local",
-		"localModpackTab": "Modpack",
-		"localInstanceTab": "Instance",
+		"importInstanceTab": "インスタンスをインポート",
+		"importInstanceHint": "MultiMC、Prism Launcher、または互換のあるランチャーからエクスポートされた.zipファイルを選択してください。",
+		"importInstanceSelect": ".zipを選択",
+		"importInstanceAnalyzing": "解析中...",
+		"importInstanceChangeFile": "ファイルを変更",
+		"importInstanceDetected": "検出された形式：{format}",
+		"importInstanceImportBtn": "インスタンスをインポート",
+		"importInstanceImporting": "インポート中...",
+		"importInstanceSuccessTitle": "インスタンスをインポートしました",
+		"importInstanceSuccessMessage": "インスタンスが正常にインポートされました。",
+		"importInstanceError": "インスタンスをインポートできませんでした。ファイルが未対応の可能性があります。",
+		"importInstanceDetectErr": "選択したファイルから有効なインスタンスを検出できませんでした。",
+		"localTab": "ローカル",
+		"localModpackTab": "MODパック",
+		"localInstanceTab": "インスタンス",
 		"curseforgeTab": "CurseForge",
-		"curseforgeModpackSearchPlaceholder": "Search CurseForge modpacks...",
-		"viewOnCurseForge": "View on CurseForge",
-		"filterSortLabel": "Sort by",
-		"filterCategoryLabel": "Category",
-		"filterVersionLabel": "Version",
-		"filterAllVersions": "Any version",
-		"filterAllCategories": "All",
-		"sortRelevance": "Relevance",
-		"sortDownloads": "Downloads",
-		"sortNewest": "Newest"
+		"curseforgeModpackSearchPlaceholder": "CurseForgeのMODパックを検索...",
+		"viewOnCurseForge": "CurseForgeで表示",
+		"filterSortLabel": "並べ替え",
+		"filterCategoryLabel": "カテゴリ",
+		"filterVersionLabel": "バージョン",
+		"filterAllVersions": "任意のバージョン",
+		"filterAllCategories": "すべて",
+		"sortRelevance": "関連性",
+		"sortDownloads": "ダウンロード",
+		"sortNewest": "最新"
 	},
 	"themes": {
 		"importSuccess": "テーマをインポートしました",
@@ -524,20 +524,20 @@
 			"desc": "Java 8、17、21、25 のランタイムをここで管理できます。ランチャーから自動でインストールするほか、既存のインストールを使うこともできます。JVM 引数や環境変数の設定も可能です。"
 		},
 		"slide8": {
-			"title": "Java Configuration",
-			"desc": "Manage Java 8, 17, 21 and 25 runtimes here. Install Java automatically from the launcher or use an existing installation. You can also configure JVM arguments and environment variables."
+			"title": "Java設定",
+			"desc": "ここでJava 8、17、21、25のランタイムを管理します。ランチャーからJavaを自動インストールするか、既存のインストールを使用してください。JVM引数や環境変数も設定できます。"
 		},
 		"slide9": {
-			"title": "License",
-			"desc": "CubicLauncher is free software released under the GNU General Public License v3."
+			"title": "ライセンス",
+			"desc": "CubicLauncherはGNU General Public License v3の下で公開されているフリーソフトウェアです。"
 		},
 		"licenseName": "GNU General Public License v3",
-		"licenseBullet1": "You are free to use, study, share and modify the software.",
-		"licenseBullet2": "If you redistribute the software, you must keep the same license.",
-		"licenseBullet3": "The software is provided without warranty of any kind.",
-		"viewLicense": "View full license",
-		"acceptLicense": "I accept the license terms",
-		"acceptLicenseNote": "Check the box to continue."
+		"licenseBullet1": "このソフトウェアは自由に使用、研究、共有、改変できます。",
+		"licenseBullet2": "ソフトウェアを再配布する場合、同じライセンスを維持する必要があります。",
+		"licenseBullet3": "このソフトウェアは無保証で提供されます。",
+		"viewLicense": "ライセンス全文を表示",
+		"acceptLicense": "ライセンス条項に同意します",
+		"acceptLicenseNote": "続けるにはチェックを入れてください。"
 	},
 	"errors": {
 		"title": "エラー",
@@ -591,7 +591,7 @@
 		"forgeJavaHint": "Forge を使うには、設定 > Java で Java 21 を設定する必要があります。",
 		"neoForgeJavaHint": "NeoForge を使うには、設定 > Java で Java 17/21 を設定する必要があります。",
 		"loaderSearchPlaceholder": "ローダーのバージョンを検索...",
-		"stableTooltip": "Recommended stable version"
+		"stableTooltip": "推奨される安定版"
 	},
 	"market": {
 		"empty": {
@@ -650,9 +650,9 @@
 		}
 	},
 	"notifications": {
-		"exportTitle": "Export instance",
-		"exportSuccess": "Instance exported to {path}",
-		"exportingTitle": "Exporting instance",
-		"exportingMessage": "Compressing {name}..."
+		"exportTitle": "インスタンスをエクスポート",
+		"exportSuccess": "インスタンスを{path}にエクスポートしました",
+		"exportingTitle": "インスタンスをエクスポート中",
+		"exportingMessage": "{name}を圧縮中..."
 	}
 }

@@ -231,7 +231,9 @@
 			"pendingChanges": "未保存の変更",
 			"changesSaved": "変更を保存しました",
 			"changesSavedDesc": "変更が正常に適用されました。",
-			"unequipPending": "マントを外しました（保存待ち）"
+			"unequipPending": "マントを外しました（保存待ち）",
+			"rateLimitTitle": "Too many changes",
+			"rateLimitMessage": "You're making changes too fast. Wait a few seconds before trying again."
 		}
 	},
 	"launch": {
@@ -397,7 +399,8 @@
 		"javaHint": "この Minecraft バージョンに推奨される Java を Cubic が自動で選択します。一部の Mod では互換性がなく、別のバージョンが必要になる場合があります。",
 		"recommended": "推奨",
 		"repairHint": "Mod ローダーとゲームバージョンを再インストールします。",
-		"useCustomConfig": "カスタム設定を使用する"
+		"useCustomConfig": "カスタム設定を使用する",
+		"versionChangeWarning": "Changing the version or loader may damage the installation and make mods stop working."
 	},
 	"createInstance": {
 		"title": "新しいインスタンスを作成",

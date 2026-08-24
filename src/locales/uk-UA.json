@@ -231,7 +231,9 @@
 			"pendingChanges": "Незбережені зміни",
 			"changesSaved": "Зміни збережено",
 			"changesSavedDesc": "Ваші зміни успішно застосовано.",
-			"unequipPending": "Плащ знято (очікує збереження)"
+			"unequipPending": "Плащ знято (очікує збереження)",
+			"rateLimitTitle": "Too many changes",
+			"rateLimitMessage": "You're making changes too fast. Wait a few seconds before trying again."
 		}
 	},
 	"launch": {
@@ -397,7 +399,8 @@
 		"javaHint": "Cubic обере рекомендовану версію Java для цієї версії Minecraft. Деякі моди можуть бути несумісними та потребувати іншої версії.",
 		"recommended": "Рекомендована",
 		"repairHint": "Це перевстановить завантажувач модів та версію гри.",
-		"useCustomConfig": "Використовувати власну конфігурацію"
+		"useCustomConfig": "Використовувати власну конфігурацію",
+		"versionChangeWarning": "Changing the version or loader may damage the installation and make mods stop working."
 	},
 	"createInstance": {
 		"title": "Створити новий екземпляр",

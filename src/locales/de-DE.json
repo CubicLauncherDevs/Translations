@@ -231,7 +231,9 @@
 			"pendingChanges": "Ungespeicherte Änderungen",
 			"changesSaved": "Änderungen gespeichert",
 			"changesSavedDesc": "Deine Änderungen wurden erfolgreich angewendet.",
-			"unequipPending": "Cape abgelegt (noch nicht gespeichert)"
+			"unequipPending": "Cape abgelegt (noch nicht gespeichert)",
+			"rateLimitTitle": "Too many changes",
+			"rateLimitMessage": "You're making changes too fast. Wait a few seconds before trying again."
 		}
 	},
 	"launch": {
@@ -397,7 +399,8 @@
 		"javaHint": "Cubic wählt die empfohlene Java-Version für diese Minecraft-Version aus. Manche Mods können inkompatibel sein und eine andere Version benötigen.",
 		"recommended": "Empfohlen",
 		"repairHint": "Dies installiert den Mod-Loader und die Spielversion neu.",
-		"useCustomConfig": "Benutzerdefinierte Konfiguration verwenden"
+		"useCustomConfig": "Benutzerdefinierte Konfiguration verwenden",
+		"versionChangeWarning": "Changing the version or loader may damage the installation and make mods stop working."
 	},
 	"createInstance": {
 		"title": "Neue Instanz erstellen",

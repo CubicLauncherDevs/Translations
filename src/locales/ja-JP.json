@@ -67,7 +67,12 @@
 			"recommendedRamButton": "推奨RAMを使用",
 			"recommendedRamHint": "{min}-{max} GB推奨 · {total} GB検出",
 			"loadingRecommendedRam": "システムRAMを検出中...",
-			"showUnstableLoaders": "不安定なローダーバージョンを表示"
+			"showUnstableLoaders": "不安定なローダーバージョンを表示",
+			"consoleTitle": "Console Options",
+			"consoleHistoryLimit": "History limit",
+			"consoleHistoryHint": "Maximum lines kept in each instance console (100-5000).",
+			"consoleShowLevelTags": "Show level tags",
+			"consoleShowLevelTagsHint": "Not recommended: hiding tags makes it harder to filter logs by level."
 		},
 		"about": {
 			"title": "このアプリについて",
@@ -390,7 +395,20 @@
 			"openSettings": "設定を開く",
 			"curseForgeRelease": "リリース",
 			"curseForgeBeta": "ベータ",
-			"curseForgeAlpha": "アルファ"
+			"curseForgeAlpha": "アルファ",
+			"conflictsTitle": "Dependency conflicts",
+			"selectAllOptional": "Select optional",
+			"deselectAllOptional": "Clear optional",
+			"include": "Include",
+			"viewDependencies": "View dependencies",
+			"dependenciesTitle": "Dependencies of {title}",
+			"noDependencies": "This mod has no dependencies.",
+			"dependencyKind": {
+				"required": "required",
+				"optional": "optional",
+				"embedded": "embedded",
+				"incompatible": "incompatible"
+			}
 		}
 	},
 	"instanceEditor": {
@@ -621,7 +639,12 @@
 			"sortNewest": "新着",
 			"category": "カテゴリ",
 			"allCategories": "すべて",
-			"refresh": "更新"
+			"refresh": "更新",
+			"source": "Source",
+			"sourceAll": "All",
+			"sourceModrinth": "Modrinth",
+			"sourceCurseForge": "CurseForge",
+			"sourceLocal": "Local"
 		},
 		"item": {
 			"by": "作者:",
@@ -630,7 +653,8 @@
 			"install": "インストール",
 			"installed": "インストール済み",
 			"updateAvailable": "更新",
-			"incompatible": "非対応"
+			"incompatible": "非対応",
+			"local": "Local"
 		},
 		"detail": {
 			"close": "詳細を閉じる",
@@ -649,7 +673,24 @@
 			"openOnModrinth": "Modrinth で開く",
 			"openOnCurseForge": "CurseForge で開く",
 			"noSelection": "Mod を選択すると詳細が表示されます",
-			"by": "作者:"
+			"by": "作者:",
+			"dependencies": {
+				"title": "Install {title}",
+				"resolving": "Resolving dependencies...",
+				"noDependencies": "No additional dependencies. {title} will be installed.",
+				"conflictsTitle": "Dependency conflicts",
+				"include": "Include",
+				"installed": "Installed",
+				"cancel": "Cancel",
+				"install": "Install {count} files",
+				"installSingle": "Install 1 file",
+				"dependencyKind": {
+					"required": "required",
+					"optional": "optional",
+					"embedded": "embedded",
+					"incompatible": "incompatible"
+				}
+			}
 		}
 	},
 	"notifications": {

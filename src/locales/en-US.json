@@ -66,7 +66,12 @@
 			"optionsTitle": "Minecraft Options",
 			"showSnapshots": "Show Snapshot versions",
 			"showAlpha": "Show Alpha versions",
-			"showUnstableLoaders": "Show unstable loader versions"
+			"showUnstableLoaders": "Show unstable loader versions",
+			"consoleTitle": "Console Options",
+			"consoleHistoryLimit": "History limit",
+			"consoleHistoryHint": "Maximum lines kept in each instance console (100-5000).",
+			"consoleShowLevelTags": "Show level tags",
+			"consoleShowLevelTagsHint": "Not recommended: hiding tags makes it harder to filter logs by level."
 		},
 		"about": {
 			"title": "About",
@@ -179,8 +184,6 @@
 			"uploadSkin": "Upload skin (.png)",
 			"dropSkinHere": "Drop skin here",
 			"invalidSkinFile": "Only .png files are allowed",
-			"skinUrlPlaceholder": "Image URL (.png)",
-			"useUrl": "Use URL",
 			"classic": "Classic",
 			"slim": "Slim",
 			"capes": "Capes",
@@ -346,6 +349,19 @@
 			"allInstalledSub": "There are no new files to download.",
 			"filesToDownload_one": "{count} file to download:",
 			"filesToDownload_other": "{count} files to download:",
+			"conflictsTitle": "Dependency conflicts",
+			"selectAllOptional": "Select optional",
+			"deselectAllOptional": "Clear optional",
+			"include": "Include",
+			"viewDependencies": "View dependencies",
+			"dependenciesTitle": "Dependencies of {title}",
+			"noDependencies": "This mod has no dependencies.",
+			"dependencyKind": {
+				"required": "required",
+				"optional": "optional",
+				"embedded": "embedded",
+				"incompatible": "incompatible"
+			},
 			"confirmDownload": "Confirm Download",
 			"downloading": "Downloading...",
 			"file_one": "file",
@@ -521,7 +537,7 @@
 		},
 		"slide7": {
 			"title": "Settings Sections",
-			"desc": "Use the tabs to navigate between Launcher (language, themes, updates), Minecraft (RAM, versions) and Java (runtimes, arguments)."
+			"desc": "Use the tabs to navigate between Launcher (language, themes, updates), Minecraft (RAM, versions, console) and Java (runtimes, arguments)."
 		},
 		"slide8": {
 			"title": "Java Configuration",
@@ -612,6 +628,11 @@
 			"title": "Filters",
 			"hideFilters": "Hide advanced filters",
 			"showFilters": "Show advanced filters",
+			"source": "Source",
+			"sourceAll": "All",
+			"sourceModrinth": "Modrinth",
+			"sourceCurseForge": "CurseForge",
+			"sourceLocal": "Local",
 			"tabModrinth": "Modrinth",
 			"tabCurseForge": "CurseForge",
 			"tabLocal": "Local",
@@ -633,7 +654,8 @@
 			"install": "Install",
 			"installed": "Installed",
 			"updateAvailable": "Update",
-			"incompatible": "Incompatible"
+			"incompatible": "Incompatible",
+			"local": "Local"
 		},
 		"detail": {
 			"close": "Close details",
@@ -652,7 +674,24 @@
 			"openOnModrinth": "Open on Modrinth",
 			"openOnCurseForge": "Open on CurseForge",
 			"noSelection": "Select a mod to view its details",
-			"by": "by"
+			"by": "by",
+			"dependencies": {
+				"title": "Install {title}",
+				"resolving": "Resolving dependencies...",
+				"noDependencies": "No additional dependencies. {title} will be installed.",
+				"conflictsTitle": "Dependency conflicts",
+				"include": "Include",
+				"installed": "Installed",
+				"cancel": "Cancel",
+				"install": "Install {count} files",
+				"installSingle": "Install 1 file",
+				"dependencyKind": {
+					"required": "required",
+					"optional": "optional",
+					"embedded": "embedded",
+					"incompatible": "incompatible"
+				}
+			}
 		}
 	}
 }

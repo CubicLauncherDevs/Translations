@@ -67,7 +67,12 @@
 			"recommendedRamButton": "Usar la RAM recomendada",
 			"recommendedRamHint": "{min}-{max} GB recomendados · {total} GB detectados",
 			"loadingRecommendedRam": "Detectando la RAM del sistema...",
-			"showUnstableLoaders": "Mostrar versiones inestables del cargador"
+			"showUnstableLoaders": "Mostrar versiones inestables del cargador",
+			"consoleTitle": "Console Options",
+			"consoleHistoryLimit": "History limit",
+			"consoleHistoryHint": "Maximum lines kept in each instance console (100-5000).",
+			"consoleShowLevelTags": "Show level tags",
+			"consoleShowLevelTagsHint": "Not recommended: hiding tags makes it harder to filter logs by level."
 		},
 		"about": {
 			"title": "Sobre Nosotros",
@@ -390,7 +395,20 @@
 			"openSettings": "Abrir Ajustes",
 			"curseForgeRelease": "Lanzamiento",
 			"curseForgeBeta": "Beta",
-			"curseForgeAlpha": "Alpha"
+			"curseForgeAlpha": "Alpha",
+			"conflictsTitle": "Dependency conflicts",
+			"selectAllOptional": "Select optional",
+			"deselectAllOptional": "Clear optional",
+			"include": "Include",
+			"viewDependencies": "View dependencies",
+			"dependenciesTitle": "Dependencies of {title}",
+			"noDependencies": "This mod has no dependencies.",
+			"dependencyKind": {
+				"required": "required",
+				"optional": "optional",
+				"embedded": "embedded",
+				"incompatible": "incompatible"
+			}
 		}
 	},
 	"instanceEditor": {
@@ -621,7 +639,12 @@
 			"refresh": "Actualizar",
 			"title": "Filtros",
 			"hideFilters": "Ocultar filtros avanzados",
-			"showFilters": "Mostrar filtros avanzados"
+			"showFilters": "Mostrar filtros avanzados",
+			"source": "Source",
+			"sourceAll": "All",
+			"sourceModrinth": "Modrinth",
+			"sourceCurseForge": "CurseForge",
+			"sourceLocal": "Local"
 		},
 		"item": {
 			"by": "por",
@@ -630,7 +653,8 @@
 			"install": "Instalar",
 			"installed": "Instalado",
 			"updateAvailable": "Actualizar",
-			"incompatible": "Incompatible"
+			"incompatible": "Incompatible",
+			"local": "Local"
 		},
 		"detail": {
 			"close": "Cerrar detalles",
@@ -650,7 +674,24 @@
 			"openOnCurseForge": "Abrir en CurseForge",
 			"noSelection": "Selecciona un mod para ver sus detalles",
 			"by": "por",
-			"installedLabel": "Ya instalado"
+			"installedLabel": "Ya instalado",
+			"dependencies": {
+				"title": "Install {title}",
+				"resolving": "Resolving dependencies...",
+				"noDependencies": "No additional dependencies. {title} will be installed.",
+				"conflictsTitle": "Dependency conflicts",
+				"include": "Include",
+				"installed": "Installed",
+				"cancel": "Cancel",
+				"install": "Install {count} files",
+				"installSingle": "Install 1 file",
+				"dependencyKind": {
+					"required": "required",
+					"optional": "optional",
+					"embedded": "embedded",
+					"incompatible": "incompatible"
+				}
+			}
 		}
 	},
 	"notifications": {

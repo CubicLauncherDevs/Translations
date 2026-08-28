@@ -67,7 +67,12 @@
 			"recommendedRamButton": "Використовувати рекомендований обсяг RAM",
 			"recommendedRamHint": "Рекомендовано {min}-{max} GB · виявлено {total} GB",
 			"loadingRecommendedRam": "Визначення обсягу RAM...",
-			"showUnstableLoaders": "Показувати нестабільні версії лоадера"
+			"showUnstableLoaders": "Показувати нестабільні версії лоадера",
+			"consoleTitle": "Console Options",
+			"consoleHistoryLimit": "History limit",
+			"consoleHistoryHint": "Maximum lines kept in each instance console (100-5000).",
+			"consoleShowLevelTags": "Show level tags",
+			"consoleShowLevelTagsHint": "Not recommended: hiding tags makes it harder to filter logs by level."
 		},
 		"about": {
 			"title": "Про лаунчер",
@@ -390,7 +395,20 @@
 			"openSettings": "Відкрити налаштування",
 			"curseForgeRelease": "Реліз",
 			"curseForgeBeta": "Бета",
-			"curseForgeAlpha": "Альфа"
+			"curseForgeAlpha": "Альфа",
+			"conflictsTitle": "Dependency conflicts",
+			"selectAllOptional": "Select optional",
+			"deselectAllOptional": "Clear optional",
+			"include": "Include",
+			"viewDependencies": "View dependencies",
+			"dependenciesTitle": "Dependencies of {title}",
+			"noDependencies": "This mod has no dependencies.",
+			"dependencyKind": {
+				"required": "required",
+				"optional": "optional",
+				"embedded": "embedded",
+				"incompatible": "incompatible"
+			}
 		}
 	},
 	"instanceEditor": {
@@ -621,7 +639,12 @@
 			"refresh": "Оновити",
 			"title": "Фільтри",
 			"hideFilters": "Приховати розширені фільтри",
-			"showFilters": "Показати розширені фільтри"
+			"showFilters": "Показати розширені фільтри",
+			"source": "Source",
+			"sourceAll": "All",
+			"sourceModrinth": "Modrinth",
+			"sourceCurseForge": "CurseForge",
+			"sourceLocal": "Local"
 		},
 		"item": {
 			"by": "від",
@@ -630,7 +653,8 @@
 			"install": "Встановити",
 			"installed": "Встановлено",
 			"updateAvailable": "Оновлення",
-			"incompatible": "Несумісно"
+			"incompatible": "Несумісно",
+			"local": "Local"
 		},
 		"detail": {
 			"close": "Закрити деталі",
@@ -650,7 +674,24 @@
 			"openOnCurseForge": "Відкрити на CurseForge",
 			"noSelection": "Виберіть мод для перегляду деталей",
 			"by": "від",
-			"installedLabel": "Вже встановлено"
+			"installedLabel": "Вже встановлено",
+			"dependencies": {
+				"title": "Install {title}",
+				"resolving": "Resolving dependencies...",
+				"noDependencies": "No additional dependencies. {title} will be installed.",
+				"conflictsTitle": "Dependency conflicts",
+				"include": "Include",
+				"installed": "Installed",
+				"cancel": "Cancel",
+				"install": "Install {count} files",
+				"installSingle": "Install 1 file",
+				"dependencyKind": {
+					"required": "required",
+					"optional": "optional",
+					"embedded": "embedded",
+					"incompatible": "incompatible"
+				}
+			}
 		}
 	},
 	"notifications": {

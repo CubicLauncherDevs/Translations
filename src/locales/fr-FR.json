@@ -54,7 +54,13 @@
 			"installingBtn": "Installation de la mise à jour",
 			"installUpdateBtn": "Installer la Mise à jour",
 			"themesBrowse": "Parcourir les thèmes",
-			"openConsoleOnLaunch": "Ouvrir la console au lancement des instances"
+			"openConsoleOnLaunch": "Ouvrir la console au lancement des instances",
+			"performanceTitle": "Performance",
+			"reduceAnimations": "Reduce interface animations",
+			"disableBlurEffects": "Disable blur effects",
+			"disableInfiniteAnimations": "Disable continuous loading animations",
+			"disableSkin3dAnimations": "Disable 3D skin viewer animation",
+			"reduceLogAnimations": "Reduce log animations"
 		},
 		"minecraft": {
 			"perfTitle": "Performances (RAM)",
@@ -699,5 +705,14 @@
 		"exportSuccess": "Instance exportée vers {path}",
 		"exportingTitle": "Exportation de l'instance",
 		"exportingMessage": "Compression de {name}..."
+	},
+	"updater": {
+		"availableTitle": "Update available: v{version}",
+		"availableMessage": "It will be downloaded and installed automatically.",
+		"downloadingTitle": "Downloading v{version}",
+		"progress": "{progress}%",
+		"installingTitle": "Installing v{version}",
+		"installingMessage": "Restarting the launcher...",
+		"errorTitle": "Update error"
 	}
 }

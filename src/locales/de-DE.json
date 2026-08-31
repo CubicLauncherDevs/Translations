@@ -54,7 +54,13 @@
 			"installingBtn": "Update installieren",
 			"installUpdateBtn": "Update installieren",
 			"themesBrowse": "Themes durchsuchen",
-			"openConsoleOnLaunch": "Konsole beim Starten von Instanzen öffnen"
+			"openConsoleOnLaunch": "Konsole beim Starten von Instanzen öffnen",
+			"performanceTitle": "Performance",
+			"reduceAnimations": "Reduce interface animations",
+			"disableBlurEffects": "Disable blur effects",
+			"disableInfiniteAnimations": "Disable continuous loading animations",
+			"disableSkin3dAnimations": "Disable 3D skin viewer animation",
+			"reduceLogAnimations": "Reduce log animations"
 		},
 		"minecraft": {
 			"perfTitle": "Leistung (RAM)",
@@ -699,5 +705,14 @@
 		"exportSuccess": "Instanz exportiert nach {path}",
 		"exportingTitle": "Instanz wird exportiert",
 		"exportingMessage": "Komprimiere {name}..."
+	},
+	"updater": {
+		"availableTitle": "Update available: v{version}",
+		"availableMessage": "It will be downloaded and installed automatically.",
+		"downloadingTitle": "Downloading v{version}",
+		"progress": "{progress}%",
+		"installingTitle": "Installing v{version}",
+		"installingMessage": "Restarting the launcher...",
+		"errorTitle": "Update error"
 	}
 }

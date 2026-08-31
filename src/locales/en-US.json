@@ -22,9 +22,6 @@
 			"java": "Java"
 		},
 		"launcher": {
-			"activeInstancesTitle": "Active Instances",
-			"killInstance": "Kill",
-			"noInstances": "No instances running",
 			"generalTitle": "General",
 			"language": "Language",
 			"autoUpdates": "Automatic Updates",
@@ -40,6 +37,12 @@
 			"themesSpan": "Looking for themes? Check out our themes page at https://www.cubiclauncher.org/themes",
 			"javaSpan": "You don't know what Java is? Check out our documentation at https://cubiclauncher.org/docs/java",
 			"themes": "Themes",
+			"performanceTitle": "Performance",
+			"reduceAnimations": "Reduce interface animations",
+			"disableBlurEffects": "Disable blur effects",
+			"disableInfiniteAnimations": "Disable continuous loading animations",
+			"disableSkin3dAnimations": "Disable 3D skin viewer animation",
+			"reduceLogAnimations": "Reduce log animations",
 			"themesActive": "Active theme",
 			"themesImport": "Import Theme",
 			"themesImporting": "Importing...",
@@ -106,6 +109,15 @@
 			"saving": "Saving...",
 			"zuluCredit": "Java runtimes provided by Azul Zulu (Zulu.org)"
 		}
+	},
+	"updater": {
+		"availableTitle": "Update available: v{version}",
+		"availableMessage": "It will be downloaded and installed automatically.",
+		"downloadingTitle": "Downloading v{version}",
+		"progress": "{progress}%",
+		"installingTitle": "Installing v{version}",
+		"installingMessage": "Restarting the launcher...",
+		"errorTitle": "Update error"
 	},
 	"main": {
 		"noInstanceTitle": "No instance selected",

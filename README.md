@@ -30,18 +30,18 @@ Mini servidor de internacionalización para [CubicLauncher](https://github.com/C
 ## Instalación
 
 ```bash
-npm install
+bun install
 ```
 
 ## Scripts
 
 | Script | Descripción |
 |--------|-------------|
-| `npm run dev` | Levanta el Worker localmente con `wrangler dev` |
-| `npm run deploy` | Despliega el Worker en Cloudflare |
-| `npm run build` | Verifica tipos con TypeScript |
-| `npm run fetch-locales` | Descarga las últimas traducciones desde GitHub |
-| `npm run sync-locales` | Sincroniza archivos locales con la referencia en-US |
+| `bun run dev` | Levanta el Worker localmente con `wrangler dev` |
+| `bun run deploy` | Despliega el Worker en Cloudflare |
+| `bun run build` | Verifica tipos con TypeScript |
+| `bun run fetch-locales` | Descarga las últimas traducciones desde GitHub |
+| `bun run sync-locales` | Sincroniza archivos locales con la referencia en-US |
 
 ## Versionado de idiomas
 
@@ -216,11 +216,11 @@ Tipos de eventos soportados:
 4. Construye y despliega:
 
 ```bash
-npm run build
-npm run deploy
+bun run build
+bun run deploy
 ```
 
-> También puedes usar `npm run sync-locales` para rellenar claves faltantes de otros idiomas a partir del en-US local.
+> También puedes usar `bun run sync-locales` para rellenar claves faltantes de otros idiomas a partir del en-US local.
 
 ## Configuración
 
@@ -246,7 +246,7 @@ echo "SYNC_SECRET=tu-secreto" > .dev.vars
 ## Despliegue
 
 ```bash
-npm run deploy
+bun run deploy
 ```
 
 Asegúrate de haber iniciado sesión con `wrangler login` previamente.

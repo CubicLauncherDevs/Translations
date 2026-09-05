@@ -89,5 +89,33 @@
 		"version": "1.3.0",
 		"timestamp": "2026-09-05T20:00:05.422367Z",
 		"details": { "note": "Translated pending strings and removed obsolete keys from en-US" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "fr-FR",
+		"version": "1.3.0",
+		"timestamp": "2026-09-05T20:16:43.864854Z",
+		"details": { "note": "Translated pending strings and removed obsolete keys from en-US" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "de-DE",
+		"version": "1.3.0",
+		"timestamp": "2026-09-05T20:16:43.864854Z",
+		"details": { "note": "Translated pending strings and removed obsolete keys from en-US" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "uk-UA",
+		"version": "1.3.0",
+		"timestamp": "2026-09-05T20:16:43.864854Z",
+		"details": { "note": "Translated pending strings and removed obsolete keys from en-US" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "ja-JP",
+		"version": "1.3.0",
+		"timestamp": "2026-09-05T20:16:43.864854Z",
+		"details": { "note": "Translated pending strings and removed obsolete keys from en-US" }
 	}
 ]

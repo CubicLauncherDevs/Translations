@@ -1,6 +1,6 @@
 {
 	"id": "ja-JP",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"common": {
 		"cancel": "キャンセル",
 		"save": "保存",
@@ -23,9 +23,6 @@
 			"java": "Java"
 		},
 		"launcher": {
-			"activeInstancesTitle": "実行中のインスタンス",
-			"killInstance": "強制終了",
-			"noInstances": "実行中のインスタンスはありません",
 			"generalTitle": "全般",
 			"language": "言語",
 			"autoUpdates": "自動アップデート",
@@ -55,12 +52,12 @@
 			"installUpdateBtn": "アップデートをインストール",
 			"themesBrowse": "テーマを参照",
 			"openConsoleOnLaunch": "インスタンス起動時にコンソールを開く",
-			"performanceTitle": "Performance",
-			"reduceAnimations": "Reduce interface animations",
-			"disableBlurEffects": "Disable blur effects",
-			"disableInfiniteAnimations": "Disable continuous loading animations",
-			"disableSkin3dAnimations": "Disable 3D skin viewer animation",
-			"reduceLogAnimations": "Reduce log animations"
+			"performanceTitle": "パフォーマンス",
+			"reduceAnimations": "インターフェースのアニメーションを減らす",
+			"disableBlurEffects": "ブラー効果を無効化",
+			"disableInfiniteAnimations": "連続ロードアニメーションを無効化",
+			"disableSkin3dAnimations": "3Dスキンビューアのアニメーションを無効化",
+			"reduceLogAnimations": "ログのアニメーションを減らす"
 		},
 		"minecraft": {
 			"perfTitle": "パフォーマンス（メモリ）",
@@ -74,11 +71,11 @@
 			"recommendedRamHint": "{min}-{max} GB推奨 · {total} GB検出",
 			"loadingRecommendedRam": "システムRAMを検出中...",
 			"showUnstableLoaders": "不安定なローダーバージョンを表示",
-			"consoleTitle": "Console Options",
-			"consoleHistoryLimit": "History limit",
-			"consoleHistoryHint": "Maximum lines kept in each instance console (100-5000).",
-			"consoleShowLevelTags": "Show level tags",
-			"consoleShowLevelTagsHint": "Not recommended: hiding tags makes it harder to filter logs by level."
+			"consoleTitle": "コンソールオプション",
+			"consoleHistoryLimit": "履歴上限",
+			"consoleHistoryHint": "各インスタンスのコンソールに保持する最大行数 (100-5000)。",
+			"consoleShowLevelTags": "レベルタグを表示",
+			"consoleShowLevelTagsHint": "非推奨：タグを非表示にすると、レベルでログを絞り込みにくくなります。"
 		},
 		"about": {
 			"title": "このアプリについて",
@@ -87,9 +84,9 @@
 			"creditMadeBy": "制作：",
 			"creditAnd": "・",
 			"creditSuffix": "（mitkomm）",
-			"openSource": "Open source",
-			"reportIssue": "Report issue",
-			"themeCreditStart": "Rosé Pine themes by",
+			"openSource": "オープンソース",
+			"reportIssue": "問題を報告",
+			"themeCreditStart": "Rosé Pineテーマ by",
 			"themeCreditName": "Rosé Pine"
 		},
 		"java": {
@@ -115,9 +112,7 @@
 			"envVarsAdd": "追加",
 			"saveBtn": "設定を保存",
 			"saving": "保存中...",
-			"zuluCredit": "Java ランタイムは Azul Zulu (Zulu.org) より提供されています",
-			"curseforgeApiKey": "CurseForge API Key",
-			"curseforgeApiKeyPlaceholder": "Your CurseForge API key (optional)"
+			"zuluCredit": "Java ランタイムは Azul Zulu (Zulu.org) より提供されています"
 		}
 	},
 	"main": {
@@ -227,8 +222,6 @@
 			"uploadSkin": "スキンをアップロード（.png）",
 			"dropSkinHere": "スキンをここにドロップ",
 			"invalidSkinFile": ".pngファイルのみ対応しています",
-			"skinUrlPlaceholder": "画像URL（.png）",
-			"useUrl": "URLを使用",
 			"classic": "クラシック",
 			"slim": "スリム",
 			"capes": "マント",
@@ -247,27 +240,27 @@
 			"changesSaved": "変更を保存しました",
 			"changesSavedDesc": "変更が正常に適用されました。",
 			"unequipPending": "マントを外しました（保存待ち）",
-			"rateLimitTitle": "Too many changes",
-			"rateLimitMessage": "You're making changes too fast. Wait a few seconds before trying again.",
-			"none": "None",
+			"rateLimitTitle": "変更が多すぎます",
+			"rateLimitMessage": "変更が速すぎます。数秒待ってからもう一度お試しください。",
+			"none": "なし",
 			"skinCloset": {
-				"title": "Skin closet",
-				"savedSkins": "Saved skins",
-				"noSavedSkins": "You haven't saved any skins yet.",
-				"equipSkin": "Equip",
-				"renameSkin": "Rename",
-				"deleteSkin": "Delete",
-				"saveAlias": "Save",
-				"cancelAlias": "Cancel",
-				"skinNamePlaceholder": "Skin name",
-				"addedTitle": "Skin saved",
-				"addedDesc": "The skin was added to your closet.",
-				"removedTitle": "Skin removed",
-				"removedDesc": "The skin was removed from your closet.",
-				"equippedTitle": "Skin equipped",
-				"equippedDesc": "The skin was applied successfully.",
-				"renamedTitle": "Skin renamed",
-				"renamedDesc": "The skin name was updated."
+				"title": "スキンクローゼット",
+				"savedSkins": "保存したスキン",
+				"noSavedSkins": "まだスキンを保存していません。",
+				"equipSkin": "装備",
+				"renameSkin": "名前を変更",
+				"deleteSkin": "削除",
+				"saveAlias": "保存",
+				"cancelAlias": "キャンセル",
+				"skinNamePlaceholder": "スキン名",
+				"addedTitle": "スキンを保存しました",
+				"addedDesc": "スキンをクローゼットに追加しました。",
+				"removedTitle": "スキンを削除しました",
+				"removedDesc": "スキンをクローゼットから削除しました。",
+				"equippedTitle": "スキンを装備しました",
+				"equippedDesc": "スキンを適用しました。",
+				"renamedTitle": "スキンの名前を変更しました",
+				"renamedDesc": "スキン名を更新しました。"
 			}
 		}
 	},
@@ -426,18 +419,18 @@
 			"curseForgeRelease": "リリース",
 			"curseForgeBeta": "ベータ",
 			"curseForgeAlpha": "アルファ",
-			"conflictsTitle": "Dependency conflicts",
-			"selectAllOptional": "Select optional",
-			"deselectAllOptional": "Clear optional",
-			"include": "Include",
+			"conflictsTitle": "依存関係の競合",
+			"selectAllOptional": "オプションを選択",
+			"deselectAllOptional": "オプションを解除",
+			"include": "含める",
 			"viewDependencies": "View dependencies",
-			"dependenciesTitle": "Dependencies of {title}",
-			"noDependencies": "This mod has no dependencies.",
+			"dependenciesTitle": "{title}の依存関係",
+			"noDependencies": "このModには依存関係がありません。",
 			"dependencyKind": {
-				"required": "required",
-				"optional": "optional",
-				"embedded": "embedded",
-				"incompatible": "incompatible"
+				"required": "必須",
+				"optional": "オプション",
+				"embedded": "同梱",
+				"incompatible": "非対応"
 			}
 		}
 	},
@@ -448,7 +441,7 @@
 		"recommended": "推奨",
 		"repairHint": "Mod ローダーとゲームバージョンを再インストールします。",
 		"useCustomConfig": "カスタム設定を使用する",
-		"versionChangeWarning": "Changing the version or loader may damage the installation and make mods stop working."
+		"versionChangeWarning": "バージョンまたはローダーを変更すると、インストールが破損し、Modが動作しなくなる可能性があります。"
 	},
 	"createInstance": {
 		"title": "新しいインスタンスを作成",
@@ -670,11 +663,11 @@
 			"category": "カテゴリ",
 			"allCategories": "すべて",
 			"refresh": "更新",
-			"source": "Source",
-			"sourceAll": "All",
+			"source": "ソース",
+			"sourceAll": "すべて",
 			"sourceModrinth": "Modrinth",
 			"sourceCurseForge": "CurseForge",
-			"sourceLocal": "Local"
+			"sourceLocal": "ローカル"
 		},
 		"item": {
 			"by": "作者:",
@@ -684,7 +677,7 @@
 			"installed": "インストール済み",
 			"updateAvailable": "更新",
 			"incompatible": "非対応",
-			"local": "Local"
+			"local": "ローカル"
 		},
 		"detail": {
 			"close": "詳細を閉じる",
@@ -705,20 +698,20 @@
 			"noSelection": "Mod を選択すると詳細が表示されます",
 			"by": "作者:",
 			"dependencies": {
-				"title": "Install {title}",
-				"resolving": "Resolving dependencies...",
-				"noDependencies": "No additional dependencies. {title} will be installed.",
-				"conflictsTitle": "Dependency conflicts",
-				"include": "Include",
-				"installed": "Installed",
-				"cancel": "Cancel",
-				"install": "Install {count} files",
-				"installSingle": "Install 1 file",
+				"title": "{title}をインストール",
+				"resolving": "依存関係を解決中...",
+				"noDependencies": "追加の依存関係はありません。{title}をインストールします。",
+				"conflictsTitle": "依存関係の競合",
+				"include": "含める",
+				"installed": "インストール済み",
+				"cancel": "キャンセル",
+				"install": "{count}個のファイルをインストール",
+				"installSingle": "1個のファイルをインストール",
 				"dependencyKind": {
-					"required": "required",
-					"optional": "optional",
-					"embedded": "embedded",
-					"incompatible": "incompatible"
+					"required": "必須",
+					"optional": "オプション",
+					"embedded": "同梱",
+					"incompatible": "非対応"
 				}
 			}
 		}
@@ -730,12 +723,12 @@
 		"exportingMessage": "{name}を圧縮中..."
 	},
 	"updater": {
-		"availableTitle": "Update available: v{version}",
-		"availableMessage": "It will be downloaded and installed automatically.",
-		"downloadingTitle": "Downloading v{version}",
+		"availableTitle": "更新が利用可能: v{version}",
+		"availableMessage": "自動的にダウンロードおよびインストールされます。",
+		"downloadingTitle": "v{version}をダウンロード中",
 		"progress": "{progress}%",
-		"installingTitle": "Installing v{version}",
-		"installingMessage": "Restarting the launcher...",
-		"errorTitle": "Update error"
+		"installingTitle": "v{version}をインストール中",
+		"installingMessage": "ランチャーを再起動中...",
+		"errorTitle": "更新エラー"
 	}
 }

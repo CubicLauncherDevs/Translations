@@ -86,7 +86,11 @@
 			"discord": "Rejoins notre Discord",
 			"creditMadeBy": "fait par",
 			"creditAnd": "et",
-			"creditSuffix": "(mitkomm)"
+			"creditSuffix": "(mitkomm)",
+			"openSource": "Open source",
+			"reportIssue": "Report issue",
+			"themeCreditStart": "Rosé Pine themes by",
+			"themeCreditName": "Rosé Pine"
 		},
 		"java": {
 			"configTitle": "Configuration Java",
@@ -244,7 +248,27 @@
 			"changesSavedDesc": "Vos modifications ont été appliquées avec succès.",
 			"unequipPending": "Cape retirée (en attente de sauvegarde)",
 			"rateLimitTitle": "Too many changes",
-			"rateLimitMessage": "You're making changes too fast. Wait a few seconds before trying again."
+			"rateLimitMessage": "You're making changes too fast. Wait a few seconds before trying again.",
+			"none": "None",
+			"skinCloset": {
+				"title": "Skin closet",
+				"savedSkins": "Saved skins",
+				"noSavedSkins": "You haven't saved any skins yet.",
+				"equipSkin": "Equip",
+				"renameSkin": "Rename",
+				"deleteSkin": "Delete",
+				"saveAlias": "Save",
+				"cancelAlias": "Cancel",
+				"skinNamePlaceholder": "Skin name",
+				"addedTitle": "Skin saved",
+				"addedDesc": "The skin was added to your closet.",
+				"removedTitle": "Skin removed",
+				"removedDesc": "The skin was removed from your closet.",
+				"equippedTitle": "Skin equipped",
+				"equippedDesc": "The skin was applied successfully.",
+				"renamedTitle": "Skin renamed",
+				"renamedDesc": "The skin name was updated."
+			}
 		}
 	},
 	"launch": {

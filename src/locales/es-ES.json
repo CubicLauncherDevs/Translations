@@ -1,6 +1,6 @@
 {
 	"id": "es-ES",
-	"version": "1.2.0",
+	"version": "1.3.0",
 	"common": {
 		"cancel": "Cancelar",
 		"save": "Guardar",
@@ -23,9 +23,6 @@
 			"java": "Java"
 		},
 		"launcher": {
-			"activeInstancesTitle": "Instancias Activas",
-			"killInstance": "Matar",
-			"noInstances": "No hay instancias corriendo",
 			"generalTitle": "General",
 			"language": "Idioma",
 			"autoUpdates": "Actualizaciones Automáticas",
@@ -55,12 +52,12 @@
 			"installUpdateBtn": "Instalar Actualización",
 			"themesBrowse": "Explorar temas",
 			"openConsoleOnLaunch": "Abrir la consola al iniciar instancias",
-			"performanceTitle": "Performance",
-			"reduceAnimations": "Reduce interface animations",
-			"disableBlurEffects": "Disable blur effects",
-			"disableInfiniteAnimations": "Disable continuous loading animations",
-			"disableSkin3dAnimations": "Disable 3D skin viewer animation",
-			"reduceLogAnimations": "Reduce log animations"
+			"performanceTitle": "Rendimiento",
+			"reduceAnimations": "Reduce las animaciones de la interfaz",
+			"disableBlurEffects": "Desactivar efectos de desenfoque",
+			"disableInfiniteAnimations": "Desactivar las animaciones de carga continua",
+			"disableSkin3dAnimations": "Desactivar la animación del visor de skin 3D",
+			"reduceLogAnimations": "Reduce las animaciones de registro"
 		},
 		"minecraft": {
 			"perfTitle": "Rendimiento (RAM)",
@@ -74,11 +71,11 @@
 			"recommendedRamHint": "{min}-{max} GB recomendados · {total} GB detectados",
 			"loadingRecommendedRam": "Detectando la RAM del sistema...",
 			"showUnstableLoaders": "Mostrar versiones inestables del cargador",
-			"consoleTitle": "Console Options",
-			"consoleHistoryLimit": "History limit",
-			"consoleHistoryHint": "Maximum lines kept in each instance console (100-5000).",
-			"consoleShowLevelTags": "Show level tags",
-			"consoleShowLevelTagsHint": "Not recommended: hiding tags makes it harder to filter logs by level."
+			"consoleTitle": "Opciones de consola",
+			"consoleHistoryLimit": "Límite de historial",
+			"consoleHistoryHint": "Máximo de líneas mantenidas en cada consola de instancia (100-5000).",
+			"consoleShowLevelTags": "Mostrar etiquetas de nivel",
+			"consoleShowLevelTagsHint": "No se recomienda: ocultar las etiquetas hace que sea más difícil filtrar los registros por nivel."
 		},
 		"about": {
 			"title": "Sobre Nosotros",
@@ -87,8 +84,8 @@
 			"creditMadeBy": "hecho por",
 			"creditAnd": "y",
 			"creditSuffix": "(mitkomm)",
-			"openSource": "Open source",
-			"reportIssue": "Report issue",
+			"openSource": "Código abierto",
+			"reportIssue": "Informar del problema",
 			"themeCreditStart": "Rosé Pine themes by",
 			"themeCreditName": "Rosé Pine"
 		},
@@ -115,9 +112,7 @@
 			"envVarsAdd": "Añadir",
 			"saveBtn": "Guardar Ajustes",
 			"saving": "Guardando...",
-			"zuluCredit": "Runtimes de Java proporcionados por Azul Zulu (Zulu.org)",
-			"curseforgeApiKey": "CurseForge API Key",
-			"curseforgeApiKeyPlaceholder": "Your CurseForge API key (optional)"
+			"zuluCredit": "Runtimes de Java proporcionados por Azul Zulu (Zulu.org)"
 		}
 	},
 	"main": {
@@ -227,8 +222,6 @@
 			"uploadSkin": "Subir skin (.png)",
 			"dropSkinHere": "Suelta la skin aquí",
 			"invalidSkinFile": "Solo se permiten archivos .png",
-			"skinUrlPlaceholder": "URL de la imagen (.png)",
-			"useUrl": "Usar URL",
 			"classic": "Clásico",
 			"slim": "Slim",
 			"capes": "Capas",
@@ -247,27 +240,27 @@
 			"changesSaved": "Cambios guardados",
 			"changesSavedDesc": "Tus cambios se han aplicado correctamente.",
 			"unequipPending": "Capa desequipada (pendiente de guardar)",
-			"rateLimitTitle": "Too many changes",
-			"rateLimitMessage": "You're making changes too fast. Wait a few seconds before trying again.",
-			"none": "None",
+			"rateLimitTitle": "Demasiados cambios",
+			"rateLimitMessage": "Estás haciendo cambios demasiado rápido. Espera unos segundos antes de volver a intentarlo.",
+			"none": "Ninguna",
 			"skinCloset": {
-				"title": "Skin closet",
-				"savedSkins": "Saved skins",
-				"noSavedSkins": "You haven't saved any skins yet.",
-				"equipSkin": "Equip",
-				"renameSkin": "Rename",
-				"deleteSkin": "Delete",
-				"saveAlias": "Save",
-				"cancelAlias": "Cancel",
-				"skinNamePlaceholder": "Skin name",
-				"addedTitle": "Skin saved",
-				"addedDesc": "The skin was added to your closet.",
-				"removedTitle": "Skin removed",
-				"removedDesc": "The skin was removed from your closet.",
-				"equippedTitle": "Skin equipped",
-				"equippedDesc": "The skin was applied successfully.",
-				"renamedTitle": "Skin renamed",
-				"renamedDesc": "The skin name was updated."
+				"title": "Armario de skins",
+				"savedSkins": "Skins guardadas",
+				"noSavedSkins": "Aún no has guardado ninguna skin.",
+				"equipSkin": "Equipar",
+				"renameSkin": "Renombrar",
+				"deleteSkin": "Eliminar",
+				"saveAlias": "Guardar",
+				"cancelAlias": "Cancelar",
+				"skinNamePlaceholder": "Nombre de la skin",
+				"addedTitle": "Skin guardada",
+				"addedDesc": "La skin se ha añadido a tu armario.",
+				"removedTitle": "Skin eliminada",
+				"removedDesc": "La skin se ha eliminado de tu armario.",
+				"equippedTitle": "Skin equipada",
+				"equippedDesc": "La skin se ha aplicado correctamente.",
+				"renamedTitle": "Skin renombrada",
+				"renamedDesc": "Se ha actualizado el nombre de la skin."
 			}
 		}
 	},
@@ -426,17 +419,17 @@
 			"curseForgeRelease": "Lanzamiento",
 			"curseForgeBeta": "Beta",
 			"curseForgeAlpha": "Alpha",
-			"conflictsTitle": "Dependency conflicts",
-			"selectAllOptional": "Select optional",
-			"deselectAllOptional": "Clear optional",
-			"include": "Include",
-			"viewDependencies": "View dependencies",
-			"dependenciesTitle": "Dependencies of {title}",
-			"noDependencies": "This mod has no dependencies.",
+			"conflictsTitle": "Conflictos de dependencia",
+			"selectAllOptional": "Seleccionar opcionales",
+			"deselectAllOptional": "Desmarcar opcionales",
+			"include": "Incluir",
+			"viewDependencies": "Ver dependencias",
+			"dependenciesTitle": "Dependencias de {title}",
+			"noDependencies": "Este mod no tiene dependencias.",
 			"dependencyKind": {
-				"required": "required",
-				"optional": "optional",
-				"embedded": "embedded",
+				"required": "obligatorio",
+				"optional": "opcional",
+				"embedded": "embebido",
 				"incompatible": "incompatible"
 			}
 		}
@@ -448,7 +441,7 @@
 		"recommended": "Recomendado",
 		"repairHint": "Esto reinstala el cargador de mods y la versión del juego.",
 		"useCustomConfig": "Usar configuración personalizada",
-		"versionChangeWarning": "Changing the version or loader may damage the installation and make mods stop working."
+		"versionChangeWarning": "Cambiar la versión o el cargador puede dañar la instalación y hacer que los mods dejen de funcionar."
 	},
 	"createInstance": {
 		"title": "Crear Nueva Instancia",
@@ -670,8 +663,8 @@
 			"title": "Filtros",
 			"hideFilters": "Ocultar filtros avanzados",
 			"showFilters": "Mostrar filtros avanzados",
-			"source": "Source",
-			"sourceAll": "All",
+			"source": "Fuente",
+			"sourceAll": "Todos",
 			"sourceModrinth": "Modrinth",
 			"sourceCurseForge": "CurseForge",
 			"sourceLocal": "Local"
@@ -695,7 +688,6 @@
 			"loadingVersions": "Cargando versiones...",
 			"selectVersion": "Seleccionar versión",
 			"readme": "Acerca de",
-			"gallery": "Galería",
 			"install": "Instalar",
 			"uninstall": "Desinstalar",
 			"enable": "Habilitar",
@@ -706,19 +698,19 @@
 			"by": "por",
 			"installedLabel": "Ya instalado",
 			"dependencies": {
-				"title": "Install {title}",
-				"resolving": "Resolving dependencies...",
-				"noDependencies": "No additional dependencies. {title} will be installed.",
-				"conflictsTitle": "Dependency conflicts",
-				"include": "Include",
-				"installed": "Installed",
-				"cancel": "Cancel",
-				"install": "Install {count} files",
-				"installSingle": "Install 1 file",
+				"title": "Instalar {title}",
+				"resolving": "Resolviendo las dependencias...",
+				"noDependencies": "Sin dependencias adicionales. Se instalará {title}.",
+				"conflictsTitle": "Conflictos de dependencia",
+				"include": "Incluir",
+				"installed": "Instalado",
+				"cancel": "Cancelar",
+				"install": "Instalar {count} archivos",
+				"installSingle": "Instalar 1 archivo",
 				"dependencyKind": {
-					"required": "required",
-					"optional": "optional",
-					"embedded": "embedded",
+					"required": "obligatorio",
+					"optional": "opcional",
+					"embedded": "embebido",
 					"incompatible": "incompatible"
 				}
 			}
@@ -731,12 +723,12 @@
 		"exportingMessage": "Comprimiendo {name}..."
 	},
 	"updater": {
-		"availableTitle": "Update available: v{version}",
-		"availableMessage": "It will be downloaded and installed automatically.",
-		"downloadingTitle": "Downloading v{version}",
+		"availableTitle": "Actualización disponible: v{version}",
+		"availableMessage": "Se descargará e instalará automáticamente.",
+		"downloadingTitle": "Descargando v{version}",
 		"progress": "{progress}%",
-		"installingTitle": "Installing v{version}",
-		"installingMessage": "Restarting the launcher...",
-		"errorTitle": "Update error"
+		"installingTitle": "Instalando v{version}",
+		"installingMessage": "Reiniciando el lanzador...",
+		"errorTitle": "Error al actualizar"
 	}
 }

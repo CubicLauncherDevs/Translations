@@ -515,7 +515,8 @@
 		"filterAllCategories": "すべて",
 		"sortRelevance": "関連性",
 		"sortDownloads": "ダウンロード",
-		"sortNewest": "最新"
+		"sortNewest": "最新",
+		"detailsTitle": "Details"
 	},
 	"themes": {
 		"importSuccess": "テーマをインポートしました",
@@ -667,7 +668,8 @@
 			"sourceAll": "すべて",
 			"sourceModrinth": "Modrinth",
 			"sourceCurseForge": "CurseForge",
-			"sourceLocal": "ローカル"
+			"sourceLocal": "ローカル",
+			"clearSearch": "Clear search"
 		},
 		"item": {
 			"by": "作者:",
@@ -730,5 +732,21 @@
 		"installingTitle": "v{version}をインストール中",
 		"installingMessage": "ランチャーを再起動中...",
 		"errorTitle": "更新エラー"
+	},
+	"logWindow": {
+		"actions": "Actions",
+		"copy": "Copy log",
+		"upload": "Upload to mclo.gs",
+		"uploading": "Uploading log...",
+		"clear": "Clear log",
+		"search": "Search logs...",
+		"clearSearch": "Clear search",
+		"previousMatch": "Previous match (Shift+Enter)",
+		"nextMatch": "Next match (Enter)",
+		"levels": "Levels",
+		"all": "All logs",
+		"warnings": "Warnings and errors",
+		"errors": "Errors only",
+		"scrollBottom": "Go to bottom"
 	}
 }

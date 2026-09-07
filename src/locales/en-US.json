@@ -1,5 +1,21 @@
 {
 	"id": "en-US",
+	"logWindow": {
+		"actions": "Actions",
+		"copy": "Copy log",
+		"upload": "Upload to mclo.gs",
+		"uploading": "Uploading log...",
+		"clear": "Clear log",
+		"search": "Search logs...",
+		"clearSearch": "Clear search",
+		"previousMatch": "Previous match (Shift+Enter)",
+		"nextMatch": "Next match (Enter)",
+		"levels": "Levels",
+		"all": "All logs",
+		"warnings": "Warnings and errors",
+		"errors": "Errors only",
+		"scrollBottom": "Go to bottom"
+	},
 	"common": {
 		"cancel": "Cancel",
 		"save": "Save",
@@ -460,6 +476,7 @@
 		"nameLabel": "Instance Name",
 		"namePlaceholder": "E.g. My Instance",
 		"versionLabel": "Version",
+		"detailsTitle": "Details",
 		"iconLabel": "Instance Logo",
 		"noVersionsErr": "No downloaded versions found",
 		"cancel": "Cancel",
@@ -673,6 +690,7 @@
 			"tabCurseForge": "CurseForge",
 			"tabLocal": "Local",
 			"searchModrinth": "Search Modrinth...",
+			"clearSearch": "Clear search",
 			"searchCurseForge": "Search CurseForge...",
 			"searchLocal": "Search installed mods...",
 			"sortBy": "Sort by",

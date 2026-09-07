@@ -515,7 +515,8 @@
 		"filterAllCategories": "Усі",
 		"sortRelevance": "Релевантність",
 		"sortDownloads": "Завантаження",
-		"sortNewest": "Найновіші"
+		"sortNewest": "Найновіші",
+		"detailsTitle": "Details"
 	},
 	"themes": {
 		"importSuccess": "Тему імпортовано",
@@ -667,7 +668,8 @@
 			"sourceAll": "Усі",
 			"sourceModrinth": "Modrinth",
 			"sourceCurseForge": "CurseForge",
-			"sourceLocal": "Локальний"
+			"sourceLocal": "Локальний",
+			"clearSearch": "Clear search"
 		},
 		"item": {
 			"by": "від",
@@ -730,5 +732,21 @@
 		"installingTitle": "Встановлення v{version}",
 		"installingMessage": "Перезапуск лаунчера...",
 		"errorTitle": "Помилка оновлення"
+	},
+	"logWindow": {
+		"actions": "Actions",
+		"copy": "Copy log",
+		"upload": "Upload to mclo.gs",
+		"uploading": "Uploading log...",
+		"clear": "Clear log",
+		"search": "Search logs...",
+		"clearSearch": "Clear search",
+		"previousMatch": "Previous match (Shift+Enter)",
+		"nextMatch": "Next match (Enter)",
+		"levels": "Levels",
+		"all": "All logs",
+		"warnings": "Warnings and errors",
+		"errors": "Errors only",
+		"scrollBottom": "Go to bottom"
 	}
 }

@@ -515,7 +515,8 @@
 		"filterAllCategories": "Tout",
 		"sortRelevance": "Pertinence",
 		"sortDownloads": "Téléchargements",
-		"sortNewest": "Plus récent"
+		"sortNewest": "Plus récent",
+		"detailsTitle": "Details"
 	},
 	"themes": {
 		"importSuccess": "Thème importé",
@@ -667,7 +668,8 @@
 			"sourceAll": "Tout",
 			"sourceModrinth": "Modrinth",
 			"sourceCurseForge": "CurseForge",
-			"sourceLocal": "Local"
+			"sourceLocal": "Local",
+			"clearSearch": "Clear search"
 		},
 		"item": {
 			"by": "par",
@@ -730,5 +732,21 @@
 		"installingTitle": "Installation de v{version}",
 		"installingMessage": "Redémarrage du launcher...",
 		"errorTitle": "Erreur de mise à jour"
+	},
+	"logWindow": {
+		"actions": "Actions",
+		"copy": "Copy log",
+		"upload": "Upload to mclo.gs",
+		"uploading": "Uploading log...",
+		"clear": "Clear log",
+		"search": "Search logs...",
+		"clearSearch": "Clear search",
+		"previousMatch": "Previous match (Shift+Enter)",
+		"nextMatch": "Next match (Enter)",
+		"levels": "Levels",
+		"all": "All logs",
+		"warnings": "Warnings and errors",
+		"errors": "Errors only",
+		"scrollBottom": "Go to bottom"
 	}
 }

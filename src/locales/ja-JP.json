@@ -522,7 +522,14 @@
 		"importSuccess": "テーマをインポートしました",
 		"importSuccessMessage": "テーマのインポートと適用が完了しました。",
 		"importError": "テーマのインポートに失敗しました",
-		"deleteConfirm": "{name} を削除しますか？"
+		"deleteConfirm": "{name} を削除しますか？",
+		"diagnostics": {
+			"title": "Theme resource advisory",
+			"advisory": "These resource counts and estimates are not measured performance. All theme resources and visuals are preserved.",
+			"fonts": "This theme declares {count} font faces. Loading many fonts may increase startup time and memory use.",
+			"css": "Custom CSS is {kib} KiB (UTF-8). A large stylesheet may add parsing work; size alone does not indicate rendering cost.",
+			"background": "Background: {width} x {height} pixels, approximately {mib} MiB for one decoded RGBA image (4 bytes/pixel). Actual memory use varies and may be higher."
+		}
 	},
 	"downloadProgress": {
 		"statusLibs": "ライブラリをダウンロード中",
@@ -620,7 +627,8 @@
 		"AUTH_BLOCKED": "内部エラー: {error}",
 		"AUTH_SESSION_EXPIRED": "セッションの有効期限が切れました。ランチャーを再起動してログインし直してください: {error}",
 		"INST_BUSY": "インスタンスは実行中です",
-		"GENERIC": "予期しないエラーが発生しました: {error}"
+		"GENERIC": "予期しないエラーが発生しました: {error}",
+		"INST_FILES_BUSY": "Wait for this instance's file operation to finish"
 	},
 	"versionDownloader": {
 		"title": "バージョンをダウンロード",
@@ -748,5 +756,51 @@
 		"warnings": "Warnings and errors",
 		"errors": "Errors only",
 		"scrollBottom": "Go to bottom"
+	},
+	"worlds": {
+		"title": "Worlds",
+		"importZip": "Import ZIP",
+		"importFolder": "Import folder",
+		"openSaves": "Open saves",
+		"openFolder": "Open folder",
+		"refresh": "Refresh",
+		"search": "Search worlds…",
+		"sort": "Sort worlds",
+		"name": "World name",
+		"folder": "Folder",
+		"version": "Minecraft version",
+		"gameMode": "Game mode",
+		"lastPlayed": "Last played",
+		"size": "Size",
+		"notCalculated": "Not calculated",
+		"calculateSize": "Calculate size",
+		"export": "Export ZIP",
+		"duplicate": "Duplicate",
+		"rename": "Rename",
+		"delete": "Delete",
+		"openDatapacks": "Open datapacks",
+		"resetIcon": "Reset icon",
+		"resettingIcon": "Resetting icon…",
+		"renameHint": "Changes the name displayed in Minecraft. The folder keeps its name.",
+		"deleteConfirm": "Delete “{name}” (folder: {folder}) and all its files? This cannot be undone.",
+		"unknown": "Unknown",
+		"survival": "Survival",
+		"creative": "Creative",
+		"adventure": "Adventure",
+		"spectator": "Spectator",
+		"hardcore": "Hardcore",
+		"running": "Close Minecraft to import, export or modify its worlds.",
+		"metadataError": "Could not read level.dat. Data from level.dat_old is shown when available. You can open the folder or export the world to inspect it.",
+		"loading": "Loading worlds…",
+		"empty": "This instance has no worlds yet. Play a game or import a world from a folder or ZIP.",
+		"noResults": "No worlds match your search.",
+		"importing": "Importing world…",
+		"exporting": "Exporting world…",
+		"duplicating": "Duplicating world…",
+		"calculating": "Calculating size…",
+		"completed": "Operation completed.",
+		"files": "{count} files",
+		"previous": "Previous",
+		"next": "Next"
 	}
 }

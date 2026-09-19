@@ -1,4 +1,5 @@
 import changelog from './changelog.json';
+import { getLastSync } from './last-sync.js';
 import {
 	computeLocaleEtag,
 	flatten,
@@ -189,6 +190,7 @@ export default {
 			return jsonResponse({
 				service: 'CubicLauncher i18n API',
 				version: '1.3.0',
+				lastSync: await getLastSync(),
 				locales: localeMeta,
 				localeAlias: 'Endpoints accept both short code and full locale id',
 				endpoints: {

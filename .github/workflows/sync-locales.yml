@@ -5,29 +5,74 @@ on:
     - cron: '0 6 * * 1'
   workflow_dispatch:
 
+concurrency:
+  group: sync-locales-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    env:
+      SYNC_TAG: sync-${{ github.run_id }}
     steps:
       - uses: actions/checkout@v4
-
-      - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          fetch-depth: 0
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: '1.3.14'
+
+      - name: Reuse released snapshot on retry
+        id: snapshot
+        run: |
+          if git show-ref --verify --quiet "refs/tags/$SYNC_TAG"; then
+            git checkout --detach "refs/tags/$SYNC_TAG"
+            echo "reused=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Sync missing keys from en-US to other locales
-        run: node tools/sync-locales.js
+        if: steps.snapshot.outputs.reused != 'true'
+        run: bun tools/sync-locales.js
 
       - name: Commit and push changes
+        if: steps.snapshot.outputs.reused != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
+          git add src/locales/
           if git diff --cached --quiet; then
             echo "No changes to commit"
           else
             git commit -m "sync: add missing locale keys from en-US"
             git push
           fi
+
+      - name: Prepare release metadata
+        id: release
+        run: |
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+          echo "date=$(date -u +'%Y-%m-%dT%H:%M:%SZ')" >> "$GITHUB_OUTPUT"
+
+      - name: Publish synchronization release
+        uses: softprops/action-gh-release@v2
+        with:
+          token: ${{ github.token }}
+          tag_name: ${{ env.SYNC_TAG }}
+          target_commitish: ${{ steps.release.outputs.sha }}
+          name: 'Translations sync #${{ github.run_number }}'
+          body: |
+            ## Sincronización de traducciones
+
+            - Fecha de publicación (UTC): ${{ steps.release.outputs.date }}
+            - Commit sincronizado: ${{ steps.release.outputs.sha }}
+            - Ejecución: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+
+            Los archivos JSON adjuntos contienen las traducciones de esta sincronización.
+            Se publica una Release incluso si no hay cambios respecto a la sincronización anterior.
+          files: src/locales/*.json
+          fail_on_unmatched_files: true
+          draft: false
+          prerelease: false

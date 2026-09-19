@@ -63,6 +63,27 @@ Cuando modifiques un idioma, incrementa su `version` (por ejemplo `1.0.1`, `1.1.
 
 Información del servicio, idiomas disponibles y endpoints.
 
+Incluye `lastSync` con la última ejecución exitosa del workflow **Sync locales** de
+[CubicLauncherDevs/Translations](https://github.com/CubicLauncherDevs/Translations):
+
+```json
+{
+	"timestamp": "2026-09-19T04:03:58Z",
+	"status": "success",
+	"url": "https://github.com/CubicLauncherDevs/Translations/actions/runs/35420276838"
+}
+```
+
+`timestamp` corresponde a la última actualización de la ejecución completada en
+GitHub (ISO 8601, UTC). Este dato se consulta automáticamente, sin redesplegar la
+API, y puede ser más reciente que las traducciones servidas por el Worker.
+
+La consulta a GitHub tiene un límite de 3 segundos y una caché de 5 minutos por
+instancia del Worker (además de los 60 segundos de caché HTTP de la respuesta).
+Si GitHub falla, se conserva el último dato disponible en esa instancia.
+`lastSync` es `null` si no hay ejecuciones exitosas o si la consulta falla sin
+datos previos. La portada sigue respondiendo normalmente en ambos casos.
+
 ### `GET /locales`
 
 Lista los idiomas soportados con su short code y su `id` completo.
@@ -221,6 +242,25 @@ bun run deploy
 ```
 
 > También puedes usar `bun run sync-locales` para rellenar claves faltantes de otros idiomas a partir del en-US local.
+
+### Releases automáticas de sincronización
+
+El workflow `.github/workflows/sync-locales.yml` se ejecuta cada lunes a las
+06:00 UTC y también puede iniciarse desde **Actions → Sync locales → Run workflow**.
+Sincroniza las traducciones con Bun, sube los cambios si los hay y publica una
+Release mediante `softprops/action-gh-release`.
+
+Cada ejecución exitosa publica una Release, incluso si no cambió ningún archivo:
+
+- Etiqueta única `sync-<run_id>` y título `Translations sync #<run_number>`.
+- La etiqueta apunta al commit resultante de la sincronización.
+- Todos los archivos `src/locales/*.json` se adjuntan individualmente.
+- La descripción incluye la fecha de publicación UTC, el commit y el enlace a la ejecución.
+
+Si falla la sincronización o la subida del commit, no se publica la Release.
+Al reintentar una ejecución cuya etiqueta ya existe, se recuperan las traducciones
+de esa etiqueta y se actualiza la misma Release con sus archivos, sin duplicarla.
+Se utiliza el `GITHUB_TOKEN` automático con permiso `contents: write`.
 
 ## Configuración
 

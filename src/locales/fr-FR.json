@@ -4,7 +4,8 @@
 	"common": {
 		"cancel": "Annuler",
 		"save": "Enregistrer",
-		"retry": "Réessayer"
+		"retry": "Réessayer",
+		"loading": "Loading..."
 	},
 	"languages": {
 		"es": "Espagnol",
@@ -20,7 +21,8 @@
 		"tabs": {
 			"launcher": "Lanceur",
 			"minecraft": "Minecraft",
-			"java": "Java"
+			"java": "Java",
+			"personalize": "Personalize"
 		},
 		"launcher": {
 			"generalTitle": "Général",
@@ -57,7 +59,12 @@
 			"disableBlurEffects": "Désactiver les effets de flou",
 			"disableInfiniteAnimations": "Désactiver les animations de chargement continues",
 			"disableSkin3dAnimations": "Désactiver l’animation du visualiseur de skin 3D",
-			"reduceLogAnimations": "Réduire les animations du journal"
+			"reduceLogAnimations": "Réduire les animations du journal",
+			"prominentNotifications": "Prominent notifications",
+			"prominentNotificationsHint": "Large, centered notices with uppercase titles and easy-to-read messages. They last at least 8 seconds; click to dismiss.",
+			"testNotification": "Test notification",
+			"testNotificationTitle": "This is how your notices look",
+			"testNotificationMessage": "This is a test message. You can adjust its position, size and title in Personalize."
 		},
 		"minecraft": {
 			"perfTitle": "Performances (RAM)",
@@ -113,6 +120,49 @@
 			"saveBtn": "Enregistrer les Paramètres",
 			"saving": "Enregistrement...",
 			"zuluCredit": "Runtimes Java fournis par Azul Zulu (Zulu.org)"
+		},
+		"interface": {
+			"title": "Interface",
+			"scale": "Interface scale",
+			"scaleHint": "Adjust the size of the entire window without modifying the theme. 100% preserves its original scale.",
+			"density": "Density",
+			"densityHint": "Adjust spacing between cards, content lists and settings while preserving their sizes and the theme's typography.",
+			"scaleError": "Could not apply the interface change",
+			"densities": {
+				"theme": "Theme default",
+				"compact": "Compact",
+				"comfortable": "Comfortable"
+			}
+		},
+		"personalize": {
+			"notificationsTitle": "Notifications",
+			"layoutTitle": "Position and size",
+			"textTitle": "Text",
+			"behaviorTitle": "Behavior",
+			"enabled": "Customize notifications",
+			"enabledHint": "Enable these options to change notices. Turn them off to restore classic notifications while keeping your preferences.",
+			"position": "Position",
+			"size": "Card size",
+			"title_size": "Title size",
+			"message_size": "Message size",
+			"duration_seconds": "Duration",
+			"durationHint": "Applies to timed notices. Downloads stay visible until they finish.",
+			"uppercase_title": "Uppercase title",
+			"bold_title": "Bold title",
+			"reset": "Restore defaults",
+			"positions": {
+				"top-left": "Top left",
+				"top-center": "Top center",
+				"top-right": "Top right",
+				"bottom-left": "Bottom left",
+				"bottom-center": "Bottom center",
+				"bottom-right": "Bottom right"
+			},
+			"sizes": {
+				"compact": "Compact",
+				"normal": "Normal",
+				"wide": "Wide"
+			}
 		}
 	},
 	"main": {
@@ -432,7 +482,9 @@
 				"embedded": "intégré",
 				"incompatible": "incompatible"
 			}
-		}
+		},
+		"downloadingMods": "Downloading mods",
+		"downloadingVersion": "Downloading version"
 	},
 	"instanceEditor": {
 		"generalTitle": "Général",
@@ -634,7 +686,8 @@
 		"SERVERS_INVALID": "Enter a valid server name and address, with a port between 1 and 65535.",
 		"SERVERS_CONFLICT": "The server list changed. Close the editor and refresh before trying again.",
 		"SERVERS_BUSY": "Close Minecraft and wait for instance file operations to finish.",
-		"SERVERS_NOT_FOUND": "The instance could not be found."
+		"SERVERS_NOT_FOUND": "The instance could not be found.",
+		"INST_MOD_ICONS": "Could not load mod icons: {error}"
 	},
 	"versionDownloader": {
 		"title": "Télécharger les Versions",
@@ -650,7 +703,30 @@
 		"forgeJavaHint": "Forge nécessite Java 21, à configurer dans Paramètres > Java.",
 		"neoForgeJavaHint": "NeoForge nécessite Java 17/21, à configurer dans Paramètres > Java.",
 		"loaderSearchPlaceholder": "Rechercher une version du loader...",
-		"stableTooltip": "Version stable recommandée"
+		"stableTooltip": "Version stable recommandée",
+		"descriptions": {
+			"vanilla": "The original Minecraft experience, straight from Mojang.",
+			"fabric": "A lightweight loader to customize Minecraft with mods.",
+			"forge": "A wide ecosystem of mods to build your own experience.",
+			"neoforge": "A modern platform for the next generation of mods.",
+			"quilt": "An open, community-driven mod loader.",
+			"optifine": "Improve performance and customize your graphics with shaders."
+		},
+		"searchLabel": "Find a version",
+		"availableVersions": "Available versions",
+		"installedCount": "installed",
+		"installedCountSingular": "installed",
+		"stable": "Stable",
+		"preview": "Preview",
+		"historical": "Historical",
+		"recommended": "Recommended",
+		"otherBuild": "Other build",
+		"emptyHint": "Try another search or adjust the version filters.",
+		"clearSearch": "Clear search",
+		"retry": "Retry",
+		"installHint": "Installed versions will be available when creating or editing an instance.",
+		"optiFineHint": "OptiFine, Minecraft and the required Java runtime will be installed. Enable unstable loaders in Settings to show preview versions.",
+		"loadError": "Could not load the catalog. Press Refresh to try again."
 	},
 	"market": {
 		"empty": {
@@ -683,7 +759,10 @@
 			"sourceModrinth": "Modrinth",
 			"sourceCurseForge": "CurseForge",
 			"sourceLocal": "Local",
-			"clearSearch": "Clear search"
+			"clearSearch": "Clear search",
+			"sortAuto": "Automatic",
+			"sortNameAsc": "Name A–Z",
+			"sortNameDesc": "Name Z–A"
 		},
 		"item": {
 			"by": "par",
@@ -729,7 +808,88 @@
 					"embedded": "intégré",
 					"incompatible": "incompatible"
 				}
-			}
+			},
+			"projectInfo": "Project information",
+			"selectedVersion": "Selected version",
+			"modSource": "Mod source",
+			"modLoaders": "Mod loaders",
+			"categories": "Categories",
+			"externalResources": "External resources",
+			"issues": "Issues",
+			"sourceCode": "Source code",
+			"technicalInfo": "Technical information",
+			"clientSide": "Client side",
+			"serverSide": "Server side",
+			"license": "License",
+			"projectId": "Project ID",
+			"sideRequired": "Required",
+			"sideOptional": "Optional",
+			"sideUnsupported": "Unsupported",
+			"sideUnknown": "Unknown",
+			"notProvided": "Not specified",
+			"copyValue": "Copy {label}: {value}",
+			"copied": "Copied to clipboard",
+			"copyFailed": "Could not copy to clipboard",
+			"backToCatalog": "Back to catalog",
+			"loadingDetails": "Loading details…",
+			"installation": "Installation"
+		},
+		"manage": {
+			"title": "Manage installed content",
+			"addFiles": "Add files",
+			"openFolder": "Open folder",
+			"refresh": "Refresh",
+			"view": "Installed content view",
+			"list": "List",
+			"cards": "Cards",
+			"status": "Status",
+			"allStates": "All",
+			"enabled": "Enabled",
+			"disabled": "Disabled",
+			"selectItem": "Select {name}",
+			"selectAll": "Select results",
+			"clearSelection": "Clear selection",
+			"counts": "{total} installed · {filtered} shown · {selected} selected",
+			"selectedActions": "Selection actions",
+			"enableSelected": "Enable selected",
+			"disableSelected": "Disable selected",
+			"deleteSelected": "Delete selected",
+			"deleteConfirm": "Delete these {count} files from this instance? This action cannot be undone.",
+			"instanceBusy": "Close Minecraft before modifying installed files.",
+			"packHint": "These packs are installed. Configure their activation inside Minecraft.",
+			"unknownVersion": "No version",
+			"progress": "Processing {completed} of {total} files…",
+			"result": "{succeeded} completed · {failed} incomplete",
+			"showFailures": "Show incomplete files ({count})",
+			"copyFailures": "Copy full report",
+			"moreFailures": "And {count} more files. Copy the full report to see all details.",
+			"fileExists": "A file with this name already exists. Skipped to preserve the existing file.",
+			"invalidFile": "Unsupported format for this section. Use .jar for mods and .zip for packs."
+		},
+		"browse": {
+			"title": "Explore content",
+			"compatibility": "Instance compatibility",
+			"search": "Search",
+			"searching": "Searching for content…",
+			"results": "{count} results",
+			"clearFilters": "Clear filters",
+			"retry": "Retry",
+			"loadMore": "Load more",
+			"loadingMore": "Loading more results…",
+			"endResults": "You've seen all the results",
+			"searchError": "The search could not be completed. Please try again."
+		},
+		"categories": {
+			"adventure": "Adventure",
+			"magic": "Magic",
+			"utility": "Utilities",
+			"optimization": "Optimization",
+			"equipment": "Equipment",
+			"worldgen": "World generation",
+			"food": "Food",
+			"library": "Libraries",
+			"decoration": "Decoration",
+			"storage": "Storage"
 		}
 	},
 	"notifications": {
@@ -745,7 +905,45 @@
 		"progress": "{progress}%",
 		"installingTitle": "Installation de v{version}",
 		"installingMessage": "Redémarrage du launcher...",
-		"errorTitle": "Erreur de mise à jour"
+		"errorTitle": "Erreur de mise à jour",
+		"title": "Update Cubic Launcher",
+		"check": "Check for updates",
+		"view": "View update",
+		"download": "Download update",
+		"install": "Restart and update",
+		"retry": "Retry",
+		"notNow": "Not now",
+		"later": "Later",
+		"close": "Close",
+		"releaseNotes": "What's new",
+		"receiving": "Receiving update…",
+		"status": {
+			"idle": "Not checked yet",
+			"checking": "Checking for updates…",
+			"available": "A new version is available",
+			"downloading": "Downloading update…",
+			"ready": "Update ready to install",
+			"installing": "Installing update…",
+			"restarting": "Restarting the launcher…",
+			"updated": "You're up to date",
+			"error": "Could not complete the update"
+		},
+		"messages": {
+			"idle": "Check for updates to find out if a new version is available.",
+			"checking": "We're checking for a new version of Cubic Launcher.",
+			"available": "Read what's new and download the update whenever you're ready.",
+			"downloading": "You can close this window and keep using the launcher. The download will continue in the background.",
+			"ready": "Everything is ready. Restart and update now, or come back from Settings later.",
+			"installing": "We're applying the update. The launcher will restart when it's finished.",
+			"restarting": "The update is installed. We're opening the new version.",
+			"updated": "There are no updates available for this installation."
+		},
+		"errors": {
+			"check": "Could not check for updates. Check your connection and try again.",
+			"download": "Could not download or verify the update. You can retry the download.",
+			"install": "Installation failed. Retrying will download the package again to prepare it.",
+			"restart": "The update is installed, but the launcher could not restart. You can retry restarting."
+		}
 	},
 	"logWindow": {
 		"actions": "Actions",

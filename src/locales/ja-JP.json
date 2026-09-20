@@ -312,6 +312,35 @@
 				"renamedTitle": "スキンの名前を変更しました",
 				"renamedDesc": "スキン名を更新しました。"
 			}
+		},
+		"accountSetup": {
+			"title": "Add account",
+			"subtitle": "Choose how you want to sign in.",
+			"offline": "Offline",
+			"premium": "Premium (Microsoft)",
+			"ely": "Ely.by",
+			"cubicAuth": "CubicAuth",
+			"authinject": "Authinject",
+			"cubicAuthServer": "Connect your account to the preconfigured CubicAuth server: auth.cubiclauncher.org.",
+			"useAccount": "Use this account",
+			"invalidName": "The name must be 3–16 characters long and contain only letters, numbers and underscores (_).",
+			"descriptions": {
+				"offline": "Use a player name",
+				"premium": "Sign in with Microsoft",
+				"ely": "Connect your Ely.by account",
+				"cubicAuth": "auth.cubiclauncher.org",
+				"authinject": "Use a custom server"
+			}
+		},
+		"elySkin": {
+			"title": "Ely.by skin",
+			"change": "Change skin on Ely.by",
+			"description": "Choose or upload a skin on Ely.by and apply it to this account. Your browser will open; you may need to sign in there.",
+			"refresh": "Refresh skin and head",
+			"refreshHint": "The preview and head refresh when you return to the launcher. If the change takes time to appear, press Refresh.",
+			"loadError": "Could not load the Ely.by skin. Check your connection and refresh again.",
+			"unavailable": "Preview unavailable",
+			"noSkin": "This account does not have an active skin yet."
 		}
 	},
 	"launch": {
@@ -641,7 +670,17 @@
 		"licenseBullet3": "このソフトウェアは無保証で提供されます。",
 		"viewLicense": "ライセンス全文を表示",
 		"acceptLicense": "ライセンス条項に同意します",
-		"acceptLicenseNote": "続けるにはチェックを入れてください。"
+		"acceptLicenseNote": "続けるにはチェックを入れてください。",
+		"skipTutorial": "Skip tutorial",
+		"skipConfirmTitle": "Skip the tutorial?",
+		"skipConfirmDesc": "The rest of the launcher tour will be skipped.",
+		"skipLicenseNotice": "Before getting started, you will need to accept the license in the last step.",
+		"continueTutorial": "Continue tutorial",
+		"confirmSkip": "Yes, skip",
+		"accounts": {
+			"active": "Active account: {name}",
+			"later": "You can also click Next and set up your account later."
+		}
 	},
 	"errors": {
 		"title": "エラー",
@@ -687,7 +726,10 @@
 		"SERVERS_CONFLICT": "The server list changed. Close the editor and refresh before trying again.",
 		"SERVERS_BUSY": "Close Minecraft and wait for instance file operations to finish.",
 		"SERVERS_NOT_FOUND": "The instance could not be found.",
-		"INST_MOD_ICONS": "Could not load mod icons: {error}"
+		"INST_MOD_ICONS": "Could not load mod icons: {error}",
+		"warningTitle": "Warning",
+		"INST_VERSION_NOT_FOUND": "Version {version} is not installed. It will be downloaded now.",
+		"INST_MINECRAFT_JAR": "Could not prepare minecraft.jar: {error}"
 	},
 	"versionDownloader": {
 		"title": "バージョンをダウンロード",
@@ -1040,5 +1082,25 @@
 		"noResults": "No servers match your search.",
 		"running": "Close Minecraft before editing the server list. Status checks remain available.",
 		"deleteConfirm": "Remove “{name}” from this instance's multiplayer list?"
+	},
+	"minecraftJar": {
+		"description": "Add mods to the contents of minecraft.jar or select a complete custom JAR for this instance.",
+		"add": "Add to Minecraft.jar",
+		"replace": "Replace Minecraft.jar",
+		"restore": "Restore original JAR",
+		"current": "Base JAR:",
+		"original": "Original version JAR",
+		"empty": "No mods have been added to the JAR.",
+		"remove": "Remove",
+		"removeNamed": "Remove {name}",
+		"moveUp": "Move {name} up",
+		"moveDown": "Move {name} down",
+		"orderHint": "Mods are applied from top to bottom. Later mods take priority when replacing files.",
+		"savedHint": "Changes are saved automatically. Restoring the base JAR keeps the mod list.",
+		"compatibility": "Use files compatible with this instance's version. Forge/NeoForge with ModLauncher does not support this customization.",
+		"running": "Close Minecraft before modifying the JAR.",
+		"loading": "Loading JAR configuration…",
+		"working": "Saving JAR changes…",
+		"retry": "Retry"
 	}
 }

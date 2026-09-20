@@ -1,5 +1,25 @@
 {
 	"id": "en-US",
+	"minecraftJar": {
+		"description": "Add mods to the contents of minecraft.jar or select a complete custom JAR for this instance.",
+		"add": "Add to Minecraft.jar",
+		"replace": "Replace Minecraft.jar",
+		"restore": "Restore original JAR",
+		"current": "Base JAR:",
+		"original": "Original version JAR",
+		"empty": "No mods have been added to the JAR.",
+		"remove": "Remove",
+		"removeNamed": "Remove {name}",
+		"moveUp": "Move {name} up",
+		"moveDown": "Move {name} down",
+		"orderHint": "Mods are applied from top to bottom. Later mods take priority when replacing files.",
+		"savedHint": "Changes are saved automatically. Restoring the base JAR keeps the mod list.",
+		"compatibility": "Use files compatible with this instance's version. Forge/NeoForge with ModLauncher does not support this customization.",
+		"running": "Close Minecraft before modifying the JAR.",
+		"loading": "Loading JAR configuration…",
+		"working": "Saving JAR changes…",
+		"retry": "Retry"
+	},
 	"servers": {
 		"title": "Servers",
 		"add": "Add server",
@@ -347,7 +367,7 @@
 		"title": "User Profile",
 		"usernamePlaceholder": "Username",
 		"offline": "Offline",
-		"authInjector": "Authlib Injector",
+		"authInjector": "Ely.by and more",
 		"cancel": "Cancel",
 		"loginMicrosoft": "Login with Microsoft",
 		"logout": "Logout",
@@ -370,6 +390,25 @@
 		"yes": "Yes",
 		"no": "No",
 		"selectAccount": "Select an account to view its details",
+		"accountSetup": {
+			"title": "Add account",
+			"subtitle": "Choose how you want to sign in.",
+			"offline": "Offline",
+			"premium": "Premium (Microsoft)",
+			"ely": "Ely.by",
+			"cubicAuth": "CubicAuth",
+			"authinject": "Authinject",
+			"cubicAuthServer": "Connect your account to the preconfigured CubicAuth server: auth.cubiclauncher.org.",
+			"useAccount": "Use this account",
+			"invalidName": "The name must be 3–16 characters long and contain only letters, numbers and underscores (_).",
+			"descriptions": {
+				"offline": "Use a player name",
+				"premium": "Sign in with Microsoft",
+				"ely": "Connect your Ely.by account",
+				"cubicAuth": "auth.cubiclauncher.org",
+				"authinject": "Use a custom server"
+			}
+		},
 		"skinCape": {
 			"title": "Skin & Cape",
 			"loading": "Loading Minecraft profile...",
@@ -428,8 +467,18 @@
 			"success": "Logged in successfully!",
 			"error": "Failed to login: {error}"
 		},
+		"elySkin": {
+			"title": "Ely.by skin",
+			"change": "Change skin on Ely.by",
+			"description": "Choose or upload a skin on Ely.by and apply it to this account. Your browser will open; you may need to sign in there.",
+			"refresh": "Refresh skin and head",
+			"refreshHint": "The preview and head refresh when you return to the launcher. If the change takes time to appear, press Refresh.",
+			"loadError": "Could not load the Ely.by skin. Check your connection and refresh again.",
+			"unavailable": "Preview unavailable",
+			"noSkin": "This account does not have an active skin yet."
+		},
 		"yggdrasilModal": {
-			"title": "Authlib Injector",
+			"title": "Ely.by and more",
 			"serverInstruction": "Enter the Yggdrasil authentication server URL.",
 			"serverLabel": "Server",
 			"serverPlaceholder": "e.g. littlesk.in",
@@ -731,6 +780,12 @@
 	"welcome": {},
 	"tutorial": {
 		"skip": "Skip",
+		"skipTutorial": "Skip tutorial",
+		"skipConfirmTitle": "Skip the tutorial?",
+		"skipConfirmDesc": "The rest of the launcher tour will be skipped.",
+		"skipLicenseNotice": "Before getting started, you will need to accept the license in the last step.",
+		"continueTutorial": "Continue tutorial",
+		"confirmSkip": "Yes, skip",
 		"next": "Next",
 		"prev": "Previous",
 		"finish": "Start",
@@ -739,8 +794,12 @@
 			"desc": "A modern, fast Minecraft launcher. Manage multiple instances, mods, Java configurations and more. Let's take a quick tour!"
 		},
 		"slide2": {
-			"title": "Your Accounts",
-			"desc": "Manage your Minecraft accounts here. Add Microsoft accounts, offline accounts or custom servers, and switch between them easily."
+			"title": "Which account would you like to use?",
+			"desc": "Choose an account type to set it up now. You can add more accounts or switch the active account from your profile later."
+		},
+		"accounts": {
+			"active": "Active account: {name}",
+			"later": "You can also click Next and set up your account later."
 		},
 		"slide3": {
 			"title": "Your Instances",
@@ -793,7 +852,9 @@
 		"SERVERS_BUSY": "Close Minecraft and wait for instance file operations to finish.",
 		"SERVERS_NOT_FOUND": "The instance could not be found.",
 		"title": "Error",
+		"warningTitle": "Warning",
 		"INST_NOT_FOUND": "Instance not found",
+		"INST_VERSION_NOT_FOUND": "Version {version} is not installed. It will be downloaded now.",
 		"INST_MOD_NOT_FOUND": "Mod not found",
 		"INST_ALREADY_STARTED": "Instance is already running",
 		"INST_FILES_BUSY": "Wait for this instance's file operation to finish",
@@ -803,6 +864,7 @@
 		"INST_NAME_INVALID": "Invalid instance name: {error}",
 		"INST_SRC_INVALID": "Invalid source path",
 		"INST_JRE_MISSING": "Java {version} is not installed. Install it in Settings > Java.",
+		"INST_MINECRAFT_JAR": "Could not prepare minecraft.jar: {error}",
 		"FS_READ_DIR": "Could not read directory '{path}': {error}",
 		"FS_READ_FILE": "Could not read file '{path}': {error}",
 		"FS_CREATE_DIR": "Could not create directory '{path}': {error}",

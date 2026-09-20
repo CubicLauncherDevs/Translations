@@ -117,5 +117,40 @@
 		"version": "1.3.0",
 		"timestamp": "2026-09-05T20:16:43.864854Z",
 		"details": { "note": "Translated pending strings and removed obsolete keys from en-US" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "es-ES",
+		"version": "1.3.1",
+		"timestamp": "2026-09-20T07:58:54.000Z",
+		"details": { "note": "Translated pending Spanish strings, aligned tutorial steps with en-US and removed obsolete updater keys" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "de-DE",
+		"version": "1.3.1",
+		"timestamp": "2026-09-20T08:14:54.000Z",
+		"details": { "note": "Translated pending German strings, aligned tutorial steps with en-US and removed obsolete updater keys" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "fr-FR",
+		"version": "1.3.1",
+		"timestamp": "2026-09-20T08:14:54.000Z",
+		"details": { "note": "Translated pending French strings, aligned tutorial steps with en-US and removed obsolete updater keys" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "ja-JP",
+		"version": "1.3.1",
+		"timestamp": "2026-09-20T08:14:54.000Z",
+		"details": { "note": "Translated pending Japanese strings, aligned tutorial steps with en-US and removed obsolete updater keys" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "uk-UA",
+		"version": "1.3.1",
+		"timestamp": "2026-09-20T08:14:54.000Z",
+		"details": { "note": "Translated pending Ukrainian strings, aligned tutorial steps with en-US and removed obsolete updater keys" }
 	}
 ]

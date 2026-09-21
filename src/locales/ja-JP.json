@@ -250,7 +250,8 @@
 			"errorTitle": "エラー",
 			"errorUnknown": "不明なエラー",
 			"successTitle": "接続しました！",
-			"successSubtitle": "アカウントが連携されました。"
+			"successSubtitle": "アカウントが連携されました。",
+			"createAccount": "Create account"
 		},
 		"activate": "有効化",
 		"accountSingular": "保存済みアカウント",
@@ -978,6 +979,11 @@
 			"download": "アップデートのダウンロードまたは検証に失敗しました。ダウンロードを再試行できます。",
 			"install": "インストールに失敗しました。再試行すると、準備のためパッケージを再度ダウンロードします。",
 			"restart": "アップデートはインストール済みですが、ランチャーを再起動できませんでした。再起動を再試行できます。"
+		},
+		"channel": {
+			"label": "Update channel",
+			"stable": "Stable",
+			"prerelease": "Pre-release"
 		}
 	},
 	"logWindow": {
@@ -1094,6 +1100,37 @@
 		"running": "JAR を変更する前に Minecraft を終了してください。",
 		"loading": "JAR の設定を読み込み中…",
 		"working": "JAR の変更を保存中…",
-		"retry": "再試行"
+		"retry": "再試行",
+		"moreInfo": "More info"
+	},
+	"migration": {
+		"title": "Migrate",
+		"description": "Bring your instances to CubicLauncher: worlds, mods, settings and packs. Data is copied, keeping the originals. Sign in to your accounts from CubicLauncher.",
+		"official": "Official launcher",
+		"officialHint": "Minecraft: Java Edition profiles",
+		"detect": "Find installations",
+		"browse": "Choose folder",
+		"scanning": "Looking for instances…",
+		"officialFolder": "Select the .minecraft folder containing launcher_profiles.json.",
+		"multimcFolder": "Select the launcher folder, its instances folder or an individual instance.",
+		"empty": "No instances found. Try choosing your launcher folder manually.",
+		"selected": "{count} of {total} instances selected",
+		"toggleAll": "Select / deselect all",
+		"shared": "This profile shares its game directory with other profiles. Each selected instance will receive a copy of the same data.",
+		"targetName": "Name in CubicLauncher",
+		"reinstallsComponents": "Published versions of the detected components will be reinstalled. Local library and argument changes from their patches will not be copied.",
+		"invalidNames": "Use valid, unique names that differ from your existing instances.",
+		"import": "Migrate {count} instances",
+		"progress": "Instance {index} of {count}",
+		"preparing": "Preparing files…",
+		"copying": "Copying data…",
+		"installing": "Saving instance…",
+		"cancelling": "Cancelling and cleaning up…",
+		"summary": "{success} of {total} instances migrated",
+		"success": "Migrated",
+		"error": "Migration failed",
+		"cancelled": "Cancelled",
+		"downloadHint": "Versions and loaders for migrated instances are added to the download queue. You can check their installation there.",
+		"done": "Done"
 	}
 }

@@ -1,5 +1,35 @@
 {
 	"id": "en-US",
+	"migration": {
+		"title": "Migrate",
+		"description": "Bring your instances to CubicLauncher: worlds, mods, settings and packs. Data is copied, keeping the originals. Sign in to your accounts from CubicLauncher.",
+		"official": "Official launcher",
+		"officialHint": "Minecraft: Java Edition profiles",
+		"detect": "Find installations",
+		"browse": "Choose folder",
+		"scanning": "Looking for instances…",
+		"officialFolder": "Select the .minecraft folder containing launcher_profiles.json.",
+		"multimcFolder": "Select the launcher folder, its instances folder or an individual instance.",
+		"empty": "No instances found. Try choosing your launcher folder manually.",
+		"selected": "{count} of {total} instances selected",
+		"toggleAll": "Select / deselect all",
+		"shared": "This profile shares its game directory with other profiles. Each selected instance will receive a copy of the same data.",
+		"targetName": "Name in CubicLauncher",
+		"reinstallsComponents": "Published versions of the detected components will be reinstalled. Local library and argument changes from their patches will not be copied.",
+		"invalidNames": "Use valid, unique names that differ from your existing instances.",
+		"import": "Migrate {count} instances",
+		"progress": "Instance {index} of {count}",
+		"preparing": "Preparing files…",
+		"copying": "Copying data…",
+		"installing": "Saving instance…",
+		"cancelling": "Cancelling and cleaning up…",
+		"summary": "{success} of {total} instances migrated",
+		"success": "Migrated",
+		"error": "Migration failed",
+		"cancelled": "Cancelled",
+		"downloadHint": "Versions and loaders for migrated instances are added to the download queue. You can check their installation there.",
+		"done": "Done"
+	},
 	"minecraftJar": {
 		"description": "Add mods to the contents of minecraft.jar or select a complete custom JAR for this instance.",
 		"add": "Add to Minecraft.jar",
@@ -18,7 +48,8 @@
 		"running": "Close Minecraft before modifying the JAR.",
 		"loading": "Loading JAR configuration…",
 		"working": "Saving JAR changes…",
-		"retry": "Retry"
+		"retry": "Retry",
+		"moreInfo": "More info"
 	},
 	"servers": {
 		"title": "Servers",
@@ -290,6 +321,11 @@
 		"notNow": "Not now",
 		"later": "Later",
 		"close": "Close",
+		"channel": {
+			"label": "Update channel",
+			"stable": "Stable",
+			"prerelease": "Pre-release"
+		},
 		"releaseNotes": "What's new",
 		"receiving": "Receiving update…",
 		"status": {
@@ -491,6 +527,7 @@
 			"passwordLabel": "Password",
 			"back": "Back",
 			"login": "Log in",
+			"createAccount": "Create account",
 			"loading": "Connecting...",
 			"errorTitle": "Error",
 			"errorUnknown": "Unknown error",
@@ -738,7 +775,7 @@
 		"nameInvalidChars": "The name contains invalid characters. Use only ASCII letters, numbers, and basic punctuation.",
 		"nameInvalidNonAscii": "The name can only contain ASCII characters (a-z, 0-9, -, _).",
 		"importInstanceTab": "Import Instance",
-		"importInstanceHint": "Select a .zip file exported from MultiMC, Prism Launcher or a compatible launcher.",
+		"importInstanceHint": "Select a .zip file exported from MultiMC, Prism Launcher, PineconeMC or a compatible launcher.",
 		"importInstanceSelect": "Select .zip",
 		"importInstanceAnalyzing": "Analyzing...",
 		"importInstanceChangeFile": "Change file",

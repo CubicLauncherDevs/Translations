@@ -119,7 +119,29 @@
 			"envVarsAdd": "Ajouter",
 			"saveBtn": "Enregistrer les Paramètres",
 			"saving": "Enregistrement...",
-			"zuluCredit": "Runtimes Java fournis par Azul Zulu (Zulu.org)"
+			"zuluCredit": "Runtimes Java fournis par Azul Zulu (Zulu.org)",
+			"provider": "Java provider",
+			"providerAuto": "Automatic (recommended)",
+			"providerAutoHint": "Uses Azul Zulu and Eclipse Temurin depending on availability.",
+			"installedVendor": "Provider: {vendor}",
+			"providerMismatch": "Uninstall and install again to use {vendor}.",
+			"vendors": {
+				"zulu": "Azul Zulu",
+				"zuluHint": "Default option. Balanced performance, available for Java 8, 17, 21 and 25.",
+				"temurin": "Eclipse Temurin",
+				"temurinHint": "Eclipse distribution, the OpenJDK reference.",
+				"liberica": "BellSoft Liberica",
+				"libericaHint": "Long-term support builds from BellSoft.",
+				"graalvm": "GraalVM",
+				"graalvmHint": "Graal JIT compiler, often faster with mods. JDK for Java 17 and newer.",
+				"corretto": "Amazon Corretto",
+				"correttoHint": "Amazon builds with long-term support. Distributed as JDK.",
+				"microsoft": "Microsoft OpenJDK",
+				"microsoftHint": "Microsoft builds, used by many Minecraft launchers. Distributed as JDK.",
+				"semeru": "IBM Semeru (OpenJ9)",
+				"semeruHint": "OpenJ9 virtual machine. Uses less RAM, useful on low-memory systems."
+			},
+			"providersCredit": "Java runtimes provided by Azul, Eclipse Temurin, BellSoft, Amazon, Microsoft, IBM and GraalVM through foojay."
 		},
 		"interface": {
 			"title": "Interface",
@@ -568,7 +590,9 @@
 		"recommended": "Recommandé",
 		"repairHint": "Cela réinstalle le chargeur de mods et la version du jeu.",
 		"useCustomConfig": "Utiliser une configuration personnalisée",
-		"versionChangeWarning": "Changer la version ou le loader peut endommager l’installation et empêcher les mods de fonctionner."
+		"versionChangeWarning": "Changer la version ou le loader peut endommager l’installation et empêcher les mods de fonctionner.",
+		"jvmArgs": "JVM Arguments",
+		"jvmArgsHint": "Extra JVM arguments for this instance, appended after the global ones. Separate arguments with spaces or new lines."
 	},
 	"createInstance": {
 		"title": "Créer une Nouvelle Instance",
@@ -1125,7 +1149,10 @@
 		"empty": "Aucun serveur enregistré dans cette instance. Ajoutez votre premier serveur.",
 		"noResults": "Aucun serveur ne correspond à votre recherche.",
 		"running": "Fermez Minecraft avant de modifier la liste des serveurs. La vérification de leur état reste disponible.",
-		"deleteConfirm": "Supprimer « {name} » de la liste multijoueur de cette instance ?"
+		"deleteConfirm": "Supprimer « {name} » de la liste multijoueur de cette instance ?",
+		"copyIp": "Copy IP",
+		"ipCopied": "IP copied",
+		"copyFailed": "Could not copy the IP to the clipboard."
 	},
 	"minecraftJar": {
 		"description": "Ajoutez des mods au contenu de minecraft.jar ou sélectionnez un JAR personnalisé complet pour cette instance.",

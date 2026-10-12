@@ -154,7 +154,8 @@
 				"theme": "テーマの既定値",
 				"compact": "コンパクト",
 				"comfortable": "ゆったり"
-			}
+			},
+			"reset": "Reset interface"
 		},
 		"personalize": {
 			"notificationsTitle": "通知",
@@ -184,7 +185,10 @@
 				"compact": "コンパクト",
 				"normal": "標準",
 				"wide": "ワイド"
-			}
+			},
+			"resetNotifications": "Reset notifications",
+			"previewTitle": "Preview",
+			"previewDuration": "Hides after {seconds}s"
 		},
 		"storage": {
 			"title": "Storage",
@@ -667,7 +671,8 @@
 		"sortRelevance": "関連性",
 		"sortDownloads": "ダウンロード",
 		"sortNewest": "最新",
-		"detailsTitle": "詳細"
+		"detailsTitle": "詳細",
+		"removeIcon": "Remove icon"
 	},
 	"themes": {
 		"importSuccess": "テーマをインポートしました",
@@ -884,7 +889,8 @@
 			"installed": "インストール済み",
 			"updateAvailable": "更新",
 			"incompatible": "非対応",
-			"local": "ローカル"
+			"local": "ローカル",
+			"doubleClickInstall": "Double click the card to install"
 		},
 		"detail": {
 			"close": "詳細を閉じる",
@@ -1002,6 +1008,43 @@
 			"library": "ライブラリ",
 			"decoration": "装飾",
 			"storage": "収納"
+		},
+		"quickInstall": {
+			"installing": "Installing…",
+			"retry": "Retry",
+			"noCompatibleVersion": "No version supports this instance's Minecraft version and loader.",
+			"noDownload": "Could not resolve the download for {name}.",
+			"fileExists": "{name} already exists. Refresh the list or review the installed versions.",
+			"disabledDependency": "The dependency {name} is disabled. Enable it before installing.",
+			"conflict": "This mod is incompatible with {name}, which is already installed.",
+			"dependencyConflict": "Dependencies request conflicting versions. Review the mod's details.",
+			"instanceChanged": "The instance version changed. Try installing again."
+		},
+		"modVersions": {
+			"update": "Update",
+			"updating": "Updating…",
+			"updateAll": "Update all",
+			"updateAllHint": "Check compatible updates for all your mods, including those hidden by filters.",
+			"checkingFile": "Checking versions for {name}",
+			"updatingFile": "Updating {name}",
+			"batchResult": "Updated: {updated} · Up to date: {current} · Skipped: {skipped} · Failed: {failed}",
+			"skippedHint": "Pack mods, files without an identified provider, versions without compatible updates, and cancelled tasks are skipped.",
+			"cancelPending": "Cancel remaining",
+			"cancelled": "Remaining updates were cancelled.",
+			"duplicateProject": "Multiple versions of this mod are installed. Choose which one to keep before updating.",
+			"current": "Installed",
+			"compatible": "Compatible",
+			"check": "Check for updates",
+			"updateTo": "Update to {version}",
+			"upToDate": "You have the latest compatible version.",
+			"change": "Apply selected version",
+			"replaceHint": "Replaces the current version and preserves its enabled or disabled state.",
+			"unidentified": "This file has not been linked to Modrinth or CurseForge yet. Its versions cannot be checked.",
+			"incompatible": "This version is not compatible with the instance's Minecraft version and loader.",
+			"busy": "Wait for the current mod operation to finish.",
+			"missingTarget": "The selection does not include a valid version of the mod.",
+			"previewTitle": "Change version of {title}",
+			"confirm": "Apply change ({count} files)"
 		}
 	},
 	"notifications": {
@@ -1053,7 +1096,9 @@
 			"label": "Update channel",
 			"stable": "Stable",
 			"prerelease": "Pre-release"
-		}
+		},
+		"lastChecked": "Last successful check: {date}",
+		"checkAgain": "Check again"
 	},
 	"logWindow": {
 		"actions": "操作",
@@ -1203,6 +1248,75 @@
 		"error": "Migration failed",
 		"cancelled": "Cancelled",
 		"downloadHint": "Versions and loaders for migrated instances are added to the download queue. You can check their installation there.",
-		"done": "Done"
+		"done": "Done",
+		"xmcl": "X Minecraft Launcher",
+		"xmclHint": "Instances from x-minecraft-launcher (XMCL)",
+		"xmclFolder": "Select the XMCL data folder (the one containing instances.json or instances)."
+	},
+	"mrpackExport": {
+		"author": "Author",
+		"authorOptional": "Author (optional)",
+		"title": "Export .mrpack",
+		"name": "Modpack name",
+		"version": "Modpack version",
+		"summary": "Summary (optional)",
+		"files": "Files to export",
+		"hint": "Select files to include. Exact published downloads are referenced when available; configurations and other files are included as overrides. Sizes are uncompressed.",
+		"defaults": "Restore defaults",
+		"selectAll": "Select all",
+		"selectNone": "Deselect all",
+		"selection": "{count} files selected · {size}",
+		"empty": "No exportable files. You can still export Minecraft and loader metadata.",
+		"loading": "Reading instance files…",
+		"exporting": "Preparing files, resolving exact downloads and writing .mrpack…",
+		"retry": "Retry",
+		"cancel": "Cancel",
+		"export": "Export .mrpack"
+	},
+	"modpack": {
+		"title": "Modpack",
+		"installationVersion": "Game / loader version",
+		"needsInventory": "The original inventory must be recovered to identify the mods in this pack",
+		"restoreInventory": "Recover inventory",
+		"fromScratch": "From scratch",
+		"fromScratchHint": "Choose Minecraft and a loader to create your own instance.",
+		"basedOnPack": "Based on a modpack",
+		"basedOnPackHint": "Browse Modrinth, CurseForge or import a local file.",
+		"changeMethod": "Change creation method",
+		"importInstanceHint": "From a .zip archive",
+		"migrateInstanceHint": "From another launcher",
+		"ownership": "Mod ownership",
+		"own": "Own",
+		"pack": "Pack",
+		"all": "All",
+		"showAll": "Show all mods",
+		"providedBy": "This mod is provided by: {pack}",
+		"protected": "This mod is protected. Unlock the pack to modify it.",
+		"modified": "Modified from the published pack",
+		"locked": "Protected pack",
+		"unlocked": "Unlocked pack",
+		"unlock": "Unlock pack",
+		"lock": "Protect pack",
+		"update": "Update modpack",
+		"updateSource": "Update source",
+		"publishedVersion": "Published version",
+		"localFile": "Local file (.mrpack / .zip)",
+		"chooseFile": "Choose file",
+		"process": "Process",
+		"added": "Added files",
+		"removed": "Removed files",
+		"changed": "Changed files",
+		"conflicts": "Conflicts",
+		"conflictsHint": "Choose what to do with each modified file before applying the update.",
+		"resolve": "Choose resolution",
+		"keep": "Keep my file",
+		"replace": "Use pack file",
+		"apply": "Apply",
+		"updated": "Modpack updated successfully.",
+		"working": "Processing modpack…",
+		"noVersions": "No other published versions are available.",
+		"retry": "Reload",
+		"close": "Close",
+		"readError": "Could not read the modpack file."
 	}
 }

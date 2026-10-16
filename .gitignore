@@ -4,3 +4,7 @@ dist/
 .env
 .dev.vars
 *.log
+# Lockfile canónico del proyecto: package-lock.json (el build de Cloudflare
+# usa npm; bun 1.2.15 del entorno no lee el bun.lock del formato nuevo).
+bun.lock
+bun.lockb

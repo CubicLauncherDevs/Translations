@@ -23,6 +23,7 @@ Mini servidor de internacionalización para [CubicLauncher](https://github.com/C
 │   ├── fetch-locales.js  # Descarga traducciones desde GitHub (opcional)
 │   └── sync-locales.js   # Sincroniza claves faltantes con en-US (local)
 ├── wrangler.json         # Configuración de Cloudflare Workers
+├── flake.nix             # Dev shell reproducible con Nix (bun, node)
 ├── tsconfig.json
 └── package.json
 ```
@@ -42,6 +43,40 @@ bun install
 | `bun run build` | Verifica tipos con TypeScript |
 | `bun run fetch-locales` | Descarga las últimas traducciones desde GitHub |
 | `bun run sync-locales` | Sincroniza archivos locales con la referencia en-US |
+
+### Desarrollo con Nix
+
+El repositorio incluye un `flake.nix` con un dev shell que trae `bun`, `nodejs` y
+`git`. Con flakes habilitados:
+
+```bash
+nix develop        # entra al shell con bun y node disponibles
+bun install
+bun run dev
+```
+
+#### `workerd` en NixOS
+
+El runtime `workerd` que usa Wrangler es un binario enlazado dinámicamente para
+glibc genérico y, si tu NixOS no tiene `programs.nix-ld` habilitado,
+`/lib64/ld-linux-x86-64.so.2` apunta al `stub-ld` y el arranque falla con
+`Could not start dynamically linked executable`.
+
+Habilita nix-ld en `configuration.nix` y reconstruye:
+
+```nix
+programs.nix-ld.enable = true;
+programs.nix-ld.libraries = with pkgs; [
+  glibc
+  stdenv.cc.cc.lib
+];
+```
+
+```bash
+sudo nixos-rebuild switch --flake /etc/nixos#nixos
+```
+
+Tras reconstruir, `bun run dev` funciona sin configuración extra.
 
 ## Versionado de idiomas
 
@@ -86,14 +121,38 @@ datos previos. La portada sigue respondiendo normalmente en ambos casos.
 
 ### `GET /locales`
 
-Lista los idiomas soportados con su short code y su `id` completo.
+Lista los idiomas soportados con su short code, su `id` completo y su nivel de
+traducción.
 
 ```json
 [
-	{ "code": "fr", "id": "fr-FR", "label": "Français", "flag": "🇫🇷" },
-	{ "code": "de", "id": "de-DE", "label": "Deutsch", "flag": "🇩🇪" }
+	{
+		"code": "fr",
+		"id": "fr-FR",
+		"label": "Français",
+		"flag": "🇫🇷",
+		"total": 1136,
+		"translated": 881,
+		"missing": 0,
+		"percentage": 77.6
+	},
+	{ "code": "de", "id": "de-DE", "label": "Deutsch", "flag": "🇩🇪", "total": 1136, "translated": 868, "missing": 0, "percentage": 76.4 }
 ]
 ```
+
+#### Nivel de traducción
+
+`percentage` (0–100, un decimal) se calcula comparando cada idioma con `en-US`,
+que es la referencia y siempre marca `100`:
+
+- `total`: número de claves en `en-US`.
+- `translated`: claves presentes en el idioma cuyo valor **difiere** del inglés.
+- `missing`: claves de `en-US` ausentes en el idioma.
+
+Una clave cuyo texto sigue siendo idéntico al inglés se considera **no
+traducida**, ya que el script `sync-locales` rellena las claves faltantes
+copiando el valor de `en-US`. La portada (`GET /`) incluye el `percentage` de
+cada idioma junto a `code`, `label` y `flag`.
 
 ### `GET /{locale}`
 

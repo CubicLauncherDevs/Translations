@@ -93,14 +93,91 @@ export function getLocaleVersion(dict: LocaleDict): string | undefined {
 	return typeof dict.version === 'string' ? dict.version : undefined;
 }
 
-export async function computeLocaleEtag(locale: string, dict: LocaleDict): Promise<string> {
-	const text = JSON.stringify(dict);
-	const bytes = new TextEncoder().encode(text);
+export interface LocaleProgress {
+	total: number;
+	translated: number;
+	missing: number;
+	percentage: number;
+}
+
+const progressCache = new Map<string, LocaleProgress>();
+
+export function getLocaleProgress(locale: string): LocaleProgress {
+	const cached = progressCache.get(locale);
+	if (cached) return cached;
+
+	const reference = getFlat('en');
+	const total = Object.keys(reference).length;
+
+	if (locale === 'en' || !locales[locale]) {
+		const result: LocaleProgress = { total, translated: total, missing: 0, percentage: total ? 100 : 0 };
+		progressCache.set(locale, result);
+		return result;
+	}
+
+	const flat = getFlat(locale);
+	let translated = 0;
+	let missing = 0;
+
+	for (const key in reference) {
+		if (!(key in flat)) {
+			missing++;
+		} else if (flat[key] !== reference[key]) {
+			translated++;
+		}
+	}
+
+	const percentage = total ? Math.round((translated / total) * 1000) / 10 : 0;
+	const result: LocaleProgress = { total, translated, missing, percentage };
+	progressCache.set(locale, result);
+	return result;
+}
+
+async function etagFromSerialized(locale: string, serialized: string): Promise<string> {
+	const bytes = new TextEncoder().encode(serialized);
 	const buffer = await crypto.subtle.digest('SHA-256', bytes);
 	const hash = Array.from(new Uint8Array(buffer))
 		.map((b) => b.toString(16).padStart(2, '0'))
 		.join('');
 	return `W/"${locale}-${hash.slice(0, 16)}"`;
+}
+
+export interface LocalePayload {
+	/** JSON indentado con 2 espacios (cuerpo por defecto de `GET /{locale}`). */
+	pretty: string;
+	/** JSON indentado con tabulaciones (cuerpo de las descargas de archivo). */
+	prettyTabs: string;
+	/** JSON indentado del diccionario aplanado (`?flat=true`). */
+	flatPretty: string;
+	/** ETag débil, estable para un mismo contenido. */
+	etag: string;
+}
+
+// Los diccionarios se cargan una vez por isolate y no cambian en runtime, así
+// que el serializado y el ETag se calculan una sola vez por idioma.
+const payloadCache = new Map<string, Promise<LocalePayload>>();
+
+async function buildLocalePayload(locale: string, dict: LocaleDict): Promise<LocalePayload> {
+	// El ETag se deriva del JSON compacto: mismo valor que antes de cachear.
+	const compact = JSON.stringify(dict);
+	return {
+		pretty: JSON.stringify(dict, null, 2),
+		prettyTabs: JSON.stringify(dict, null, '\t'),
+		flatPretty: JSON.stringify(flatten(dict), null, 2),
+		etag: await etagFromSerialized(locale, compact),
+	};
+}
+
+export function getLocalePayload(locale: string): Promise<LocalePayload> | null {
+	const dict = locales[locale];
+	if (!dict) return null;
+
+	let cached = payloadCache.get(locale);
+	if (!cached) {
+		cached = buildLocalePayload(locale, dict);
+		payloadCache.set(locale, cached);
+	}
+	return cached;
 }
 
 export function resolveTranslation(

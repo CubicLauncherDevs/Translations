@@ -1,9 +1,8 @@
 import changelog from './changelog.json';
 import { getLastSync } from './last-sync.js';
 import {
-	computeLocaleEtag,
-	flatten,
-	getLocale,
+	getLocalePayload,
+	getLocaleProgress,
 	getLocaleVersion,
 	getNestedValue,
 	localeIds,
@@ -29,8 +28,8 @@ const corsHeaders = {
 	'Access-Control-Allow-Headers': 'Content-Type, Authorization',
 };
 
-function jsonResponse(data: unknown, status = 200, extraHeaders: Record<string, string> = {}) {
-	return new Response(JSON.stringify(data, null, 2), {
+function serializedJsonResponse(body: string, status = 200, extraHeaders: Record<string, string> = {}) {
+	return new Response(body, {
 		status,
 		headers: {
 			'Content-Type': 'application/json',
@@ -39,6 +38,10 @@ function jsonResponse(data: unknown, status = 200, extraHeaders: Record<string, 
 			...extraHeaders,
 		},
 	});
+}
+
+function jsonResponse(data: unknown, status = 200, extraHeaders: Record<string, string> = {}) {
+	return serializedJsonResponse(JSON.stringify(data, null, 2), status, extraHeaders);
 }
 
 function errorResponse(message: string, status = 400) {
@@ -56,6 +59,20 @@ function notModifiedResponse(etag: string) {
 	});
 }
 
+// Compara `If-None-Match` con el ETag actual tolerando listas, `*` y prefijos
+// débiles (`W/`). Así un launcher que ya tiene el recurso recibe 304 y evita
+// volver a descargar el diccionario completo.
+function etagMatches(header: string | null, etag: string): boolean {
+	if (!header) return false;
+
+	const normalize = (value: string) => value.trim().replace(/^W\//, '');
+	const candidates = header.split(',');
+	if (candidates.some((candidate) => candidate.trim() === '*')) return true;
+
+	const target = normalize(etag);
+	return candidates.some((candidate) => normalize(candidate) === target);
+}
+
 function serializeDictValue(value: DictValue | undefined): unknown {
 	if (value === undefined) return null;
 	if (typeof value === 'string') return value;
@@ -63,44 +80,43 @@ function serializeDictValue(value: DictValue | undefined): unknown {
 }
 
 async function downloadResponse(locale: string): Promise<Response> {
-	const dict = locales[locale];
-	if (!dict) {
+	const payloadPromise = getLocalePayload(locale);
+	if (!payloadPromise) {
 		return errorResponse(`Locale '${locale}' not found`, 404);
 	}
-	const etag = await computeLocaleEtag(locale, dict);
+	const payload = await payloadPromise;
 	const filename = `${localeIds[locale] ?? locale}.json`;
-	return new Response(JSON.stringify(dict, null, '\t'), {
+	return new Response(payload.prettyTabs, {
 		status: 200,
 		headers: {
 			'Content-Type': 'application/json; charset=utf-8',
 			'Content-Disposition': `attachment; filename="${filename}"`,
 			'Cache-Control': 'public, max-age=60',
-			ETag: etag,
-			'X-Locale-Version': getLocaleVersion(dict) ?? 'unknown',
+			ETag: payload.etag,
+			'X-Locale-Version': getLocaleVersion(locales[locale]) ?? 'unknown',
 			...corsHeaders,
 		},
 	});
 }
 
-async function handleGetLocale(request: Request, env: Env, locale: string): Promise<Response> {
-	const dict = locales[locale];
-	if (!dict) {
+async function handleGetLocale(request: Request, locale: string): Promise<Response> {
+	const payloadPromise = getLocalePayload(locale);
+	if (!payloadPromise) {
 		return errorResponse(`Locale '${locale}' not found`, 404);
 	}
+	const payload = await payloadPromise;
 
-	const etag = await computeLocaleEtag(locale, dict);
 	const clientEtag = request.headers.get('If-None-Match');
-	if (clientEtag && clientEtag === etag) {
-		return notModifiedResponse(etag);
+	if (etagMatches(clientEtag, payload.etag)) {
+		return notModifiedResponse(payload.etag);
 	}
 
 	const url = new URL(request.url);
 	const flatRequested = url.searchParams.get('flat') === 'true';
-	const body = flatRequested ? flatten(dict) : dict;
 
-	return jsonResponse(body, 200, {
-		ETag: etag,
-		'X-Locale-Version': getLocaleVersion(dict) ?? 'unknown',
+	return serializedJsonResponse(flatRequested ? payload.flatPretty : payload.pretty, 200, {
+		ETag: payload.etag,
+		'X-Locale-Version': getLocaleVersion(locales[locale]) ?? 'unknown',
 	});
 }
 
@@ -189,9 +205,14 @@ export default {
 		if (parts.length === 0) {
 			return jsonResponse({
 				service: 'CubicLauncher i18n API',
-				version: '1.3.0',
+				version: '1.4.0',
 				lastSync: await getLastSync(),
-				locales: localeMeta,
+				locales: localeMeta.map(({ code, label, flag }) => ({
+					code,
+					label,
+					flag,
+					percentage: getLocaleProgress(code).percentage,
+				})),
 				localeAlias: 'Endpoints accept both short code and full locale id',
 				endpoints: {
 					listLocales: '/locales',
@@ -239,6 +260,7 @@ export default {
 					id: localeIds[code],
 					label,
 					flag,
+					...getLocaleProgress(code),
 				})),
 			);
 		}
@@ -257,7 +279,7 @@ export default {
 
 		// GET /{locale}
 		if (parts.length === 1) {
-			return handleGetLocale(request, env, locale);
+			return handleGetLocale(request, locale);
 		}
 
 		// GET /{locale}/nested/path/to/key

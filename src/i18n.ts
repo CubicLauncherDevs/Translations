@@ -100,6 +100,72 @@ export interface LocaleProgress {
 	percentage: number;
 }
 
+// Claves que pueden mantener el mismo valor que `en-US` sin contar como no
+// traducidas: nombres propios, marcas, URLs, formatos de placeholder y términos
+// que la comunidad de ese idioma conserva en inglés. Se declaran por idioma
+// porque palabras como «Normal» o «Error» solo coinciden en algunos idiomas.
+const identicalKeysByLocale: Record<string, readonly string[]> = {
+	es: [
+		'modpack.title',
+		'migration.xmcl',
+		'servers.ping',
+		'settings.tabs.minecraft',
+		'settings.tabs.java',
+		'settings.personalize.sizes.normal',
+		'settings.launcher.generalTitle',
+		'settings.about.creditSuffix',
+		'settings.java.vendors.zulu',
+		'settings.java.vendors.temurin',
+		'settings.java.vendors.liberica',
+		'settings.java.vendors.graalvm',
+		'settings.java.vendors.corretto',
+		'settings.java.vendors.microsoft',
+		'settings.java.vendors.semeru',
+		'userMenu.no',
+		'userMenu.accountSetup.premium',
+		'userMenu.accountSetup.ely',
+		'userMenu.accountSetup.cubicAuth',
+		'userMenu.accountSetup.authinject',
+		'userMenu.accountSetup.descriptions.cubicAuth',
+		'userMenu.yggdrasilModal.errorTitle',
+		'instanceView.playtimeSeconds',
+		'instanceView.playtimeMinutes',
+		'instanceView.playtimeHours',
+		'instanceView.playtimeHoursMinutes',
+		'instanceView.playtimeDays',
+		'instanceView.playtimeDaysMinutes',
+		'instanceView.playtimeDaysHours',
+		'instanceView.playtimeDaysHoursMinutes',
+		'instanceView.status.error',
+		'instanceView.tabs.mods',
+		'instanceView.shaders.title',
+		'instanceView.downloadMods.dependencyKind.incompatible',
+		'instanceView.downloadMods.compatible',
+		'instanceView.downloadMods.sourceModrinth',
+		'instanceView.downloadMods.sourceCurseForge',
+		'instanceView.downloadMods.curseForgeBeta',
+		'instanceView.downloadMods.curseForgeAlpha',
+		'instanceEditor.generalTitle',
+		'instanceEditor.options.title',
+		'optionsProfiles.contentPlaceholder',
+		'createInstance.manualTab',
+		'createInstance.localTab',
+		'createInstance.localModpackTab',
+		'createInstance.curseforgeTab',
+		'tutorial.licenseName',
+		'errors.title',
+		'market.modVersions.compatible',
+		'market.filter.sourceModrinth',
+		'market.filter.sourceCurseForge',
+		'market.filter.sourceLocal',
+		'market.filter.tabModrinth',
+		'market.filter.tabCurseForge',
+		'market.item.incompatible',
+		'market.item.local',
+		'market.detail.dependencies.dependencyKind.incompatible',
+	],
+};
+
 const progressCache = new Map<string, LocaleProgress>();
 
 export function getLocaleProgress(locale: string): LocaleProgress {
@@ -116,13 +182,14 @@ export function getLocaleProgress(locale: string): LocaleProgress {
 	}
 
 	const flat = getFlat(locale);
+	const identicalAllowed = new Set(identicalKeysByLocale[locale] ?? []);
 	let translated = 0;
 	let missing = 0;
 
 	for (const key in reference) {
 		if (!(key in flat)) {
 			missing++;
-		} else if (flat[key] !== reference[key]) {
+		} else if (flat[key] !== reference[key] || identicalAllowed.has(key)) {
 			translated++;
 		}
 	}

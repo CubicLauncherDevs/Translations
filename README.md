@@ -146,13 +146,20 @@ traducción.
 que es la referencia y siempre marca `100`:
 
 - `total`: número de claves en `en-US`.
-- `translated`: claves presentes en el idioma cuyo valor **difiere** del inglés.
+- `translated`: claves presentes en el idioma cuyo valor **difiere** del inglés,
+  más las claves marcadas como idénticas permitidas (ver abajo).
 - `missing`: claves de `en-US` ausentes en el idioma.
 
 Una clave cuyo texto sigue siendo idéntico al inglés se considera **no
 traducida**, ya que el script `sync-locales` rellena las claves faltantes
-copiando el valor de `en-US`. La portada (`GET /`) incluye el `percentage` de
-cada idioma junto a `code`, `label` y `flag`.
+copiando el valor de `en-US`. Sin embargo, hay claves que de forma intencionada
+mantienen el inglés en un idioma: nombres propios, marcas, URLs, formatos de
+placeholder y términos que la comunidad usa tal cual (por ejemplo `Minecraft`,
+`Modrinth`, `Azul Zulu` o `Mods`). Esas claves se declaran en
+`identicalKeysByLocale` dentro de `src/i18n.ts` y cuentan como traducidas, de
+modo que un idioma con todo el texto traducido alcanza el `100%` sin tener que
+falsear esas cadenas. La portada (`GET /`) incluye el `percentage` de cada
+idioma junto a `code`, `label` y `flag`.
 
 ### `GET /{locale}`
 

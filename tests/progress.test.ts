@@ -28,7 +28,7 @@ test('GET /locales exposes each locale translation progress against en-US', asyn
 		expect(locale.translated + locale.missing).toBeLessThanOrEqual(locale.total);
 
 		if (locale.code !== 'en') {
-			expect(locale.percentage).toBeLessThan(100);
+			expect(locale.percentage).toBeLessThanOrEqual(100);
 			expect(locale.translated).toBeGreaterThan(0);
 		}
 	}

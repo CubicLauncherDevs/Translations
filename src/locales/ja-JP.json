@@ -83,7 +83,13 @@
 			"consoleHistoryLimit": "履歴上限",
 			"consoleHistoryHint": "各インスタンスのコンソールに保持する最大行数 (100-5000)。",
 			"consoleShowLevelTags": "レベルタグを表示",
-			"consoleShowLevelTagsHint": "非推奨：タグを非表示にすると、レベルでログを絞り込みにくくなります。"
+			"consoleShowLevelTagsHint": "非推奨：タグを非表示にすると、レベルでログを絞り込みにくくなります。",
+			"downloadProviderTitle": "Download provider",
+			"downloadProviderLabel": "Download server",
+			"downloadProviderOfficial": "Official (Mojang)",
+			"downloadProviderOfficialHint": "Official servers. Recommended outside China.",
+			"downloadProviderBmclapi": "BMCLAPI (China)",
+			"downloadProviderBmclapiHint": "Mirror for players in China with slow downloads. Falls back to the official servers if it fails."
 		},
 		"about": {
 			"title": "このアプリについて",
@@ -376,7 +382,8 @@
 				"equippedDesc": "スキンを適用しました。",
 				"renamedTitle": "スキンの名前を変更しました",
 				"renamedDesc": "スキン名を更新しました。"
-			}
+			},
+			"uploadHint": "Drag your skin or click to upload"
 		},
 		"accountSetup": {
 			"title": "アカウントを追加",

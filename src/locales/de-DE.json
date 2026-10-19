@@ -83,7 +83,13 @@
 			"consoleHistoryLimit": "Verlaufslimit",
 			"consoleHistoryHint": "Maximale Zeilen pro Instanzkonsole (100-5000).",
 			"consoleShowLevelTags": "Level-Tags anzeigen",
-			"consoleShowLevelTagsHint": "Nicht empfohlen: Ausgeblendete Tags erschweren das Filtern von Logs nach Level."
+			"consoleShowLevelTagsHint": "Nicht empfohlen: Ausgeblendete Tags erschweren das Filtern von Logs nach Level.",
+			"downloadProviderTitle": "Download provider",
+			"downloadProviderLabel": "Download server",
+			"downloadProviderOfficial": "Official (Mojang)",
+			"downloadProviderOfficialHint": "Official servers. Recommended outside China.",
+			"downloadProviderBmclapi": "BMCLAPI (China)",
+			"downloadProviderBmclapiHint": "Mirror for players in China with slow downloads. Falls back to the official servers if it fails."
 		},
 		"about": {
 			"title": "Über uns",
@@ -376,7 +382,8 @@
 				"equippedDesc": "Der Skin wurde erfolgreich angewendet.",
 				"renamedTitle": "Skin umbenannt",
 				"renamedDesc": "Der Skin-Name wurde aktualisiert."
-			}
+			},
+			"uploadHint": "Drag your skin or click to upload"
 		},
 		"accountSetup": {
 			"title": "Konto hinzufügen",

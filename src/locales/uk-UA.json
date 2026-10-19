@@ -83,7 +83,13 @@
 			"consoleHistoryLimit": "Ліміт історії",
 			"consoleHistoryHint": "Максимум рядків у консолі кожного інстанса (100–5000).",
 			"consoleShowLevelTags": "Показувати мітки рівня",
-			"consoleShowLevelTagsHint": "Не рекомендується: приховані мітки ускладнюють фільтрування журналу за рівнем."
+			"consoleShowLevelTagsHint": "Не рекомендується: приховані мітки ускладнюють фільтрування журналу за рівнем.",
+			"downloadProviderTitle": "Download provider",
+			"downloadProviderLabel": "Download server",
+			"downloadProviderOfficial": "Official (Mojang)",
+			"downloadProviderOfficialHint": "Official servers. Recommended outside China.",
+			"downloadProviderBmclapi": "BMCLAPI (China)",
+			"downloadProviderBmclapiHint": "Mirror for players in China with slow downloads. Falls back to the official servers if it fails."
 		},
 		"about": {
 			"title": "Про лаунчер",
@@ -376,7 +382,8 @@
 				"equippedDesc": "Скін успішно застосовано.",
 				"renamedTitle": "Скін перейменовано",
 				"renamedDesc": "Назву скіна оновлено."
-			}
+			},
+			"uploadHint": "Drag your skin or click to upload"
 		},
 		"accountSetup": {
 			"title": "Додати обліковий запис",

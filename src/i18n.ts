@@ -4,12 +4,13 @@ import es from './locales/es-ES.json';
 import fr from './locales/fr-FR.json';
 import uk from './locales/uk-UA.json';
 import ja from './locales/ja-JP.json';
+import ru from './locales/ru-RU.json';
 
 export type DictValue = string | { [key: string]: DictValue };
 export type LocaleDict = Record<string, DictValue>;
 export type FlatDict = Record<string, string>;
 
-export const locales: Record<string, LocaleDict> = { en, es, fr, de, uk, ja };
+export const locales: Record<string, LocaleDict> = { en, es, fr, de, uk, ja, ru };
 
 export const localeIds: Record<string, string> = Object.fromEntries(
 	Object.entries(locales).map(([code, dict]) => {
@@ -35,6 +36,7 @@ export const localeMeta = [
 	{ code: 'de', label: 'Deutsch', flag: '🇩🇪' },
 	{ code: 'uk', label: 'Українська', flag: '🇺🇦' },
 	{ code: 'ja', label: '日本語', flag: '🇯🇵' },
+	{ code: 'ru', label: 'Русский', flag: '🇷🇺' },
 ] as const;
 
 let flatCache: Map<string, FlatDict> | null = null;

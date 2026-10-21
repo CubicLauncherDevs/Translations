@@ -187,5 +187,12 @@
 		"version": "1.4.0",
 		"timestamp": "2026-10-17T00:00:00.000Z",
 		"details": { "note": "Translated pending Japanese strings for mrpack export, modpacks, migration, storage, Java providers, options profiles and market, and removed obsolete keys" }
+	},
+	{
+		"type": "locale.added",
+		"locale": "ru-RU",
+		"version": "1.0.0",
+		"timestamp": "2026-10-21T00:00:00.000Z",
+		"details": { "note": "Added Russian locale" }
 	}
 ]

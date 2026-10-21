@@ -383,7 +383,8 @@
 				"renamedTitle": "Skin umbenannt",
 				"renamedDesc": "Der Skin-Name wurde aktualisiert."
 			},
-			"uploadHint": "Drag your skin or click to upload"
+			"uploadHint": "Drag your skin or click to upload",
+			"modelDetected": "Detected from the skin. You can change it."
 		},
 		"accountSetup": {
 			"title": "Konto hinzufügen",

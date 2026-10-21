@@ -383,7 +383,8 @@
 				"renamedTitle": "スキンの名前を変更しました",
 				"renamedDesc": "スキン名を更新しました。"
 			},
-			"uploadHint": "Drag your skin or click to upload"
+			"uploadHint": "Drag your skin or click to upload",
+			"modelDetected": "Detected from the skin. You can change it."
 		},
 		"accountSetup": {
 			"title": "アカウントを追加",

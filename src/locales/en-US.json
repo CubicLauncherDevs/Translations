@@ -232,7 +232,8 @@
 		"fr": "French",
 		"de": "German",
 		"uk": "Ukrainian",
-		"ja": "Japanese"
+		"ja": "Japanese",
+		"ru": "Russian"
 	},
 	"settings": {
 		"title": "Settings",
@@ -296,9 +297,14 @@
 		},
 		"storage": {
 			"title": "Storage",
+			"instancesTitle": "Instances",
 			"description": "Choose which disk stores your instances. Moving uses hardlinks: no extra disk space and the original folder is only removed after each instance is fully transferred.",
 			"currentDir": "Current location",
 			"instanceCount": "Instances",
+			"defaultLocation": "Default",
+			"customLocation": "Custom",
+			"copyPath": "Copy path",
+			"copied": "Copied",
 			"change": "Change location",
 			"reset": "Restore default location",
 			"pickTitle": "Select the new instances folder",
@@ -317,6 +323,15 @@
 			"usage": "Disk usage",
 			"files": "{count} file(s)",
 			"empty": "Empty",
+			"breakdownTitle": "Usage by folder",
+			"working": "Updating…",
+			"categories": {
+				"versions": "Versions",
+				"libraries": "Libraries",
+				"assets": "Assets",
+				"runtimes": "Java",
+				"natives": "Natives"
+			},
 			"change": "Change location",
 			"reset": "Restore default location",
 			"purge": "Delete all",
@@ -613,6 +628,8 @@
 			"rateLimitMessage": "You're making changes too fast. Wait a few seconds before trying again.",
 			"unequipPending": "Cape unequipped (pending save)",
 			"modelDetected": "Detected from the skin. You can change it.",
+			"classicLocked": "A slim skin (Alex) can't be saved as Classic (Steve).",
+			"modelLockedSlim": "Slim skin (Alex): it can't be changed to Classic to avoid black stripes on the arms.",
 			"skinCloset": {
 				"title": "Skin closet",
 				"savedSkins": "Saved skins",
@@ -635,6 +652,10 @@
 		},
 		"authModal": {
 			"title": "Microsoft Login",
+			"sessionExpired": "The session for {username} expired. Sign in again to continue.",
+			"fromLauncher": "From the launcher",
+			"withCode": "With an authentication code",
+			"otherMethod": "Choose another method",
 			"instruction": "To login with your Microsoft account, copy the following link and enter the code shown below:",
 			"copyLink": "Copy link",
 			"linkCopied": "Link copied!",
@@ -1121,7 +1142,7 @@
 		"AUTH_TOKENS_SAVE": "Could not save tokens: {error}",
 		"AUTH_TOKENS_DEL": "Could not delete tokens: {error}",
 		"AUTH_BLOCKED": "Internal error: {error}",
-		"AUTH_SESSION_EXPIRED": "Session expired. Please restart the launcher and log in again: {error}",
+		"AUTH_SESSION_EXPIRED": "Session expired. Sign in again: {error}",
 		"INST_BUSY": "Instance is running",
 		"GENERIC": "An unexpected error occurred: {error}"
 	},

@@ -14,7 +14,8 @@
 		"fr": "フランス語",
 		"de": "ドイツ語",
 		"uk": "ウクライナ語",
-		"ja": "日本語"
+		"ja": "日本語",
+		"ru": "Russian"
 	},
 	"settings": {
 		"title": "設定",
@@ -212,7 +213,12 @@
 			"progress": "インスタンス {index} / {count}",
 			"cancelling": "キャンセル中…",
 			"done": "{count} 個のインスタンスを転送しました",
-			"partial": "{failed} 個のファイルを転送できませんでした:"
+			"partial": "{failed} 個のファイルを転送できませんでした:",
+			"instancesTitle": "Instances",
+			"defaultLocation": "Default",
+			"customLocation": "Custom",
+			"copyPath": "Copy path",
+			"copied": "Copied"
 		},
 		"sharedStorage": {
 			"title": "共有ファイル",
@@ -232,7 +238,16 @@
 			"purging": "削除中…",
 			"purged": "{size} を解放しました（{files}）",
 			"changed": "場所を更新しました。{size} を解放しました。",
-			"busy": "これらのファイルを変更する前に、Minecraft を終了し、ダウンロードが完了するまで待ってください。"
+			"busy": "これらのファイルを変更する前に、Minecraft を終了し、ダウンロードが完了するまで待ってください。",
+			"breakdownTitle": "Usage by folder",
+			"working": "Updating…",
+			"categories": {
+				"versions": "Versions",
+				"libraries": "Libraries",
+				"assets": "Assets",
+				"runtimes": "Java",
+				"natives": "Natives"
+			}
 		}
 	},
 	"main": {
@@ -300,7 +315,11 @@
 			"loading": "Microsoft に接続中...",
 			"waiting": "認証を待機中...",
 			"success": "ログインしました！",
-			"error": "ログインに失敗しました: {error}"
+			"error": "ログインに失敗しました: {error}",
+			"sessionExpired": "The session for {username} expired. Sign in again to continue.",
+			"fromLauncher": "From the launcher",
+			"withCode": "With an authentication code",
+			"otherMethod": "Choose another method"
 		},
 		"yggdrasilModal": {
 			"title": "Authlib インジェクター",
@@ -384,7 +403,9 @@
 				"renamedDesc": "スキン名を更新しました。"
 			},
 			"uploadHint": "Drag your skin or click to upload",
-			"modelDetected": "Detected from the skin. You can change it."
+			"modelDetected": "Detected from the skin. You can change it.",
+			"classicLocked": "A slim skin (Alex) can't be saved as Classic (Steve).",
+			"modelLockedSlim": "Slim skin (Alex): it can't be changed to Classic to avoid black stripes on the arms."
 		},
 		"accountSetup": {
 			"title": "アカウントを追加",

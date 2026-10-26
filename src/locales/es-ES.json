@@ -14,7 +14,8 @@
 		"fr": "Francés",
 		"de": "Alemán",
 		"uk": "Ucraniano",
-		"ja": "Japonés"
+		"ja": "Japonés",
+		"ru": "Russian"
 	},
 	"settings": {
 		"title": "Ajustes",
@@ -212,7 +213,12 @@
 			"progress": "Instancia {index} de {count}",
 			"cancelling": "Cancelando…",
 			"done": "{count} instancia(s) transferida(s)",
-			"partial": "No se pudieron transferir {failed} archivo(s):"
+			"partial": "No se pudieron transferir {failed} archivo(s):",
+			"instancesTitle": "Instances",
+			"defaultLocation": "Default",
+			"customLocation": "Custom",
+			"copyPath": "Copy path",
+			"copied": "Copied"
 		},
 		"sharedStorage": {
 			"title": "Archivos compartidos",
@@ -232,7 +238,16 @@
 			"purging": "Eliminando…",
 			"purged": "{size} liberados ({files})",
 			"changed": "Ubicación actualizada. Se liberaron {size}.",
-			"busy": "Cierra Minecraft y espera a que terminen las descargas antes de modificar estos archivos."
+			"busy": "Cierra Minecraft y espera a que terminen las descargas antes de modificar estos archivos.",
+			"breakdownTitle": "Usage by folder",
+			"working": "Updating…",
+			"categories": {
+				"versions": "Versions",
+				"libraries": "Libraries",
+				"assets": "Assets",
+				"runtimes": "Java",
+				"natives": "Natives"
+			}
 		}
 	},
 	"main": {
@@ -300,7 +315,11 @@
 			"loading": "Conectando con Microsoft...",
 			"waiting": "Esperando autenticación...",
 			"success": "¡Sesión iniciada correctamente!",
-			"error": "Error al iniciar sesión: {error}"
+			"error": "Error al iniciar sesión: {error}",
+			"sessionExpired": "The session for {username} expired. Sign in again to continue.",
+			"fromLauncher": "From the launcher",
+			"withCode": "With an authentication code",
+			"otherMethod": "Choose another method"
 		},
 		"yggdrasilModal": {
 			"title": "Authlib Injector",
@@ -384,7 +403,9 @@
 				"renamedDesc": "Se ha actualizado el nombre de la skin."
 			},
 			"uploadHint": "Drag your skin or click to upload",
-			"modelDetected": "Detected from the skin. You can change it."
+			"modelDetected": "Detected from the skin. You can change it.",
+			"classicLocked": "A slim skin (Alex) can't be saved as Classic (Steve).",
+			"modelLockedSlim": "Slim skin (Alex): it can't be changed to Classic to avoid black stripes on the arms."
 		},
 		"accountSetup": {
 			"title": "Añadir cuenta",

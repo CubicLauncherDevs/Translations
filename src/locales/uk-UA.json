@@ -14,7 +14,8 @@
 		"fr": "Французька",
 		"de": "Німецька",
 		"uk": "Українська",
-		"ja": "Японська"
+		"ja": "Японська",
+		"ru": "Russian"
 	},
 	"settings": {
 		"title": "Налаштування",
@@ -212,7 +213,12 @@
 			"progress": "Екземпляр {index} з {count}",
 			"cancelling": "Скасування…",
 			"done": "Перенесено екземплярів: {count}",
-			"partial": "Не вдалося перенести файлів: {failed}:"
+			"partial": "Не вдалося перенести файлів: {failed}:",
+			"instancesTitle": "Instances",
+			"defaultLocation": "Default",
+			"customLocation": "Custom",
+			"copyPath": "Copy path",
+			"copied": "Copied"
 		},
 		"sharedStorage": {
 			"title": "Спільні файли",
@@ -232,7 +238,16 @@
 			"purging": "Видалення…",
 			"purged": "Звільнено {size} ({files})",
 			"changed": "Розташування оновлено. Звільнено {size}.",
-			"busy": "Закрийте Minecraft і дочекайтеся завершення завантажень, перш ніж змінювати ці файли."
+			"busy": "Закрийте Minecraft і дочекайтеся завершення завантажень, перш ніж змінювати ці файли.",
+			"breakdownTitle": "Usage by folder",
+			"working": "Updating…",
+			"categories": {
+				"versions": "Versions",
+				"libraries": "Libraries",
+				"assets": "Assets",
+				"runtimes": "Java",
+				"natives": "Natives"
+			}
 		}
 	},
 	"main": {
@@ -300,7 +315,11 @@
 			"loading": "Підключення до Microsoft...",
 			"waiting": "Очікування автентифікації...",
 			"success": "Успішний вхід!",
-			"error": "Помилка входу: {error}"
+			"error": "Помилка входу: {error}",
+			"sessionExpired": "The session for {username} expired. Sign in again to continue.",
+			"fromLauncher": "From the launcher",
+			"withCode": "With an authentication code",
+			"otherMethod": "Choose another method"
 		},
 		"yggdrasilModal": {
 			"title": "Authlib Injector",
@@ -384,7 +403,9 @@
 				"renamedDesc": "Назву скіна оновлено."
 			},
 			"uploadHint": "Drag your skin or click to upload",
-			"modelDetected": "Detected from the skin. You can change it."
+			"modelDetected": "Detected from the skin. You can change it.",
+			"classicLocked": "A slim skin (Alex) can't be saved as Classic (Steve).",
+			"modelLockedSlim": "Slim skin (Alex): it can't be changed to Classic to avoid black stripes on the arms."
 		},
 		"accountSetup": {
 			"title": "Додати обліковий запис",

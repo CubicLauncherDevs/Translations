@@ -240,6 +240,8 @@ const identicalKeysByLocale: Record<string, readonly string[]> = {
 		'market.item.local',
 		'market.detail.installation',
 		'market.detail.dependencies.dependencyKind.incompatible',
+		'userMenu.skinCape.catalog.open',
+		'userMenu.skinCape.catalog.tags',
 	],
 	de: [
 		'modpack.title',
@@ -328,6 +330,8 @@ const identicalKeysByLocale: Record<string, readonly string[]> = {
 		'market.detail.installation',
 		'market.detail.downloads',
 		'market.detail.dependencies.dependencyKind.optional',
+		'userMenu.skinCape.catalog.tags',
+		'userMenu.skinCape.catalog.sortDownloads',
 	],
 	uk: [
 		'modpack.title',

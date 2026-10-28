@@ -194,5 +194,47 @@
 		"version": "1.0.0",
 		"timestamp": "2026-10-21T00:00:00.000Z",
 		"details": { "note": "Added Russian locale" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "fr-FR",
+		"version": "1.4.1",
+		"timestamp": "2026-10-27T00:00:00.000Z",
+		"details": { "note": "Translated the Mosaicary skin catalogue and the skin preview buttons" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "de-DE",
+		"version": "1.4.1",
+		"timestamp": "2026-10-27T00:00:00.000Z",
+		"details": { "note": "Translated the Mosaicary skin catalogue and the skin preview buttons" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "uk-UA",
+		"version": "1.4.1",
+		"timestamp": "2026-10-27T00:00:00.000Z",
+		"details": { "note": "Translated the Mosaicary skin catalogue and the skin preview buttons" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "ja-JP",
+		"version": "1.4.1",
+		"timestamp": "2026-10-27T00:00:00.000Z",
+		"details": { "note": "Translated the Mosaicary skin catalogue and the skin preview buttons" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "ru-RU",
+		"version": "1.0.1",
+		"timestamp": "2026-10-27T00:00:00.000Z",
+		"details": { "note": "Translated the Mosaicary skin catalogue, the skin preview buttons and the slim skin lock notes, fixed the saved accounts label and a translated placeholder in market progress" }
+	},
+	{
+		"type": "locale.updated",
+		"locale": "es-ES",
+		"version": "1.4.1",
+		"timestamp": "2026-10-27T00:00:00.000Z",
+		"details": { "note": "Added the Mosaicary skin catalogue and the skin preview buttons, as the launcher has them" }
 	}
 ]

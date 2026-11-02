@@ -98,7 +98,10 @@
 		"error": "Ошибка переноса",
 		"cancelled": "Отменено",
 		"downloadHint": "Версии и загрузчики перенесённых экземпляров добавлены в очередь загрузки. Их установку можно проверить там.",
-		"done": "Готово"
+		"done": "Готово",
+		"sklauncher": "SKLauncher",
+		"sklauncherHint": "Instances from SKLauncher 4",
+		"sklauncherFolder": "Select the SKLauncher data folder (the one containing instances.json)."
 	},
 	"minecraftJar": {
 		"description": "Добавьте моды в содержимое minecraft.jar или выберите полный пользовательский JAR для этого экземпляра.",
@@ -386,7 +389,40 @@
 			"downloadInstallBtn": "Загрузить и установить",
 			"installing": "Установка...",
 			"installingBtn": "Установка обновления",
-			"installUpdateBtn": "Установить обновление"
+			"installUpdateBtn": "Установить обновление",
+			"performance": {
+				"presetsTitle": "Performance profile",
+				"presets": {
+					"quality": {
+						"title": "Quality",
+						"hint": "Maximum visual detail. Keeps animations, blur and the theme background."
+					},
+					"balanced": {
+						"title": "Balanced",
+						"hint": "Less motion and loading animations; keeps blur and background."
+					},
+					"performance": {
+						"title": "Performance",
+						"hint": "Disables animations, blur, background and reduces the 3D skin viewer."
+					}
+				},
+				"custom": "Custom",
+				"enabledCount": "Active optimizations: {count}",
+				"reset": "Reset",
+				"groupMotion": "Motion",
+				"groupVisuals": "Visual effects",
+				"groupSkin": "3D skin viewer",
+				"reduceAnimationsHint": "Shortens or removes interface transitions. It also removes background blur.",
+				"disableInfiniteAnimationsHint": "Stops spinners and animations that repeat endlessly.",
+				"reduceLogAnimationsHint": "Disables the animation for new console lines.",
+				"disableBlurEffectsHint": "Removes frosted glass and the blurs that use the most GPU.",
+				"disableBackgroundImage": "Disable background image",
+				"disableBackgroundImageHint": "Hides the theme background to save memory and graphics compositing.",
+				"disableSkin3dAnimationsHint": "The 3D viewer stays static until you interact with it.",
+				"reduceSkin3dQuality": "Reduce 3D viewer quality",
+				"reduceSkin3dQualityHint": "Renders skins at a lower resolution to ease GPU load.",
+				"osMotionNote": "If your system has reduced motion enabled, the launcher respects it too."
+			}
 		},
 		"minecraft": {
 			"perfTitle": "Производительность (ОЗУ)",
@@ -410,7 +446,30 @@
 			"downloadProviderOfficial": "Официальный (Mojang)",
 			"downloadProviderOfficialHint": "Официальные серверы. Рекомендуется за пределами Китая.",
 			"downloadProviderBmclapi": "BMCLAPI (Китай)",
-			"downloadProviderBmclapiHint": "Зеркало для игроков в Китае с медленной загрузкой. При сбое используются официальные серверы."
+			"downloadProviderBmclapiHint": "Зеркало для игроков в Китае с медленной загрузкой. При сбое используются официальные серверы.",
+			"perf": {
+				"ramUsage": "Allocated RAM",
+				"ramTotal": "{total} GB in the system",
+				"ramTooHigh": "Maximum is too high: leave at least 1 GB free for the system ({total} GB total).",
+				"ramTooLow": "Allocate at least 1 GB so Minecraft can start without issues.",
+				"jvmPresetsTitle": "JVM argument profile",
+				"jvmPresetsHint": "Applies garbage collection flags without touching RAM. Per-instance arguments are still appended afterwards.",
+				"jvmPresets": {
+					"vanilla": {
+						"title": "Vanilla",
+						"hint": "No extra arguments. The most compatible option."
+					},
+					"recommended": {
+						"title": "Recommended",
+						"hint": "Tuned G1 for the client; a good balance."
+					},
+					"aikar": {
+						"title": "Aikar",
+						"hint": "Flags for servers and large modpacks."
+					}
+				},
+				"jvmCustom": "Custom arguments. Edit them in Java → Advanced."
+			}
 		},
 		"about": {
 			"title": "О программе",
@@ -739,7 +798,18 @@
 			"errorTitle": "Ошибка",
 			"errorUnknown": "Неизвестная ошибка",
 			"successTitle": "Подключено!",
-			"successSubtitle": "Ваш аккаунт подключён."
+			"successSubtitle": "Ваш аккаунт подключён.",
+			"tokenLabel": "Token"
+		},
+		"cubicAuthSkin": {
+			"title": "CubicAuth skin",
+			"change": "Change skin on CubicAuth",
+			"description": "Upload a skin from the launcher or manage it on your CubicAuth account. Changes apply to this account.",
+			"refresh": "Refresh skin and head",
+			"refreshHint": "The preview and head refresh when you return to the launcher. If the change takes time to appear, press Refresh.",
+			"loadError": "Could not load the account skin. Check your connection and refresh again.",
+			"unavailable": "Preview unavailable",
+			"noSkin": "This account does not have an active skin yet."
 		}
 	},
 	"launch": {

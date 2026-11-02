@@ -66,7 +66,40 @@
 			"prominentNotificationsHint": "タイトルの英字を大文字にし、読みやすいメッセージを中央に大きく表示します。通知は最低 8 秒間表示され、クリックすると閉じます。",
 			"testNotification": "通知をテスト",
 			"testNotificationTitle": "通知の表示例",
-			"testNotificationMessage": "これはテストメッセージです。「カスタマイズ」で位置、サイズ、タイトルを調整できます。"
+			"testNotificationMessage": "これはテストメッセージです。「カスタマイズ」で位置、サイズ、タイトルを調整できます。",
+			"performance": {
+				"presetsTitle": "Performance profile",
+				"presets": {
+					"quality": {
+						"title": "Quality",
+						"hint": "Maximum visual detail. Keeps animations, blur and the theme background."
+					},
+					"balanced": {
+						"title": "Balanced",
+						"hint": "Less motion and loading animations; keeps blur and background."
+					},
+					"performance": {
+						"title": "Performance",
+						"hint": "Disables animations, blur, background and reduces the 3D skin viewer."
+					}
+				},
+				"custom": "Custom",
+				"enabledCount": "Active optimizations: {count}",
+				"reset": "Reset",
+				"groupMotion": "Motion",
+				"groupVisuals": "Visual effects",
+				"groupSkin": "3D skin viewer",
+				"reduceAnimationsHint": "Shortens or removes interface transitions. It also removes background blur.",
+				"disableInfiniteAnimationsHint": "Stops spinners and animations that repeat endlessly.",
+				"reduceLogAnimationsHint": "Disables the animation for new console lines.",
+				"disableBlurEffectsHint": "Removes frosted glass and the blurs that use the most GPU.",
+				"disableBackgroundImage": "Disable background image",
+				"disableBackgroundImageHint": "Hides the theme background to save memory and graphics compositing.",
+				"disableSkin3dAnimationsHint": "The 3D viewer stays static until you interact with it.",
+				"reduceSkin3dQuality": "Reduce 3D viewer quality",
+				"reduceSkin3dQualityHint": "Renders skins at a lower resolution to ease GPU load.",
+				"osMotionNote": "If your system has reduced motion enabled, the launcher respects it too."
+			}
 		},
 		"minecraft": {
 			"perfTitle": "パフォーマンス（メモリ）",
@@ -90,7 +123,30 @@
 			"downloadProviderOfficial": "Official (Mojang)",
 			"downloadProviderOfficialHint": "Official servers. Recommended outside China.",
 			"downloadProviderBmclapi": "BMCLAPI (China)",
-			"downloadProviderBmclapiHint": "Mirror for players in China with slow downloads. Falls back to the official servers if it fails."
+			"downloadProviderBmclapiHint": "Mirror for players in China with slow downloads. Falls back to the official servers if it fails.",
+			"perf": {
+				"ramUsage": "Allocated RAM",
+				"ramTotal": "{total} GB in the system",
+				"ramTooHigh": "Maximum is too high: leave at least 1 GB free for the system ({total} GB total).",
+				"ramTooLow": "Allocate at least 1 GB so Minecraft can start without issues.",
+				"jvmPresetsTitle": "JVM argument profile",
+				"jvmPresetsHint": "Applies garbage collection flags without touching RAM. Per-instance arguments are still appended afterwards.",
+				"jvmPresets": {
+					"vanilla": {
+						"title": "Vanilla",
+						"hint": "No extra arguments. The most compatible option."
+					},
+					"recommended": {
+						"title": "Recommended",
+						"hint": "Tuned G1 for the client; a good balance."
+					},
+					"aikar": {
+						"title": "Aikar",
+						"hint": "Flags for servers and large modpacks."
+					}
+				},
+				"jvmCustom": "Custom arguments. Edit them in Java → Advanced."
+			}
 		},
 		"about": {
 			"title": "このアプリについて",
@@ -340,7 +396,8 @@
 			"errorUnknown": "不明なエラー",
 			"successTitle": "接続しました！",
 			"successSubtitle": "アカウントが連携されました。",
-			"createAccount": "アカウントを作成"
+			"createAccount": "アカウントを作成",
+			"tokenLabel": "Token"
 		},
 		"activate": "有効化",
 		"accountSingular": "保存済みアカウント",
@@ -480,6 +537,16 @@
 			"loadError": "Ely.by のスキンを読み込めませんでした。接続を確認して再度更新してください。",
 			"unavailable": "プレビューを表示できません",
 			"noSkin": "このアカウントにはまだ有効なスキンがありません。"
+		},
+		"cubicAuthSkin": {
+			"title": "CubicAuth skin",
+			"change": "Change skin on CubicAuth",
+			"description": "Upload a skin from the launcher or manage it on your CubicAuth account. Changes apply to this account.",
+			"refresh": "Refresh skin and head",
+			"refreshHint": "The preview and head refresh when you return to the launcher. If the change takes time to appear, press Refresh.",
+			"loadError": "Could not load the account skin. Check your connection and refresh again.",
+			"unavailable": "Preview unavailable",
+			"noSkin": "This account does not have an active skin yet."
 		}
 	},
 	"launch": {
@@ -1346,7 +1413,10 @@
 		"done": "完了",
 		"xmcl": "X Minecraft Launcher",
 		"xmclHint": "x-minecraft-launcher（XMCL）のインスタンス",
-		"xmclFolder": "XMCL のデータフォルダー（instances.json または instances を含むもの）を選択してください。"
+		"xmclFolder": "XMCL のデータフォルダー（instances.json または instances を含むもの）を選択してください。",
+		"sklauncher": "SKLauncher",
+		"sklauncherHint": "Instances from SKLauncher 4",
+		"sklauncherFolder": "Select the SKLauncher data folder (the one containing instances.json)."
 	},
 	"mrpackExport": {
 		"author": "作者",

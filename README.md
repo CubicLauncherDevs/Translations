@@ -19,7 +19,8 @@ Mini servidor de internacionalización para [CubicLauncher](https://github.com/C
 │       ├── fr-FR.json
 │       ├── ja-JP.json
 │       ├── ru-RU.json
-│       └── uk-UA.json
+│       ├── uk-UA.json
+│       └── zh-CN.json
 ├── tools/
 │   ├── fetch-locales.js  # Descarga traducciones desde GitHub (opcional)
 │   └── sync-locales.js   # Sincroniza claves faltantes con en-US (local)

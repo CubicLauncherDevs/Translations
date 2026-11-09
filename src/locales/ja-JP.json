@@ -1,6 +1,6 @@
 {
 	"id": "ja-JP",
-	"version": "1.4.1",
+	"version": "1.5.0",
 	"common": {
 		"cancel": "キャンセル",
 		"save": "保存",
@@ -15,7 +15,7 @@
 		"de": "ドイツ語",
 		"uk": "ウクライナ語",
 		"ja": "日本語",
-		"ru": "Russian"
+		"ru": "ロシア語"
 	},
 	"settings": {
 		"title": "設定",
@@ -68,37 +68,37 @@
 			"testNotificationTitle": "通知の表示例",
 			"testNotificationMessage": "これはテストメッセージです。「カスタマイズ」で位置、サイズ、タイトルを調整できます。",
 			"performance": {
-				"presetsTitle": "Performance profile",
+				"presetsTitle": "パフォーマンスプロファイル",
 				"presets": {
 					"quality": {
-						"title": "Quality",
-						"hint": "Maximum visual detail. Keeps animations, blur and the theme background."
+						"title": "品質",
+						"hint": "最大限の視覚的詳細。アニメーション、ぼかし、テーマの背景を維持します。"
 					},
 					"balanced": {
-						"title": "Balanced",
-						"hint": "Less motion and loading animations; keeps blur and background."
+						"title": "バランス",
+						"hint": "動きと読み込みアニメーションを減らします。ぼかしと背景は維持します。"
 					},
 					"performance": {
-						"title": "Performance",
-						"hint": "Disables animations, blur, background and reduces the 3D skin viewer."
+						"title": "パフォーマンス",
+						"hint": "アニメーション、ぼかし、背景を無効にし、3D スキンビューアーを軽量化します。"
 					}
 				},
-				"custom": "Custom",
-				"enabledCount": "Active optimizations: {count}",
-				"reset": "Reset",
-				"groupMotion": "Motion",
-				"groupVisuals": "Visual effects",
-				"groupSkin": "3D skin viewer",
-				"reduceAnimationsHint": "Shortens or removes interface transitions. It also removes background blur.",
-				"disableInfiniteAnimationsHint": "Stops spinners and animations that repeat endlessly.",
-				"reduceLogAnimationsHint": "Disables the animation for new console lines.",
-				"disableBlurEffectsHint": "Removes frosted glass and the blurs that use the most GPU.",
-				"disableBackgroundImage": "Disable background image",
-				"disableBackgroundImageHint": "Hides the theme background to save memory and graphics compositing.",
-				"disableSkin3dAnimationsHint": "The 3D viewer stays static until you interact with it.",
-				"reduceSkin3dQuality": "Reduce 3D viewer quality",
-				"reduceSkin3dQualityHint": "Renders skins at a lower resolution to ease GPU load.",
-				"osMotionNote": "If your system has reduced motion enabled, the launcher respects it too."
+				"custom": "カスタム",
+				"enabledCount": "有効な最適化: {count}",
+				"reset": "リセット",
+				"groupMotion": "動き",
+				"groupVisuals": "視覚効果",
+				"groupSkin": "3D スキンビューアー",
+				"reduceAnimationsHint": "インターフェースのトランジションを短縮または削除します。背景のぼかしも削除します。",
+				"disableInfiniteAnimationsHint": "スピナーや無限に繰り返されるアニメーションを停止します。",
+				"reduceLogAnimationsHint": "新しいコンソール行のアニメーションを無効にします。",
+				"disableBlurEffectsHint": "すりガラス効果と、GPU を最も多く使用するぼかしを削除します。",
+				"disableBackgroundImage": "背景画像を無効にする",
+				"disableBackgroundImageHint": "テーマの背景を非表示にして、メモリとグラフィック合成を節約します。",
+				"disableSkin3dAnimationsHint": "3D ビューアーは操作するまで静止したままです。",
+				"reduceSkin3dQuality": "3D ビューアーの品質を下げる",
+				"reduceSkin3dQualityHint": "GPU 負荷を軽減するため、スキンを低解像度でレンダリングします。",
+				"osMotionNote": "システムで動きの軽減が有効になっている場合、ランチャーもそれに従います。"
 			}
 		},
 		"minecraft": {
@@ -118,34 +118,34 @@
 			"consoleHistoryHint": "各インスタンスのコンソールに保持する最大行数 (100-5000)。",
 			"consoleShowLevelTags": "レベルタグを表示",
 			"consoleShowLevelTagsHint": "非推奨：タグを非表示にすると、レベルでログを絞り込みにくくなります。",
-			"downloadProviderTitle": "Download provider",
-			"downloadProviderLabel": "Download server",
-			"downloadProviderOfficial": "Official (Mojang)",
-			"downloadProviderOfficialHint": "Official servers. Recommended outside China.",
-			"downloadProviderBmclapi": "BMCLAPI (China)",
-			"downloadProviderBmclapiHint": "Mirror for players in China with slow downloads. Falls back to the official servers if it fails.",
+			"downloadProviderTitle": "ダウンロードプロバイダー",
+			"downloadProviderLabel": "ダウンロードサーバー",
+			"downloadProviderOfficial": "公式（Mojang）",
+			"downloadProviderOfficialHint": "公式サーバー。中国以外では推奨されます。",
+			"downloadProviderBmclapi": "BMCLAPI（中国）",
+			"downloadProviderBmclapiHint": "中国でダウンロードが遅いプレイヤー向けのミラー。失敗した場合は公式サーバーにフォールバックします。",
 			"perf": {
-				"ramUsage": "Allocated RAM",
-				"ramTotal": "{total} GB in the system",
-				"ramTooHigh": "Maximum is too high: leave at least 1 GB free for the system ({total} GB total).",
-				"ramTooLow": "Allocate at least 1 GB so Minecraft can start without issues.",
-				"jvmPresetsTitle": "JVM argument profile",
-				"jvmPresetsHint": "Applies garbage collection flags without touching RAM. Per-instance arguments are still appended afterwards.",
+				"ramUsage": "割り当て済み RAM",
+				"ramTotal": "システムの {total} GB",
+				"ramTooHigh": "最大値が高すぎます。システム用に少なくとも 1 GB 空けてください（合計 {total} GB）。",
+				"ramTooLow": "Minecraft が問題なく起動できるよう、少なくとも 1 GB 割り当ててください。",
+				"jvmPresetsTitle": "JVM 引数プロファイル",
+				"jvmPresetsHint": "RAM を変更せずにガベージコレクションのフラグを適用します。インスタンスごとの引数は後から追加されます。",
 				"jvmPresets": {
 					"vanilla": {
-						"title": "Vanilla",
-						"hint": "No extra arguments. The most compatible option."
+						"title": "バニラ",
+						"hint": "追加の引数なし。最も互換性の高いオプションです。"
 					},
 					"recommended": {
-						"title": "Recommended",
-						"hint": "Tuned G1 for the client; a good balance."
+						"title": "推奨",
+						"hint": "クライアント向けに調整された G1。バランスが良好です。"
 					},
 					"aikar": {
 						"title": "Aikar",
-						"hint": "Flags for servers and large modpacks."
+						"hint": "サーバーや大規模な MOD パック向けのフラグ。"
 					}
 				},
-				"jvmCustom": "Custom arguments. Edit them in Java → Advanced."
+				"jvmCustom": "カスタム引数。Java → 詳細設定で編集してください。"
 			}
 		},
 		"about": {
@@ -270,11 +270,11 @@
 			"cancelling": "キャンセル中…",
 			"done": "{count} 個のインスタンスを転送しました",
 			"partial": "{failed} 個のファイルを転送できませんでした:",
-			"instancesTitle": "Instances",
-			"defaultLocation": "Default",
-			"customLocation": "Custom",
-			"copyPath": "Copy path",
-			"copied": "Copied"
+			"instancesTitle": "インスタンス",
+			"defaultLocation": "デフォルト",
+			"customLocation": "カスタム",
+			"copyPath": "パスをコピー",
+			"copied": "コピーしました"
 		},
 		"sharedStorage": {
 			"title": "共有ファイル",
@@ -295,14 +295,14 @@
 			"purged": "{size} を解放しました（{files}）",
 			"changed": "場所を更新しました。{size} を解放しました。",
 			"busy": "これらのファイルを変更する前に、Minecraft を終了し、ダウンロードが完了するまで待ってください。",
-			"breakdownTitle": "Usage by folder",
-			"working": "Updating…",
+			"breakdownTitle": "フォルダー別の使用量",
+			"working": "更新中…",
 			"categories": {
-				"versions": "Versions",
-				"libraries": "Libraries",
-				"assets": "Assets",
+				"versions": "バージョン",
+				"libraries": "ライブラリ",
+				"assets": "アセット",
 				"runtimes": "Java",
-				"natives": "Natives"
+				"natives": "ネイティブライブラリ"
 			}
 		}
 	},
@@ -372,10 +372,10 @@
 			"waiting": "認証を待機中...",
 			"success": "ログインしました！",
 			"error": "ログインに失敗しました: {error}",
-			"sessionExpired": "The session for {username} expired. Sign in again to continue.",
-			"fromLauncher": "From the launcher",
-			"withCode": "With an authentication code",
-			"otherMethod": "Choose another method"
+			"sessionExpired": "{username} のセッションが期限切れになりました。続行するには再度サインインしてください。",
+			"fromLauncher": "ランチャーから",
+			"withCode": "認証コードを使用",
+			"otherMethod": "別の方法を選択"
 		},
 		"yggdrasilModal": {
 			"title": "Authlib インジェクター",
@@ -397,7 +397,7 @@
 			"successTitle": "接続しました！",
 			"successSubtitle": "アカウントが連携されました。",
 			"createAccount": "アカウントを作成",
-			"tokenLabel": "Token"
+			"tokenLabel": "トークン"
 		},
 		"activate": "有効化",
 		"accountSingular": "保存済みアカウント",
@@ -459,8 +459,8 @@
 				"renamedTitle": "スキンの名前を変更しました",
 				"renamedDesc": "スキン名を更新しました。"
 			},
-			"uploadHint": "Drag your skin or click to upload",
-			"modelDetected": "Detected from the skin. You can change it.",
+			"uploadHint": "スキンをドラッグするか、クリックしてアップロード",
+			"modelDetected": "スキンから検出されました。変更できます。",
 			"rotate": "回転",
 			"walk": "歩行",
 			"eyesMove": "目を動かす（ゲーム内ではリソースパック Fresh Moves がある場合のみ動きます）",
@@ -506,8 +506,8 @@
 					"creatures": "クリーチャー"
 				}
 			},
-			"classicLocked": "A slim skin (Alex) can't be saved as Classic (Steve).",
-			"modelLockedSlim": "Slim skin (Alex): it can't be changed to Classic to avoid black stripes on the arms."
+			"classicLocked": "スリムスキン（Alex）はクラシック（Steve）として保存できません。",
+			"modelLockedSlim": "スリムスキン（Alex）: 腕の黒い縞を避けるため、クラシックには変更できません。"
 		},
 		"accountSetup": {
 			"title": "アカウントを追加",
@@ -539,14 +539,14 @@
 			"noSkin": "このアカウントにはまだ有効なスキンがありません。"
 		},
 		"cubicAuthSkin": {
-			"title": "CubicAuth skin",
-			"change": "Change skin on CubicAuth",
-			"description": "Upload a skin from the launcher or manage it on your CubicAuth account. Changes apply to this account.",
-			"refresh": "Refresh skin and head",
-			"refreshHint": "The preview and head refresh when you return to the launcher. If the change takes time to appear, press Refresh.",
-			"loadError": "Could not load the account skin. Check your connection and refresh again.",
-			"unavailable": "Preview unavailable",
-			"noSkin": "This account does not have an active skin yet."
+			"title": "CubicAuth スキン",
+			"change": "CubicAuth でスキンを変更",
+			"description": "ランチャーからスキンをアップロードするか、CubicAuth アカウントで管理します。変更はこのアカウントに適用されます。",
+			"refresh": "スキンと頭を更新",
+			"refreshHint": "ランチャーに戻るとプレビューと頭が更新されます。変更が反映されるまで時間がかかる場合は、更新を押してください。",
+			"loadError": "アカウントのスキンを読み込めませんでした。接続を確認して、もう一度更新してください。",
+			"unavailable": "プレビューは利用できません",
+			"noSkin": "このアカウントにはまだ有効なスキンがありません。"
 		}
 	},
 	"launch": {
@@ -1415,8 +1415,8 @@
 		"xmclHint": "x-minecraft-launcher（XMCL）のインスタンス",
 		"xmclFolder": "XMCL のデータフォルダー（instances.json または instances を含むもの）を選択してください。",
 		"sklauncher": "SKLauncher",
-		"sklauncherHint": "Instances from SKLauncher 4",
-		"sklauncherFolder": "Select the SKLauncher data folder (the one containing instances.json)."
+		"sklauncherHint": "SKLauncher 4 のインスタンス",
+		"sklauncherFolder": "SKLauncher のデータフォルダー（instances.json を含むフォルダー）を選択してください。"
 	},
 	"mrpackExport": {
 		"author": "作者",

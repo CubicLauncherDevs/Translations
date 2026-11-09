@@ -1,6 +1,6 @@
 {
 	"id": "es-ES",
-	"version": "1.4.1",
+	"version": "1.5.0",
 	"common": {
 		"cancel": "Cancelar",
 		"save": "Guardar",
@@ -15,7 +15,7 @@
 		"de": "Alemán",
 		"uk": "Ucraniano",
 		"ja": "Japonés",
-		"ru": "Russian"
+		"ru": "Ruso"
 	},
 	"settings": {
 		"title": "Ajustes",
@@ -68,37 +68,37 @@
 			"testNotificationTitle": "Así se ven tus avisos",
 			"testNotificationMessage": "Este es un mensaje de prueba. Puedes ajustar su posición, tamaño y título en Personalizar.",
 			"performance": {
-				"presetsTitle": "Performance profile",
+				"presetsTitle": "Perfil de rendimiento",
 				"presets": {
 					"quality": {
-						"title": "Quality",
-						"hint": "Maximum visual detail. Keeps animations, blur and the theme background."
+						"title": "Calidad",
+						"hint": "Máximo detalle visual. Mantiene las animaciones, el desenfoque y el fondo del tema."
 					},
 					"balanced": {
-						"title": "Balanced",
-						"hint": "Less motion and loading animations; keeps blur and background."
+						"title": "Equilibrado",
+						"hint": "Menos movimiento y animaciones de carga; mantiene el desenfoque y el fondo."
 					},
 					"performance": {
-						"title": "Performance",
-						"hint": "Disables animations, blur, background and reduces the 3D skin viewer."
+						"title": "Rendimiento",
+						"hint": "Desactiva animaciones, desenfoque y fondo, y reduce el visor de skins 3D."
 					}
 				},
-				"custom": "Custom",
-				"enabledCount": "Active optimizations: {count}",
-				"reset": "Reset",
-				"groupMotion": "Motion",
-				"groupVisuals": "Visual effects",
-				"groupSkin": "3D skin viewer",
-				"reduceAnimationsHint": "Shortens or removes interface transitions. It also removes background blur.",
-				"disableInfiniteAnimationsHint": "Stops spinners and animations that repeat endlessly.",
-				"reduceLogAnimationsHint": "Disables the animation for new console lines.",
-				"disableBlurEffectsHint": "Removes frosted glass and the blurs that use the most GPU.",
-				"disableBackgroundImage": "Disable background image",
-				"disableBackgroundImageHint": "Hides the theme background to save memory and graphics compositing.",
-				"disableSkin3dAnimationsHint": "The 3D viewer stays static until you interact with it.",
-				"reduceSkin3dQuality": "Reduce 3D viewer quality",
-				"reduceSkin3dQualityHint": "Renders skins at a lower resolution to ease GPU load.",
-				"osMotionNote": "If your system has reduced motion enabled, the launcher respects it too."
+				"custom": "Personalizado",
+				"enabledCount": "Optimizaciones activas: {count}",
+				"reset": "Restablecer",
+				"groupMotion": "Movimiento",
+				"groupVisuals": "Efectos visuales",
+				"groupSkin": "Visor de skins 3D",
+				"reduceAnimationsHint": "Acorta o elimina las transiciones de la interfaz. También quita el desenfoque del fondo.",
+				"disableInfiniteAnimationsHint": "Detiene los indicadores de carga y las animaciones que se repiten sin fin.",
+				"reduceLogAnimationsHint": "Desactiva la animación de las nuevas líneas de la consola.",
+				"disableBlurEffectsHint": "Quita el efecto de cristal esmerilado y los desenfoques que más usan la GPU.",
+				"disableBackgroundImage": "Desactivar imagen de fondo",
+				"disableBackgroundImageHint": "Oculta el fondo del tema para ahorrar memoria y composición gráfica.",
+				"disableSkin3dAnimationsHint": "El visor 3D permanece estático hasta que interactúas con él.",
+				"reduceSkin3dQuality": "Reducir la calidad del visor 3D",
+				"reduceSkin3dQualityHint": "Renderiza las skins a menor resolución para aliviar la carga de la GPU.",
+				"osMotionNote": "Si tu sistema tiene activado el movimiento reducido, el launcher también lo respeta."
 			}
 		},
 		"minecraft": {
@@ -118,34 +118,34 @@
 			"consoleHistoryHint": "Máximo de líneas mantenidas en cada consola de instancia (100-5000).",
 			"consoleShowLevelTags": "Mostrar etiquetas de nivel",
 			"consoleShowLevelTagsHint": "No se recomienda: ocultar las etiquetas hace que sea más difícil filtrar los registros por nivel.",
-			"downloadProviderTitle": "Download provider",
-			"downloadProviderLabel": "Download server",
-			"downloadProviderOfficial": "Official (Mojang)",
-			"downloadProviderOfficialHint": "Official servers. Recommended outside China.",
+			"downloadProviderTitle": "Proveedor de descargas",
+			"downloadProviderLabel": "Servidor de descargas",
+			"downloadProviderOfficial": "Oficial (Mojang)",
+			"downloadProviderOfficialHint": "Servidores oficiales. Recomendado fuera de China.",
 			"downloadProviderBmclapi": "BMCLAPI (China)",
-			"downloadProviderBmclapiHint": "Mirror for players in China with slow downloads. Falls back to the official servers if it fails.",
+			"downloadProviderBmclapiHint": "Espejo para jugadores en China con descargas lentas. Si falla, usa los servidores oficiales.",
 			"perf": {
-				"ramUsage": "Allocated RAM",
-				"ramTotal": "{total} GB in the system",
-				"ramTooHigh": "Maximum is too high: leave at least 1 GB free for the system ({total} GB total).",
-				"ramTooLow": "Allocate at least 1 GB so Minecraft can start without issues.",
-				"jvmPresetsTitle": "JVM argument profile",
-				"jvmPresetsHint": "Applies garbage collection flags without touching RAM. Per-instance arguments are still appended afterwards.",
+				"ramUsage": "RAM asignada",
+				"ramTotal": "{total} GB en el sistema",
+				"ramTooHigh": "El máximo es demasiado alto: deja al menos 1 GB libre para el sistema ({total} GB en total).",
+				"ramTooLow": "Asigna al menos 1 GB para que Minecraft pueda iniciarse sin problemas.",
+				"jvmPresetsTitle": "Perfil de argumentos de la JVM",
+				"jvmPresetsHint": "Aplica indicadores de recolección de basura sin tocar la RAM. Los argumentos de cada instancia se añaden después.",
 				"jvmPresets": {
 					"vanilla": {
 						"title": "Vanilla",
-						"hint": "No extra arguments. The most compatible option."
+						"hint": "Sin argumentos extra. La opción más compatible."
 					},
 					"recommended": {
-						"title": "Recommended",
-						"hint": "Tuned G1 for the client; a good balance."
+						"title": "Recomendado",
+						"hint": "G1 ajustado para el cliente; un buen equilibrio."
 					},
 					"aikar": {
 						"title": "Aikar",
-						"hint": "Flags for servers and large modpacks."
+						"hint": "Indicadores para servidores y modpacks grandes."
 					}
 				},
-				"jvmCustom": "Custom arguments. Edit them in Java → Advanced."
+				"jvmCustom": "Argumentos personalizados. Edítalos en Java → Avanzado."
 			}
 		},
 		"about": {
@@ -270,11 +270,11 @@
 			"cancelling": "Cancelando…",
 			"done": "{count} instancia(s) transferida(s)",
 			"partial": "No se pudieron transferir {failed} archivo(s):",
-			"instancesTitle": "Instances",
-			"defaultLocation": "Default",
-			"customLocation": "Custom",
-			"copyPath": "Copy path",
-			"copied": "Copied"
+			"instancesTitle": "Instancias",
+			"defaultLocation": "Predeterminada",
+			"customLocation": "Personalizada",
+			"copyPath": "Copiar ruta",
+			"copied": "Copiado"
 		},
 		"sharedStorage": {
 			"title": "Archivos compartidos",
@@ -295,14 +295,14 @@
 			"purged": "{size} liberados ({files})",
 			"changed": "Ubicación actualizada. Se liberaron {size}.",
 			"busy": "Cierra Minecraft y espera a que terminen las descargas antes de modificar estos archivos.",
-			"breakdownTitle": "Usage by folder",
-			"working": "Updating…",
+			"breakdownTitle": "Uso por carpeta",
+			"working": "Actualizando…",
 			"categories": {
-				"versions": "Versions",
-				"libraries": "Libraries",
-				"assets": "Assets",
+				"versions": "Versiones",
+				"libraries": "Bibliotecas",
+				"assets": "Recursos",
 				"runtimes": "Java",
-				"natives": "Natives"
+				"natives": "Nativos"
 			}
 		}
 	},
@@ -372,10 +372,10 @@
 			"waiting": "Esperando autenticación...",
 			"success": "¡Sesión iniciada correctamente!",
 			"error": "Error al iniciar sesión: {error}",
-			"sessionExpired": "The session for {username} expired. Sign in again to continue.",
-			"fromLauncher": "From the launcher",
-			"withCode": "With an authentication code",
-			"otherMethod": "Choose another method"
+			"sessionExpired": "La sesión de {username} ha caducado. Inicia sesión de nuevo para continuar.",
+			"fromLauncher": "Desde el launcher",
+			"withCode": "Con un código de autenticación",
+			"otherMethod": "Elegir otro método"
 		},
 		"yggdrasilModal": {
 			"title": "Authlib Injector",
@@ -459,10 +459,10 @@
 				"renamedTitle": "Skin renombrada",
 				"renamedDesc": "Se ha actualizado el nombre de la skin."
 			},
-			"uploadHint": "Drag your skin or click to upload",
-			"modelDetected": "Detected from the skin. You can change it.",
-			"classicLocked": "A slim skin (Alex) can't be saved as Classic (Steve).",
-			"modelLockedSlim": "Slim skin (Alex): it can't be changed to Classic to avoid black stripes on the arms.",
+			"uploadHint": "Arrastra tu skin o haz clic para subirla",
+			"modelDetected": "Detectado a partir de la skin. Puedes cambiarlo.",
+			"classicLocked": "Una skin delgada (Alex) no se puede guardar como Clásica (Steve).",
+			"modelLockedSlim": "Skin delgada (Alex): no se puede cambiar a Clásica para evitar franjas negras en los brazos.",
 			"rotate": "Girar",
 			"walk": "Caminar",
 			"eyesMove": "Mover los ojos (en el juego solo se mueven con el paquete de recursos Fresh Moves)",
@@ -539,14 +539,14 @@
 			"noSkin": "Esta cuenta aún no tiene una skin activa."
 		},
 		"cubicAuthSkin": {
-			"title": "CubicAuth skin",
-			"change": "Change skin on CubicAuth",
-			"description": "Upload a skin from the launcher or manage it on your CubicAuth account. Changes apply to this account.",
-			"refresh": "Refresh skin and head",
-			"refreshHint": "The preview and head refresh when you return to the launcher. If the change takes time to appear, press Refresh.",
-			"loadError": "Could not load the account skin. Check your connection and refresh again.",
-			"unavailable": "Preview unavailable",
-			"noSkin": "This account does not have an active skin yet."
+			"title": "Skin de CubicAuth",
+			"change": "Cambiar skin en CubicAuth",
+			"description": "Sube una skin desde el launcher o gestiónala en tu cuenta de CubicAuth. Los cambios se aplican a esta cuenta.",
+			"refresh": "Actualizar skin y cabeza",
+			"refreshHint": "La vista previa y la cabeza se actualizan al volver al launcher. Si el cambio tarda en aparecer, pulsa Actualizar.",
+			"loadError": "No se pudo cargar la skin de la cuenta. Comprueba tu conexión y vuelve a actualizar.",
+			"unavailable": "Vista previa no disponible",
+			"noSkin": "Esta cuenta aún no tiene una skin activa."
 		}
 	},
 	"launch": {
@@ -1415,8 +1415,8 @@
 		"xmclHint": "Instancias de x-minecraft-launcher (XMCL)",
 		"xmclFolder": "Selecciona la carpeta de datos de XMCL (la que contiene instances.json o instances).",
 		"sklauncher": "SKLauncher",
-		"sklauncherHint": "Instances from SKLauncher 4",
-		"sklauncherFolder": "Select the SKLauncher data folder (the one containing instances.json)."
+		"sklauncherHint": "Instancias de SKLauncher 4",
+		"sklauncherFolder": "Selecciona la carpeta de datos de SKLauncher (la que contiene instances.json)."
 	},
 	"mrpackExport": {
 		"author": "Autor",

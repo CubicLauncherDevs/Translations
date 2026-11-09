@@ -66,7 +66,7 @@
 		"readError": "Не удалось прочитать файл сборки модов."
 	},
 	"id": "ru-RU",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"migration": {
 		"title": "Перенос",
 		"description": "Перенесите экземпляры в CubicLauncher: миры, моды, настройки и сборки. Данные копируются, оригиналы сохраняются. Войдите в свои аккаунты через CubicLauncher.",
@@ -100,8 +100,8 @@
 		"downloadHint": "Версии и загрузчики перенесённых экземпляров добавлены в очередь загрузки. Их установку можно проверить там.",
 		"done": "Готово",
 		"sklauncher": "SKLauncher",
-		"sklauncherHint": "Instances from SKLauncher 4",
-		"sklauncherFolder": "Select the SKLauncher data folder (the one containing instances.json)."
+		"sklauncherHint": "Экземпляры из SKLauncher 4",
+		"sklauncherFolder": "Выберите папку данных SKLauncher (ту, что содержит instances.json)."
 	},
 	"minecraftJar": {
 		"description": "Добавьте моды в содержимое minecraft.jar или выберите полный пользовательский JAR для этого экземпляра.",
@@ -314,11 +314,11 @@
 			"cancelling": "Отмена…",
 			"done": "Перенесено экземпляров: {count}",
 			"partial": "Не удалось перенести файлов: {failed}",
-			"instancesTitle": "Instances",
-			"defaultLocation": "Default",
-			"customLocation": "Custom",
-			"copyPath": "Copy path",
-			"copied": "Copied"
+			"instancesTitle": "Экземпляры",
+			"defaultLocation": "По умолчанию",
+			"customLocation": "Другая",
+			"copyPath": "Копировать путь",
+			"copied": "Скопировано"
 		},
 		"sharedStorage": {
 			"title": "Общие файлы",
@@ -339,14 +339,14 @@
 			"purged": "Освобождено {size} ({files})",
 			"changed": "Расположение обновлено. Освобождено: {size}.",
 			"busy": "Закройте Minecraft и дождитесь завершения загрузок перед изменением этих файлов.",
-			"breakdownTitle": "Usage by folder",
-			"working": "Updating…",
+			"breakdownTitle": "Использование по папкам",
+			"working": "Обновление…",
 			"categories": {
-				"versions": "Versions",
-				"libraries": "Libraries",
-				"assets": "Assets",
+				"versions": "Версии",
+				"libraries": "Библиотеки",
+				"assets": "Ресурсы",
 				"runtimes": "Java",
-				"natives": "Natives"
+				"natives": "Нативные библиотеки"
 			}
 		},
 		"launcher": {
@@ -391,37 +391,37 @@
 			"installingBtn": "Установка обновления",
 			"installUpdateBtn": "Установить обновление",
 			"performance": {
-				"presetsTitle": "Performance profile",
+				"presetsTitle": "Профиль производительности",
 				"presets": {
 					"quality": {
-						"title": "Quality",
-						"hint": "Maximum visual detail. Keeps animations, blur and the theme background."
+						"title": "Качество",
+						"hint": "Максимальная визуальная детализация. Сохраняет анимации, размытие и фон темы."
 					},
 					"balanced": {
-						"title": "Balanced",
-						"hint": "Less motion and loading animations; keeps blur and background."
+						"title": "Сбалансированный",
+						"hint": "Меньше движения и анимаций загрузки; сохраняет размытие и фон."
 					},
 					"performance": {
-						"title": "Performance",
-						"hint": "Disables animations, blur, background and reduces the 3D skin viewer."
+						"title": "Производительность",
+						"hint": "Отключает анимации, размытие и фон, а также упрощает 3D-просмотр скинов."
 					}
 				},
-				"custom": "Custom",
-				"enabledCount": "Active optimizations: {count}",
-				"reset": "Reset",
-				"groupMotion": "Motion",
-				"groupVisuals": "Visual effects",
-				"groupSkin": "3D skin viewer",
-				"reduceAnimationsHint": "Shortens or removes interface transitions. It also removes background blur.",
-				"disableInfiniteAnimationsHint": "Stops spinners and animations that repeat endlessly.",
-				"reduceLogAnimationsHint": "Disables the animation for new console lines.",
-				"disableBlurEffectsHint": "Removes frosted glass and the blurs that use the most GPU.",
-				"disableBackgroundImage": "Disable background image",
-				"disableBackgroundImageHint": "Hides the theme background to save memory and graphics compositing.",
-				"disableSkin3dAnimationsHint": "The 3D viewer stays static until you interact with it.",
-				"reduceSkin3dQuality": "Reduce 3D viewer quality",
-				"reduceSkin3dQualityHint": "Renders skins at a lower resolution to ease GPU load.",
-				"osMotionNote": "If your system has reduced motion enabled, the launcher respects it too."
+				"custom": "Свой",
+				"enabledCount": "Активные оптимизации: {count}",
+				"reset": "Сбросить",
+				"groupMotion": "Движение",
+				"groupVisuals": "Визуальные эффекты",
+				"groupSkin": "3D-просмотр скинов",
+				"reduceAnimationsHint": "Сокращает или убирает переходы интерфейса. Также убирает размытие фона.",
+				"disableInfiniteAnimationsHint": "Останавливает индикаторы загрузки и анимации, которые повторяются бесконечно.",
+				"reduceLogAnimationsHint": "Отключает анимацию новых строк консоли.",
+				"disableBlurEffectsHint": "Убирает эффект матового стекла и размытие, которое сильнее всего нагружает GPU.",
+				"disableBackgroundImage": "Отключить фоновое изображение",
+				"disableBackgroundImageHint": "Скрывает фон темы, чтобы сэкономить память и графические ресурсы.",
+				"disableSkin3dAnimationsHint": "3D-просмотр остаётся статичным, пока вы с ним не взаимодействуете.",
+				"reduceSkin3dQuality": "Снизить качество 3D-просмотра",
+				"reduceSkin3dQualityHint": "Рендерит скины в более низком разрешении, чтобы снизить нагрузку на GPU.",
+				"osMotionNote": "Если в системе включено уменьшение движения, лаунчер также это учитывает."
 			}
 		},
 		"minecraft": {
@@ -448,27 +448,27 @@
 			"downloadProviderBmclapi": "BMCLAPI (Китай)",
 			"downloadProviderBmclapiHint": "Зеркало для игроков в Китае с медленной загрузкой. При сбое используются официальные серверы.",
 			"perf": {
-				"ramUsage": "Allocated RAM",
-				"ramTotal": "{total} GB in the system",
-				"ramTooHigh": "Maximum is too high: leave at least 1 GB free for the system ({total} GB total).",
-				"ramTooLow": "Allocate at least 1 GB so Minecraft can start without issues.",
-				"jvmPresetsTitle": "JVM argument profile",
-				"jvmPresetsHint": "Applies garbage collection flags without touching RAM. Per-instance arguments are still appended afterwards.",
+				"ramUsage": "Выделенная RAM",
+				"ramTotal": "{total} ГБ в системе",
+				"ramTooHigh": "Максимум слишком велик: оставьте системе хотя бы 1 ГБ свободной памяти (всего {total} ГБ).",
+				"ramTooLow": "Выделите хотя бы 1 ГБ, чтобы Minecraft мог запуститься без проблем.",
+				"jvmPresetsTitle": "Профиль аргументов JVM",
+				"jvmPresetsHint": "Применяет флаги сборки мусора, не изменяя RAM. Аргументы отдельных экземпляров всё равно добавляются после этого.",
 				"jvmPresets": {
 					"vanilla": {
 						"title": "Vanilla",
-						"hint": "No extra arguments. The most compatible option."
+						"hint": "Без дополнительных аргументов. Самый совместимый вариант."
 					},
 					"recommended": {
-						"title": "Recommended",
-						"hint": "Tuned G1 for the client; a good balance."
+						"title": "Рекомендуемый",
+						"hint": "G1, настроенный для клиента; хороший баланс."
 					},
 					"aikar": {
 						"title": "Aikar",
-						"hint": "Flags for servers and large modpacks."
+						"hint": "Флаги для серверов и больших модпаков."
 					}
 				},
-				"jvmCustom": "Custom arguments. Edit them in Java → Advanced."
+				"jvmCustom": "Свои аргументы. Измените их в Java → Дополнительно."
 			}
 		},
 		"about": {
@@ -764,10 +764,10 @@
 			"waiting": "Ожидание аутентификации...",
 			"success": "Вход выполнен!",
 			"error": "Не удалось войти: {error}",
-			"sessionExpired": "The session for {username} expired. Sign in again to continue.",
-			"fromLauncher": "From the launcher",
-			"withCode": "With an authentication code",
-			"otherMethod": "Choose another method"
+			"sessionExpired": "Сеанс {username} истёк. Войдите снова, чтобы продолжить.",
+			"fromLauncher": "Из лаунчера",
+			"withCode": "С кодом аутентификации",
+			"otherMethod": "Выбрать другой способ"
 		},
 		"elySkin": {
 			"title": "Скин Ely.by",
@@ -799,17 +799,17 @@
 			"errorUnknown": "Неизвестная ошибка",
 			"successTitle": "Подключено!",
 			"successSubtitle": "Ваш аккаунт подключён.",
-			"tokenLabel": "Token"
+			"tokenLabel": "Токен"
 		},
 		"cubicAuthSkin": {
-			"title": "CubicAuth skin",
-			"change": "Change skin on CubicAuth",
-			"description": "Upload a skin from the launcher or manage it on your CubicAuth account. Changes apply to this account.",
-			"refresh": "Refresh skin and head",
-			"refreshHint": "The preview and head refresh when you return to the launcher. If the change takes time to appear, press Refresh.",
-			"loadError": "Could not load the account skin. Check your connection and refresh again.",
-			"unavailable": "Preview unavailable",
-			"noSkin": "This account does not have an active skin yet."
+			"title": "Скин CubicAuth",
+			"change": "Изменить скин в CubicAuth",
+			"description": "Загрузите скин из лаунчера или управляйте им в своём аккаунте CubicAuth. Изменения применяются к этому аккаунту.",
+			"refresh": "Обновить скин и голову",
+			"refreshHint": "Предпросмотр и голова обновляются при возвращении в лаунчер. Если изменение появляется с задержкой, нажмите «Обновить».",
+			"loadError": "Не удалось загрузить скин аккаунта. Проверьте соединение и обновите ещё раз.",
+			"unavailable": "Предпросмотр недоступен",
+			"noSkin": "У этого аккаунта ещё нет активного скина."
 		}
 	},
 	"launch": {

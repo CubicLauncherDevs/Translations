@@ -1,6 +1,6 @@
 {
 	"id": "uk-UA",
-	"version": "1.4.1",
+	"version": "1.5.0",
 	"common": {
 		"cancel": "Скасувати",
 		"save": "Зберегти",
@@ -15,7 +15,7 @@
 		"de": "Німецька",
 		"uk": "Українська",
 		"ja": "Японська",
-		"ru": "Russian"
+		"ru": "Російська"
 	},
 	"settings": {
 		"title": "Налаштування",
@@ -68,37 +68,37 @@
 			"testNotificationTitle": "Ось так виглядають ваші сповіщення",
 			"testNotificationMessage": "Це тестове повідомлення. Ви можете налаштувати його розташування, розмір і заголовок у розділі «Персоналізація».",
 			"performance": {
-				"presetsTitle": "Performance profile",
+				"presetsTitle": "Профіль продуктивності",
 				"presets": {
 					"quality": {
-						"title": "Quality",
-						"hint": "Maximum visual detail. Keeps animations, blur and the theme background."
+						"title": "Якість",
+						"hint": "Максимальна візуальна деталізація. Зберігає анімації, розмиття та фон теми."
 					},
 					"balanced": {
-						"title": "Balanced",
-						"hint": "Less motion and loading animations; keeps blur and background."
+						"title": "Збалансований",
+						"hint": "Менше руху й анімацій завантаження; зберігає розмиття та фон."
 					},
 					"performance": {
-						"title": "Performance",
-						"hint": "Disables animations, blur, background and reduces the 3D skin viewer."
+						"title": "Продуктивність",
+						"hint": "Вимикає анімації, розмиття й фон та зменшує 3D-перегляд скінів."
 					}
 				},
-				"custom": "Custom",
-				"enabledCount": "Active optimizations: {count}",
-				"reset": "Reset",
-				"groupMotion": "Motion",
-				"groupVisuals": "Visual effects",
-				"groupSkin": "3D skin viewer",
-				"reduceAnimationsHint": "Shortens or removes interface transitions. It also removes background blur.",
-				"disableInfiniteAnimationsHint": "Stops spinners and animations that repeat endlessly.",
-				"reduceLogAnimationsHint": "Disables the animation for new console lines.",
-				"disableBlurEffectsHint": "Removes frosted glass and the blurs that use the most GPU.",
-				"disableBackgroundImage": "Disable background image",
-				"disableBackgroundImageHint": "Hides the theme background to save memory and graphics compositing.",
-				"disableSkin3dAnimationsHint": "The 3D viewer stays static until you interact with it.",
-				"reduceSkin3dQuality": "Reduce 3D viewer quality",
-				"reduceSkin3dQualityHint": "Renders skins at a lower resolution to ease GPU load.",
-				"osMotionNote": "If your system has reduced motion enabled, the launcher respects it too."
+				"custom": "Власний",
+				"enabledCount": "Активні оптимізації: {count}",
+				"reset": "Скинути",
+				"groupMotion": "Рух",
+				"groupVisuals": "Візуальні ефекти",
+				"groupSkin": "3D-перегляд скінів",
+				"reduceAnimationsHint": "Скорочує або прибирає переходи інтерфейсу. Також прибирає розмиття фону.",
+				"disableInfiniteAnimationsHint": "Зупиняє індикатори завантаження й анімації, що повторюються безкінечно.",
+				"reduceLogAnimationsHint": "Вимикає анімацію нових рядків консолі.",
+				"disableBlurEffectsHint": "Прибирає ефект матового скла та розмиття, що найбільше навантажують GPU.",
+				"disableBackgroundImage": "Вимкнути фонове зображення",
+				"disableBackgroundImageHint": "Приховує фон теми, щоб заощадити пам’ять і графічні ресурси.",
+				"disableSkin3dAnimationsHint": "3D-перегляд залишається статичним, доки ви з ним не взаємодієте.",
+				"reduceSkin3dQuality": "Зменшити якість 3D-перегляду",
+				"reduceSkin3dQualityHint": "Рендерить скіни в нижчій роздільній здатності, щоб зменшити навантаження на GPU.",
+				"osMotionNote": "Якщо у вашій системі ввімкнено зменшення руху, лаунчер також це враховує."
 			}
 		},
 		"minecraft": {
@@ -118,34 +118,34 @@
 			"consoleHistoryHint": "Максимум рядків у консолі кожного інстанса (100–5000).",
 			"consoleShowLevelTags": "Показувати мітки рівня",
 			"consoleShowLevelTagsHint": "Не рекомендується: приховані мітки ускладнюють фільтрування журналу за рівнем.",
-			"downloadProviderTitle": "Download provider",
-			"downloadProviderLabel": "Download server",
-			"downloadProviderOfficial": "Official (Mojang)",
-			"downloadProviderOfficialHint": "Official servers. Recommended outside China.",
-			"downloadProviderBmclapi": "BMCLAPI (China)",
-			"downloadProviderBmclapiHint": "Mirror for players in China with slow downloads. Falls back to the official servers if it fails.",
+			"downloadProviderTitle": "Постачальник завантажень",
+			"downloadProviderLabel": "Сервер завантажень",
+			"downloadProviderOfficial": "Офіційний (Mojang)",
+			"downloadProviderOfficialHint": "Офіційні сервери. Рекомендовано за межами Китаю.",
+			"downloadProviderBmclapi": "BMCLAPI (Китай)",
+			"downloadProviderBmclapiHint": "Дзеркало для гравців у Китаї з повільним завантаженням. У разі збою перемикається на офіційні сервери.",
 			"perf": {
-				"ramUsage": "Allocated RAM",
-				"ramTotal": "{total} GB in the system",
-				"ramTooHigh": "Maximum is too high: leave at least 1 GB free for the system ({total} GB total).",
-				"ramTooLow": "Allocate at least 1 GB so Minecraft can start without issues.",
-				"jvmPresetsTitle": "JVM argument profile",
-				"jvmPresetsHint": "Applies garbage collection flags without touching RAM. Per-instance arguments are still appended afterwards.",
+				"ramUsage": "Виділена RAM",
+				"ramTotal": "{total} ГБ у системі",
+				"ramTooHigh": "Максимум завеликий: залиште щонайменше 1 ГБ вільної пам’яті для системи (усього {total} ГБ).",
+				"ramTooLow": "Виділіть щонайменше 1 ГБ, щоб Minecraft міг запуститися без проблем.",
+				"jvmPresetsTitle": "Профіль аргументів JVM",
+				"jvmPresetsHint": "Застосовує прапорці збирання сміття, не змінюючи RAM. Аргументи окремих екземплярів додаються після цього.",
 				"jvmPresets": {
 					"vanilla": {
-						"title": "Vanilla",
-						"hint": "No extra arguments. The most compatible option."
+						"title": "Ваніль",
+						"hint": "Без додаткових аргументів. Найсумісніший варіант."
 					},
 					"recommended": {
-						"title": "Recommended",
-						"hint": "Tuned G1 for the client; a good balance."
+						"title": "Рекомендований",
+						"hint": "G1 налаштований для клієнта; хороший баланс."
 					},
 					"aikar": {
 						"title": "Aikar",
-						"hint": "Flags for servers and large modpacks."
+						"hint": "Прапорці для серверів і великих модпаків."
 					}
 				},
-				"jvmCustom": "Custom arguments. Edit them in Java → Advanced."
+				"jvmCustom": "Власні аргументи. Редагуйте їх у Java → Додатково."
 			}
 		},
 		"about": {
@@ -270,11 +270,11 @@
 			"cancelling": "Скасування…",
 			"done": "Перенесено екземплярів: {count}",
 			"partial": "Не вдалося перенести файлів: {failed}:",
-			"instancesTitle": "Instances",
-			"defaultLocation": "Default",
-			"customLocation": "Custom",
-			"copyPath": "Copy path",
-			"copied": "Copied"
+			"instancesTitle": "Екземпляри",
+			"defaultLocation": "За замовчуванням",
+			"customLocation": "Власна",
+			"copyPath": "Копіювати шлях",
+			"copied": "Скопійовано"
 		},
 		"sharedStorage": {
 			"title": "Спільні файли",
@@ -295,14 +295,14 @@
 			"purged": "Звільнено {size} ({files})",
 			"changed": "Розташування оновлено. Звільнено {size}.",
 			"busy": "Закрийте Minecraft і дочекайтеся завершення завантажень, перш ніж змінювати ці файли.",
-			"breakdownTitle": "Usage by folder",
-			"working": "Updating…",
+			"breakdownTitle": "Використання за теками",
+			"working": "Оновлення…",
 			"categories": {
-				"versions": "Versions",
-				"libraries": "Libraries",
-				"assets": "Assets",
+				"versions": "Версії",
+				"libraries": "Бібліотеки",
+				"assets": "Ресурси",
 				"runtimes": "Java",
-				"natives": "Natives"
+				"natives": "Нативні бібліотеки"
 			}
 		}
 	},
@@ -372,10 +372,10 @@
 			"waiting": "Очікування автентифікації...",
 			"success": "Успішний вхід!",
 			"error": "Помилка входу: {error}",
-			"sessionExpired": "The session for {username} expired. Sign in again to continue.",
-			"fromLauncher": "From the launcher",
-			"withCode": "With an authentication code",
-			"otherMethod": "Choose another method"
+			"sessionExpired": "Сеанс {username} завершився. Увійдіть знову, щоб продовжити.",
+			"fromLauncher": "З лаунчера",
+			"withCode": "З кодом автентифікації",
+			"otherMethod": "Вибрати інший метод"
 		},
 		"yggdrasilModal": {
 			"title": "Authlib Injector",
@@ -397,7 +397,7 @@
 			"successTitle": "Підключено!",
 			"successSubtitle": "Ваш обліковий запис повʼязано.",
 			"createAccount": "Створити обліковий запис",
-			"tokenLabel": "Token"
+			"tokenLabel": "Токен"
 		},
 		"activate": "Активувати",
 		"accountSingular": "Збережений обліковий запис",
@@ -459,8 +459,8 @@
 				"renamedTitle": "Скін перейменовано",
 				"renamedDesc": "Назву скіна оновлено."
 			},
-			"uploadHint": "Drag your skin or click to upload",
-			"modelDetected": "Detected from the skin. You can change it.",
+			"uploadHint": "Перетягніть скін або натисніть, щоб завантажити",
+			"modelDetected": "Визначено за скіном. Ви можете це змінити.",
 			"rotate": "Обертання",
 			"walk": "Ходьба",
 			"eyesMove": "Рухати очима (у грі вони рухаються лише з пакетом ресурсів Fresh Moves)",
@@ -506,8 +506,8 @@
 					"creatures": "Істоти"
 				}
 			},
-			"classicLocked": "A slim skin (Alex) can't be saved as Classic (Steve).",
-			"modelLockedSlim": "Slim skin (Alex): it can't be changed to Classic to avoid black stripes on the arms."
+			"classicLocked": "Худий скін (Alex) не можна зберегти як класичний (Steve).",
+			"modelLockedSlim": "Худий скін (Alex): його не можна змінити на класичний, щоб уникнути чорних смуг на руках."
 		},
 		"accountSetup": {
 			"title": "Додати обліковий запис",
@@ -539,14 +539,14 @@
 			"noSkin": "Цей обліковий запис ще не має активного скіна."
 		},
 		"cubicAuthSkin": {
-			"title": "CubicAuth skin",
-			"change": "Change skin on CubicAuth",
-			"description": "Upload a skin from the launcher or manage it on your CubicAuth account. Changes apply to this account.",
-			"refresh": "Refresh skin and head",
-			"refreshHint": "The preview and head refresh when you return to the launcher. If the change takes time to appear, press Refresh.",
-			"loadError": "Could not load the account skin. Check your connection and refresh again.",
-			"unavailable": "Preview unavailable",
-			"noSkin": "This account does not have an active skin yet."
+			"title": "Скін CubicAuth",
+			"change": "Змінити скін у CubicAuth",
+			"description": "Завантажте скін із лаунчера або керуйте ним у своєму обліковому записі CubicAuth. Зміни застосуються до цього запису.",
+			"refresh": "Оновити скін і голову",
+			"refreshHint": "Попередній перегляд і голова оновлюються, коли ви повертаєтеся до лаунчера. Якщо зміна з’являється із затримкою, натисніть Оновити.",
+			"loadError": "Не вдалося завантажити скін облікового запису. Перевірте з’єднання й оновіть ще раз.",
+			"unavailable": "Попередній перегляд недоступний",
+			"noSkin": "Цей обліковий запис ще не має активного скіна."
 		}
 	},
 	"launch": {
@@ -1415,8 +1415,8 @@
 		"xmclHint": "Екземпляри з x-minecraft-launcher (XMCL)",
 		"xmclFolder": "Виберіть теку даних XMCL (ту, що містить instances.json або instances).",
 		"sklauncher": "SKLauncher",
-		"sklauncherHint": "Instances from SKLauncher 4",
-		"sklauncherFolder": "Select the SKLauncher data folder (the one containing instances.json)."
+		"sklauncherHint": "Екземпляри з SKLauncher 4",
+		"sklauncherFolder": "Виберіть теку даних SKLauncher (ту, що містить instances.json)."
 	},
 	"mrpackExport": {
 		"author": "Автор",

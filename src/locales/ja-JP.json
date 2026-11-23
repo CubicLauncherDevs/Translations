@@ -6,7 +6,8 @@
 		"save": "保存",
 		"retry": "再試行",
 		"loading": "読み込み中...",
-		"edit": "編集"
+		"edit": "編集",
+		"resizePanel": "Resize panel"
 	},
 	"languages": {
 		"es": "スペイン語",
@@ -202,7 +203,8 @@
 				"semeru": "IBM Semeru (OpenJ9)",
 				"semeruHint": "OpenJ9 仮想マシン。RAM 使用量が少なく、メモリの少ないシステムに役立ちます。"
 			},
-			"providersCredit": "Java ランタイムは Azul、Eclipse Temurin、BellSoft、Amazon、Microsoft、IBM、GraalVM が foojay を通じて提供しています。"
+			"providersCredit": "Java ランタイムは Azul、Eclipse Temurin、BellSoft、Amazon、Microsoft、IBM、GraalVM が foojay を通じて提供しています。",
+			"java4shellWarning": "Affected by CVE-2026-114938. Uninstall and install again to get a fixed build."
 		},
 		"interface": {
 			"title": "インターフェース",
@@ -1497,7 +1499,8 @@
 		"noVersions": "他に公開されているバージョンはありません。",
 		"retry": "再読み込み",
 		"close": "閉じる",
-		"readError": "Modpack ファイルを読み込めませんでした。"
+		"readError": "Modpack ファイルを読み込めませんでした。",
+		"changeSource": "Change"
 	},
 	"optionsProfiles": {
 		"title": "options.txt プロファイル",
@@ -1546,7 +1549,8 @@
 			"reinstallConfirm": "Delete and download version {version} again?",
 			"installJava": "Install Java {version}",
 			"openMods": "Open mods",
-			"openWorlds": "Open worlds"
+			"openWorlds": "Open worlds",
+			"generic": "Fix"
 		},
 		"reports": {
 			"title": "Crash reports",

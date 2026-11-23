@@ -63,7 +63,8 @@
 		"noVersions": "Другие опубликованные версии недоступны.",
 		"retry": "Перезагрузить",
 		"close": "Закрыть",
-		"readError": "Не удалось прочитать файл сборки модов."
+		"readError": "Не удалось прочитать файл сборки модов.",
+		"changeSource": "Change"
 	},
 	"id": "ru-RU",
 	"version": "1.1.0",
@@ -228,7 +229,8 @@
 		"cancel": "Отмена",
 		"save": "Сохранить",
 		"edit": "Изменить",
-		"retry": "Повторить"
+		"retry": "Повторить",
+		"resizePanel": "Resize panel"
 	},
 	"languages": {
 		"es": "Испанский",
@@ -519,7 +521,8 @@
 				"graalvm": "GraalVM",
 				"graalvmHint": "Graal JIT compiler, often faster with mods. JDK for Java 17 и newer."
 			},
-			"providersCredit": "Java runtimes provided by Azul, Eclipse Temurin, BellSoft и GraalVM through foojay."
+			"providersCredit": "Java runtimes provided by Azul, Eclipse Temurin, BellSoft и GraalVM through foojay.",
+			"java4shellWarning": "Affected by CVE-2026-114938. Uninstall and install again to get a fixed build."
 		},
 		"launcherCache": {
 			"title": "Launcher cache",
@@ -1540,7 +1543,8 @@
 			"reinstallConfirm": "Delete and download version {version} again?",
 			"installJava": "Install Java {version}",
 			"openMods": "Open mods",
-			"openWorlds": "Open worlds"
+			"openWorlds": "Open worlds",
+			"generic": "Fix"
 		},
 		"reports": {
 			"title": "Crash reports",

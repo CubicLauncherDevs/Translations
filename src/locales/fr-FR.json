@@ -6,7 +6,8 @@
 		"save": "Enregistrer",
 		"retry": "Réessayer",
 		"loading": "Chargement...",
-		"edit": "Modifier"
+		"edit": "Modifier",
+		"resizePanel": "Resize panel"
 	},
 	"languages": {
 		"es": "Espagnol",
@@ -202,7 +203,8 @@
 				"semeru": "IBM Semeru (OpenJ9)",
 				"semeruHint": "Machine virtuelle OpenJ9. Utilise moins de RAM, utile sur les systèmes à faible mémoire."
 			},
-			"providersCredit": "Runtimes Java fournis par Azul, Eclipse Temurin, BellSoft, Amazon, Microsoft, IBM et GraalVM via foojay."
+			"providersCredit": "Runtimes Java fournis par Azul, Eclipse Temurin, BellSoft, Amazon, Microsoft, IBM et GraalVM via foojay.",
+			"java4shellWarning": "Affected by CVE-2026-114938. Uninstall and install again to get a fixed build."
 		},
 		"interface": {
 			"title": "Interface",
@@ -1497,7 +1499,8 @@
 		"noVersions": "Aucune autre version publiée n’est disponible.",
 		"retry": "Recharger",
 		"close": "Fermer",
-		"readError": "Impossible de lire le fichier du modpack."
+		"readError": "Impossible de lire le fichier du modpack.",
+		"changeSource": "Change"
 	},
 	"optionsProfiles": {
 		"title": "Profils options.txt",
@@ -1546,7 +1549,8 @@
 			"reinstallConfirm": "Delete and download version {version} again?",
 			"installJava": "Install Java {version}",
 			"openMods": "Open mods",
-			"openWorlds": "Open worlds"
+			"openWorlds": "Open worlds",
+			"generic": "Fix"
 		},
 		"reports": {
 			"title": "Crash reports",

@@ -6,7 +6,8 @@
 		"save": "Зберегти",
 		"retry": "Повторити",
 		"loading": "Завантаження...",
-		"edit": "Редагувати"
+		"edit": "Редагувати",
+		"resizePanel": "Resize panel"
 	},
 	"languages": {
 		"es": "Іспанська",
@@ -202,7 +203,8 @@
 				"semeru": "IBM Semeru (OpenJ9)",
 				"semeruHint": "Віртуальна машина OpenJ9. Використовує менше RAM, корисна на системах з малою пам’яттю."
 			},
-			"providersCredit": "Середовища виконання Java надають Azul, Eclipse Temurin, BellSoft, Amazon, Microsoft, IBM і GraalVM через foojay."
+			"providersCredit": "Середовища виконання Java надають Azul, Eclipse Temurin, BellSoft, Amazon, Microsoft, IBM і GraalVM через foojay.",
+			"java4shellWarning": "Affected by CVE-2026-114938. Uninstall and install again to get a fixed build."
 		},
 		"interface": {
 			"title": "Інтерфейс",
@@ -1497,7 +1499,8 @@
 		"noVersions": "Інші опубліковані версії недоступні.",
 		"retry": "Перезавантажити",
 		"close": "Закрити",
-		"readError": "Не вдалося прочитати файл модпаку."
+		"readError": "Не вдалося прочитати файл модпаку.",
+		"changeSource": "Change"
 	},
 	"optionsProfiles": {
 		"title": "Профілі options.txt",
@@ -1546,7 +1549,8 @@
 			"reinstallConfirm": "Delete and download version {version} again?",
 			"installJava": "Install Java {version}",
 			"openMods": "Open mods",
-			"openWorlds": "Open worlds"
+			"openWorlds": "Open worlds",
+			"generic": "Fix"
 		},
 		"reports": {
 			"title": "Crash reports",

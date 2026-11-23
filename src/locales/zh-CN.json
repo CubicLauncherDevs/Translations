@@ -63,7 +63,8 @@
 		"noVersions": "没有其他已发布的版本可用。",
 		"retry": "重新加载",
 		"close": "关闭",
-		"readError": "无法读取整合包文件。"
+		"readError": "无法读取整合包文件。",
+		"changeSource": "Change"
 	},
 	"id": "zh-CN",
 	"version": "1.0.0",
@@ -228,7 +229,8 @@
 		"cancel": "取消",
 		"save": "保存",
 		"edit": "编辑",
-		"retry": "重试"
+		"retry": "重试",
+		"resizePanel": "Resize panel"
 	},
 	"languages": {
 		"es": "西班牙语",
@@ -519,7 +521,8 @@
 				"graalvm": "GraalVM",
 				"graalvmHint": "Graal JIT 编译器，通常在模组中更快。Java 17 及更高版本的 JDK。"
 			},
-			"providersCredit": "Java 运行时由 Azul、Eclipse Temurin、BellSoft 和 GraalVM 通过 foojay 提供。"
+			"providersCredit": "Java 运行时由 Azul、Eclipse Temurin、BellSoft 和 GraalVM 通过 foojay 提供。",
+			"java4shellWarning": "Affected by CVE-2026-114938. Uninstall and install again to get a fixed build."
 		},
 		"launcherCache": {
 			"title": "Launcher cache",
@@ -1539,7 +1542,8 @@
 			"reinstallConfirm": "Delete and download version {version} again?",
 			"installJava": "Install Java {version}",
 			"openMods": "Open mods",
-			"openWorlds": "Open worlds"
+			"openWorlds": "Open worlds",
+			"generic": "Fix"
 		},
 		"reports": {
 			"title": "Crash reports",
